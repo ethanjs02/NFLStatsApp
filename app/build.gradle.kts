@@ -44,6 +44,8 @@ dependencies {
 
     // Dependencies for working with Architecture components
     // You'll probably have to update the version numbers in build.gradle (Project)
+    implementation("com.google.code.gson:gson:2.8.9")
+
 
     // Room components
     val room_version = "2.5.2"

@@ -1,4 +1,4 @@
-package com.example.nflstatsapp.Repository.Teams
+package com.example.nflstatsapp.data.teams
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
