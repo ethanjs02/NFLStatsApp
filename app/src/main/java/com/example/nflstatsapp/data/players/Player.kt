@@ -22,6 +22,6 @@ data class Player (
     @ColumnInfo(name = "jersey") val jersey: String?,
     @ColumnInfo(name = "position") val position: String,
     @ColumnInfo(name = "positionAbbreviation") val positionAbbreviation: String,
-    @ColumnInfo(name = "headshotUrl") val headshotUrl: String, // URL to the player's headshot image
-    @ColumnInfo(name = "headshotAltText") val headshotAltText: String
+    @ColumnInfo(name = "headshotUrl") val headshotUrl: String?, // URL to the player's headshot image
+    @ColumnInfo(name = "headshotAltText") val headshotAltText: String?
 )

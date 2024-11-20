@@ -67,17 +67,25 @@ abstract class NFLDatabase : RoomDatabase() {
             playerDao.deleteAll()
             teamDao.deleteAll()
 
-            val playersJson = context.assets.open("players.json").use { inputStream ->
+            val playersJson = context.assets.open("player_data.json").use { inputStream ->
                 InputStreamReader(inputStream).readText()
             }
-            val playersListType = object : TypeToken<List<Player>>() {}.type
-            val players: List<Player> = Gson().fromJson(playersJson, playersListType)
+            val playersListType = object : TypeToken<List<List<Player>>>() {}.type
+            val nestedPlayers: List<List<Player>> = Gson().fromJson(playersJson, playersListType)
+
+            // Flatten the nested structure
+            val players: List<Player> = nestedPlayers.flatten()
+
+            Log.d("DatabasePopulation", "Number of players read: ${players.size}")
 
             // Insert players into the database
             players.forEach { playerDao.insert(it) }
 
+            Log.d("DatabasePopulation", "Inserted ${players.size} players into the database")
+
+
             // Read and parse teams JSON
-            val teamsJson = context.assets.open("teams.json").use { inputStream ->
+            val teamsJson = context.assets.open("team_data.json").use { inputStream ->
                 InputStreamReader(inputStream).readText()
             }
             val teamsListType = object : TypeToken<List<Team>>() {}.type
