@@ -1,0 +1,30 @@
+package com.example.nflstatsapp.data.api
+
+data class PlayerStats(
+    val gamesPlayed: String?,
+    val fumblesLost: String?,
+    val totalPassingYards: String?,
+    val avgPassingYards: String?,
+    val totalPassingTDs: String?,
+    val totalPassAttempts: String?,
+    val totalRushingYards: String?,
+    val avgRushingYards: String?,
+    val totalRushingTDs: String?,
+    val totalRushAttempts: String?,
+    val avgRushAttempts: String?,
+    val totalInterceptions: String?,
+    val totalReceivingYards: String?,
+    val receivingYardsPerGame: String?,
+    val totalReceivingTDs: String?,
+    val totalTargets: String?,
+    val totalFumbles: String?,
+    val extraPointAttempts: String?,
+    val extraPointPct: String?,
+    val extraPointsMade: String?,
+    val fieldGoalAttempts: String?,
+    val fieldGoalPct: String?,
+    val fieldGoalsMade: String?,
+    val longFieldGoalMade: String?,
+    val teamPassAttempts: String?,
+    val teamRushAttempts: String?
+)
