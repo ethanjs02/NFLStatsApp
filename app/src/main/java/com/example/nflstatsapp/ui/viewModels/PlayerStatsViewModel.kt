@@ -68,7 +68,7 @@ class PlayerStatsViewModel : ViewModel() {
 
                     //Calculate fantasy points
                     if (playerStatsResponse != null) {
-                        fantasyPointsCalculator(playerStatsResponse, posId)
+                        fantasyPointsCalculator(playerStatsResponse)
                     }
 
                     withContext(Dispatchers.Main) {
@@ -94,41 +94,31 @@ class PlayerStatsViewModel : ViewModel() {
         }
     }
 
-    private fun fantasyPointsCalculator(playerStats: PlayerStats, posId: String) {
+    private fun fantasyPointsCalculator(playerStats: PlayerStats) {
         // Safely access nullable properties and perform calculations
         playerStats.totalPassingYards?.toBigDecimal()?.let {
             val points = it.divide(BigDecimal(25), 2, RoundingMode.HALF_UP) // 1 point for every 25 passing yards
             standard = standard.add(points)
-            halfPpr = halfPpr.add(points)
-            ppr = ppr.add(points)
         }
 
         playerStats.totalPassingTDs?.toBigDecimal()?.let {
             val points = it.multiply(BigDecimal(4)) // 4 points per passing TD
             standard = standard.add(points)
-            halfPpr = halfPpr.add(points)
-            ppr = ppr.add(points)
         }
 
         playerStats.totalInterceptions?.toBigDecimal()?.let {
             val points = it.multiply(BigDecimal(2)) // -2 points per interception
             standard = standard.subtract(points)
-            halfPpr = halfPpr.subtract(points)
-            ppr = ppr.subtract(points)
         }
 
         playerStats.totalRushingYards?.toBigDecimal()?.let {
             val points = it.divide(BigDecimal(10), 2, RoundingMode.HALF_UP) // 1 point for every 10 rushing yards
             standard = standard.add(points)
-            halfPpr = halfPpr.add(points)
-            ppr = ppr.add(points)
         }
 
         playerStats.totalRushingTDs?.toBigDecimal()?.let {
             val points = it.multiply(BigDecimal(6)) // 6 points per rushing TD
             standard = standard.add(points)
-            halfPpr = halfPpr.add(points)
-            ppr = ppr.add(points)
         }
 
         playerStats.totalReceptions?.toBigDecimal()?.let { receptions ->
@@ -141,38 +131,59 @@ class PlayerStatsViewModel : ViewModel() {
         playerStats.totalReceivingYards?.toBigDecimal()?.let {
             val points = it.divide(BigDecimal(10), 2, RoundingMode.HALF_UP) // 1 point for every 10 receiving yards
             standard = standard.add(points)
-            halfPpr = halfPpr.add(points)
-            ppr = ppr.add(points)
         }
 
         playerStats.totalReceivingTDs?.toBigDecimal()?.let {
             val points = it.multiply(BigDecimal(6)) // 6 points per receiving TD
             standard = standard.add(points)
-            halfPpr = halfPpr.add(points)
-            ppr = ppr.add(points)
         }
 
-        // Handle kickers (posId == "K")
-        if (posId == "K") {
-            playerStats.fieldGoalsMade?.toBigDecimal()?.let { fgMade ->
-                val points = fgMade.multiply(BigDecimal(3)) // 3 points per field goal
-                standard = standard.add(points)
-                halfPpr = halfPpr.add(points)
-                ppr = ppr.add(points)
-            }
-
-            playerStats.extraPointsMade?.toBigDecimal()?.let { xpMade ->
-                val points = xpMade.multiply(BigDecimal(1)) // 1 point per extra point
-                standard = standard.add(points)
-                halfPpr = halfPpr.add(points)
-                ppr = ppr.add(points)
-            }
+        playerStats.extraPointsMade?.toBigDecimal()?.let { xpMade ->
+            val points = xpMade.multiply(BigDecimal(1)) // 1 point per extra point
+            standard = standard.add(points)
         }
+
+        // Handle fumbles lost (-2 points for each fumble lost)
+        playerStats.totalFumbles?.toBigDecimal()?.let {
+            val points = it.multiply(BigDecimal(2)) // -2 points for each fumble lost
+            standard = standard.subtract(points)
+        }
+
+        // Handle field goal distance
+        playerStats.fieldGoalsMade1_19?.toBigDecimal()?.let { fg1To19 ->
+            val points = fg1To19.multiply(BigDecimal(3)) // 3 points for field goals made from 1-19 yards
+            standard = standard.add(points)
+        }
+        playerStats.fieldGoalsMade20_29?.toBigDecimal()?.let { fg20To29 ->
+            val points = fg20To29.multiply(BigDecimal(3)) // 3 points for field goals made from 20-29 yards
+            standard = standard.add(points)
+        }
+        playerStats.fieldGoalsMade30_39?.toBigDecimal()?.let { fg30To39 ->
+            val points = fg30To39.multiply(BigDecimal(3)) // 3 points for field goals made from 30-39 yards
+            standard = standard.add(points)
+        }
+        playerStats.fieldGoalsMade40_49?.toBigDecimal()?.let { fg40To49 ->
+            val points = fg40To49.multiply(BigDecimal(4)) // 4 points for field goals made from 40-49 yards
+            standard = standard.add(points)
+        }
+        playerStats.fieldGoalsMade50_59?.toBigDecimal()?.let { fg50To59 ->
+            val points = fg50To59.multiply(BigDecimal(5)) // 5 points for field goals made from 50-59 yards
+            standard = standard.add(points)
+        }
+        playerStats.fieldGoalsMade60_99?.toBigDecimal()?.let { fg60To99 ->
+            val points = fg60To99.multiply(BigDecimal(6)) // 6 points for field goals made from 60-99 yards
+            standard = standard.add(points)
+        }
+
+        halfPpr = halfPpr.add(standard)
+        ppr = ppr.add(standard)
 
         // Log or use the calculated fantasy points
         Log.d("FantasyPoints", "Standard: $standard, Half PPR: $halfPpr, PPR: $ppr")
+
+        // Calculate total fantasy points per game
         _totalFantasyPoints.postValue(standard)
-        _fantasyPointsPerGame.postValue(standard.divide(BigDecimal(gamesPlayed), 2, RoundingMode.HALF_UP))
+        _fantasyPointsPerGame.postValue(standard.divide(BigDecimal(playerStats.gamesPlayed?.toInt() ?: 1), 2, RoundingMode.HALF_UP))
     }
 
     private fun updateFantasyPoints(totalPoints: BigDecimal, gamesPlayed: Int) {
