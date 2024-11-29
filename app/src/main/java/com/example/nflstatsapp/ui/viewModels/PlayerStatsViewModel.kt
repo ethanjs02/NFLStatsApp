@@ -4,11 +4,15 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.liveData
 import androidx.lifecycle.viewModelScope
+import com.example.nflstatsapp.NFLStatsApplication
 import com.example.nflstatsapp.data.api.ApiService
 import com.example.nflstatsapp.data.api.RetrofitClient
 import com.example.nflstatsapp.data.api.PlayerStats
 import com.example.nflstatsapp.data.api.Stat
+import com.example.nflstatsapp.data.teams.Team
+import com.example.nflstatsapp.data.teams.TeamRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -17,9 +21,11 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 
 
-class PlayerStatsViewModel : ViewModel() {
+class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewModel() {
 
     private val apiService: ApiService = RetrofitClient.apiService
+
+    var teamData: Team? = null
 
     // LiveData to hold the player stats
     private val _playerStats = MutableLiveData<PlayerStats?>()
@@ -44,6 +50,12 @@ class PlayerStatsViewModel : ViewModel() {
     // LiveData for error messages
     private val _errorMessage = MutableLiveData<String>()
     val errorMessage: LiveData<String> get() = _errorMessage
+
+    fun fetchTeamData(teamId: Int) = liveData(Dispatchers.IO) {
+        val team = teamRepository.getTeamById(teamId) // Suspend function call
+        emit(team)
+    }
+
 
     // Function to fetch player stats from API
     fun fetchPlayerStats(playerId: String, teamId: String, posId: String) {
@@ -249,6 +261,4 @@ class PlayerStatsViewModel : ViewModel() {
 
         return statList
     }
-
-
 }

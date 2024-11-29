@@ -27,10 +27,6 @@ class MainActivity : AppCompatActivity() {
         (application as NFLStatsApplication).playerRepository
     }
 
-    private val teamRepository: TeamRepository by lazy {
-        (application as NFLStatsApplication).teamRepository
-    }
-
     private lateinit var playerAdapter: PlayerAdapter
     private lateinit var playerViewModel: PlayerViewModel
 

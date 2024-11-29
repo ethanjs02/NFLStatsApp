@@ -1,6 +1,7 @@
 package com.example.nflstatsapp.ui.activties
 
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.widget.ImageView
@@ -11,15 +12,22 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.nflstatsapp.NFLStatsApplication
 import com.example.nflstatsapp.R
 import com.example.nflstatsapp.data.api.PlayerStats
 import com.example.nflstatsapp.data.players.Player
+import com.example.nflstatsapp.data.teams.TeamRepository
 import com.example.nflstatsapp.ui.StatsAdapter
 import com.example.nflstatsapp.ui.viewModels.PlayerStatsViewModel
 import com.google.android.material.tabs.TabLayout
 import com.squareup.picasso.Picasso
 
 class StatsActivity : AppCompatActivity() {
+
+    private val playerStatsViewModel: PlayerStatsViewModel by lazy {
+        val teamRepository: TeamRepository = (application as NFLStatsApplication).teamRepository
+        PlayerStatsViewModel(teamRepository)
+    }
 
     private lateinit var player: Player
     private lateinit var playerHeadshot: ImageView
@@ -29,14 +37,14 @@ class StatsActivity : AppCompatActivity() {
     private lateinit var fantasyPointsTextView: TextView
     private lateinit var fantasyPpgTextView: TextView
     private lateinit var recyclerView: RecyclerView
+    private lateinit var playerJerseyTextView: TextView
+    private lateinit var playerHeightTextView: TextView
+    private lateinit var playerWeightTextView: TextView
 
-    private val playerStatsViewModel: PlayerStatsViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_stats)
-
-        val player = intent.extras?.get("player_data") as? Player
 
         // Initialize the UI elements
         playerHeadshot = findViewById(R.id.playerHeadshot)
@@ -46,6 +54,18 @@ class StatsActivity : AppCompatActivity() {
         fantasyPointsTextView = findViewById(R.id.fantasyPoints)
         fantasyPpgTextView = findViewById(R.id.fantasyPointsPerGame)
         recyclerView = findViewById(R.id.recyclerView)
+        playerJerseyTextView= findViewById(R.id.playerJersey)
+        playerHeightTextView= findViewById(R.id.playerHeight)
+        playerWeightTextView= findViewById(R.id.playerWeight)
+
+        val player = intent.extras?.get("player_data") as? Player
+        player?.teamId?.let {
+            playerStatsViewModel.fetchTeamData(it).observe(this) { team ->
+                if (team != null) {
+                    playerTeam.text = team.name
+                }
+            }
+        }
 
         val tabLayout: TabLayout = findViewById(R.id.tabLayout)
         val tabNames = listOf("Standard", "Half-PPR", "PPR")
@@ -55,10 +75,14 @@ class StatsActivity : AppCompatActivity() {
         }
 
         // Set player name, position, and team
+//        playerHeadshot.setImageURI(Uri.parse(player?.headshotUrl))
         playerName.text = player?.fullName
         playerPosition.text = player?.position
+        playerJerseyTextView.text = "Jersey: #${player?.jersey}" // Set jersey number
+        playerHeightTextView.text = "Height: ${player?.displayHeight}" // Set height
+        playerWeightTextView.text = "Weight: ${player?.displayWeight}" // Set weight
 
-        val imageUrl = "https://www.gstatic.com/webp/gallery3/1.png"
+//        val imageUrl = "https://www.gstatic.com/webp/gallery3/1.png"
 
         //Someone pls figure out how to get the images to work
 //        Picasso.get()
@@ -68,7 +92,7 @@ class StatsActivity : AppCompatActivity() {
 
         // Load the player's headshot with Glide
         Glide.with(this)
-            .load(imageUrl)
+            .load(player?.headshotUrl)
             .placeholder(R.drawable.default_player_image)
             .error(R.drawable.default_player_image)
             .fallback(R.drawable.default_player_image)
