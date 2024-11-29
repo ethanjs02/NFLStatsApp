@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NFLStatsApp</string>
+    <string name="player_headshot">player_headshot</string>
+    <string name="scoring_format_spinner">Select Scoring Format</string>
 </resources>

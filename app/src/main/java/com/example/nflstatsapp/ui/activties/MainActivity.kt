@@ -1,9 +1,9 @@
-package com.example.nflstatsapp.ui
+package com.example.nflstatsapp.ui.activties
 
+import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
-import android.widget.EditText
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,11 +17,9 @@ import com.example.nflstatsapp.data.players.PlayerRepository
 import com.example.nflstatsapp.data.teams.TeamRepository
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import com.example.nflstatsapp.ui.viewModels.PlayerAdapter
+import com.example.nflstatsapp.ui.viewModels.PlayerViewModel
+import com.example.nflstatsapp.ui.viewModels.PlayerViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 
@@ -53,7 +51,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
-        playerAdapter = PlayerAdapter()
+        playerAdapter = PlayerAdapter { player ->
+            val intent = Intent(this, StatsActivity::class.java).apply {
+                putExtra("player_data", player) // Pass the player object
+            }
+            startActivity(intent)
+        }
         recyclerView.adapter = playerAdapter
         recyclerView.layoutManager = LinearLayoutManager(this)
 

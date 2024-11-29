@@ -3,6 +3,7 @@ package com.example.nflstatsapp.data.players
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity(tableName = "players")
 data class Player (
@@ -25,4 +26,4 @@ data class Player (
     @ColumnInfo(name = "positionAbbreviation") val positionAbbreviation: String,
     @ColumnInfo(name = "headshotUrl") val headshotUrl: String?, // URL to the player's headshot image
     @ColumnInfo(name = "headshotAltText") val headshotAltText: String?
-)
+): Serializable
