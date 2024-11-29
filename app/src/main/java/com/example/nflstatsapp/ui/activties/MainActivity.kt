@@ -3,7 +3,6 @@ package com.example.nflstatsapp.ui.activties
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
-import android.util.Log
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -17,7 +16,7 @@ import com.example.nflstatsapp.data.players.PlayerRepository
 import com.example.nflstatsapp.data.teams.TeamRepository
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
-import com.example.nflstatsapp.ui.viewModels.PlayerAdapter
+import com.example.nflstatsapp.ui.adapters.PlayerAdapter
 import com.example.nflstatsapp.ui.viewModels.PlayerViewModel
 import com.example.nflstatsapp.ui.viewModels.PlayerViewModelFactory
 

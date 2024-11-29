@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
     android:scrollbars="vertical">
@@ -52,163 +52,13 @@
         android:textSize="16sp"
         android:gravity="center" />
 
-    <!-- Stats Section -->
-    <LinearLayout
+    <!-- Stats Section (RecyclerView) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="16dp">
-
-        <!-- Game Stats -->
-        <TextView
-            android:id="@+id/gamesPlayed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/fumblesLost"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <!-- Passing Stats -->
-        <TextView
-            android:id="@+id/passingYards"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/avgPassingYards"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/passingTDs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <!-- Rushing Stats -->
-        <TextView
-            android:id="@+id/rushAttempts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/rushingYards"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/avgRushingYards"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/rushingTDs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <!-- Additional Stats -->
-        <TextView
-            android:id="@+id/interceptions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/receivingYards"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/receivingYardsPerGame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/receivingTDs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/targets"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <!-- Misc Stats -->
-        <TextView
-            android:id="@+id/totalFumbles"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/extraPointAttempts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/extraPointPct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/extraPointsMade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <!-- Field Goal Stats -->
-        <TextView
-            android:id="@+id/fieldGoalAttempts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/fieldGoalPct"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/fieldGoalsMade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/longFieldGoalMade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <!-- Team Stats -->
-        <TextView
-            android:id="@+id/teamPassAttempts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/teamRushAttempts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp" />
-
-    </LinearLayout>
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="yes"
+        android:contentDescription="@string/player_stats_list"
+        tools:listitem="@layout/item_player_stat"/>
 </LinearLayout>

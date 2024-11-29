@@ -1,4 +1,4 @@
-package com.example.nflstatsapp.ui.viewModels
+package com.example.nflstatsapp.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View

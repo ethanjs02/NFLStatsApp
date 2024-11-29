@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.nflstatsapp.data.api.ApiService
 import com.example.nflstatsapp.data.api.RetrofitClient
 import com.example.nflstatsapp.data.api.PlayerStats
+import com.example.nflstatsapp.data.api.Stat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -67,4 +68,39 @@ class PlayerStatsViewModel : ViewModel() {
             }
         }
     }
+
+    fun mapPlayerStatsToList(playerStats: PlayerStats): List<Stat> {
+        val statList = mutableListOf<Stat>()
+
+        // Map each stat to a name and value
+        playerStats.gamesPlayed?.let { statList.add(Stat("Games Played", it)) }
+        playerStats.fumblesLost?.let { statList.add(Stat("Fumbles Lost", it)) }
+        playerStats.totalPassingYards?.let { statList.add(Stat("Total Passing Yards", it)) }
+        playerStats.avgPassingYards?.let { statList.add(Stat("Avg Passing Yards", it)) }
+        playerStats.totalPassingTDs?.let { statList.add(Stat("Total Passing TDs", it)) }
+        playerStats.totalPassAttempts?.let { statList.add(Stat("Total Pass Attempts", it)) }
+        playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
+        playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+        playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+        playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
+        playerStats.avgRushAttempts?.let { statList.add(Stat("Avg Rush Attempts", it)) }
+        playerStats.totalInterceptions?.let { statList.add(Stat("Total Interceptions", it)) }
+        playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
+        playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
+        playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
+        playerStats.totalTargets?.let { statList.add(Stat("Total Targets", it)) }
+        playerStats.totalFumbles?.let { statList.add(Stat("Total Fumbles", it)) }
+        playerStats.extraPointAttempts?.let { statList.add(Stat("Extra Point Attempts", it)) }
+        playerStats.extraPointPct?.let { statList.add(Stat("Extra Point %", it)) }
+        playerStats.extraPointsMade?.let { statList.add(Stat("Extra Points Made", it)) }
+        playerStats.fieldGoalAttempts?.let { statList.add(Stat("Field Goal Attempts", it)) }
+        playerStats.fieldGoalPct?.let { statList.add(Stat("Field Goal %", it)) }
+        playerStats.fieldGoalsMade?.let { statList.add(Stat("Field Goals Made", it)) }
+        playerStats.longFieldGoalMade?.let { statList.add(Stat("Long Field Goal Made", it)) }
+        playerStats.teamPassAttempts?.let { statList.add(Stat("Team Pass Attempts", it)) }
+        playerStats.teamRushAttempts?.let { statList.add(Stat("Team Rush Attempts", it)) }
+
+        return statList
+    }
+
 }
