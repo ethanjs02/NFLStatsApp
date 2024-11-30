@@ -1,17 +1,17 @@
 package com.example.nflstatsapp.ui.viewModels
 
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import androidx.lifecycle.viewModelScope
-import com.example.nflstatsapp.NFLStatsApplication
 import com.example.nflstatsapp.data.api.ApiService
 import com.example.nflstatsapp.data.api.RetrofitClient
 import com.example.nflstatsapp.data.api.PlayerStats
 import com.example.nflstatsapp.data.api.Stat
-import com.example.nflstatsapp.data.teams.Team
 import com.example.nflstatsapp.data.teams.TeamRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -25,7 +25,8 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
 
     private val apiService: ApiService = RetrofitClient.apiService
 
-    var teamData: Team? = null
+    private val _headshotData = MutableLiveData<Bitmap?>()
+    val headshotData: LiveData<Bitmap?> get() = _headshotData
 
     // LiveData to hold the player stats
     private val _playerStats = MutableLiveData<PlayerStats?>()
@@ -54,6 +55,55 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
     fun fetchTeamData(teamId: Int) = liveData(Dispatchers.IO) {
         val team = teamRepository.getTeamById(teamId) // Suspend function call
         emit(team)
+    }
+
+    fun fetchHeadshot(url: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            try {
+                Log.d("fetchHeadshot", "Starting to fetch headshot from URL: $url")
+
+                // Make the API call to fetch the player headshot
+                val response = apiService.getPlayerHeadshot(url)
+
+                // Check if the response is successful
+                if (response.isSuccessful) {
+                    // Get the image body as bytes
+                    Log.d("fetchHeadshot", response.body().toString())
+
+                    val imageBody = response.body()?.byteStream()
+
+                    // Decode the InputStream to a Bitmap
+                    val bitmap = imageBody?.let { BitmapFactory.decodeStream(it) }
+
+                    // Check if the bitmap is valid
+                    if (bitmap != null) {
+                        // Post the Bitmap to LiveData
+                        withContext(Dispatchers.Main) {
+                            _headshotData.postValue(bitmap)
+                            Log.d("fetchHeadshot", "Successfully fetched and decoded the image")
+                        }
+                    } else {
+                        // Handle decoding failure
+                        withContext(Dispatchers.Main) {
+                            _headshotData.postValue(null)
+                            Log.e("fetchHeadshot", "Failed to decode image data")
+                        }
+                    }
+                } else {
+                    // Handle non-2xx HTTP responses
+                    withContext(Dispatchers.Main) {
+                        _headshotData.postValue(null)
+                        Log.e("fetchHeadshot", "Error fetching image: ${response.code()} ${response.message()}")
+                    }
+                }
+            } catch (e: Exception) {
+                // Handle general exceptions (e.g., network errors)
+                withContext(Dispatchers.Main) {
+                    _headshotData.postValue(null)
+                    Log.e("fetchHeadshot", "Exception occurred while fetching image: ${e.localizedMessage}", e)
+                }
+            }
+        }
     }
 
 
