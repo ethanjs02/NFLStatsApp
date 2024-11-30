@@ -75,7 +75,8 @@ class StatsActivity : AppCompatActivity() {
         }
 
         // Set player name, position, and team
-//        playerHeadshot.setImageURI(Uri.parse(player?.headshotUrl))
+        Log.d("Headshot URL", player?.href ?: "No headshot URL available")
+//        playerHeadshot.setImageURI(Uri.parse(player?.href))
         playerName.text = player?.fullName
         playerPosition.text = player?.position
         playerJerseyTextView.text = "Jersey: #${player?.jersey}" // Set jersey number
@@ -92,7 +93,7 @@ class StatsActivity : AppCompatActivity() {
 
         // Load the player's headshot with Glide
         Glide.with(this)
-            .load(player?.headshotUrl)
+            .load(player?.href)
             .placeholder(R.drawable.default_player_image)
             .error(R.drawable.default_player_image)
             .fallback(R.drawable.default_player_image)
