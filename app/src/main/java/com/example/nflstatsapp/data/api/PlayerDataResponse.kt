@@ -2,7 +2,6 @@ package com.example.nflstatsapp.data.api
 
 data class PlayerStats(
     val gamesPlayed: String?,
-    val fumblesLost: String?,
     val totalPassingYards: String?,
     val avgPassingYards: String?,
     val totalPassingTDs: String?,
@@ -20,6 +19,7 @@ data class PlayerStats(
     val totalReceptions: String?,
     val targetShare: String?,
     val totalFumbles: String?,
+    val fumblesLost: String?,
     val extraPointAttempts: String?,
     val extraPointPct: String?,
     val extraPointsMade: String?,

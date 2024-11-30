@@ -2,7 +2,9 @@ package com.example.nflstatsapp.ui.activties
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -34,6 +36,7 @@ class StatsActivity : AppCompatActivity() {
     private lateinit var playerJerseyTextView: TextView
     private lateinit var playerHeightTextView: TextView
     private lateinit var playerWeightTextView: TextView
+    private lateinit var progressBar: ProgressBar
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,6 +54,7 @@ class StatsActivity : AppCompatActivity() {
         playerJerseyTextView= findViewById(R.id.playerJersey)
         playerHeightTextView= findViewById(R.id.playerHeight)
         playerWeightTextView= findViewById(R.id.playerWeight)
+        progressBar = findViewById(R.id.progressBar)
 
         val player = intent.extras?.get("player_data") as? Player
         player?.teamId?.let {
@@ -108,6 +112,18 @@ class StatsActivity : AppCompatActivity() {
                 fantasyPpgTextView.text = "Fantasy Points Per Game: $it"
             }
         })
+
+        playerStatsViewModel.isLoading.observe(this, {
+            isLoading -> isLoading?.let {
+                if(isLoading) {
+                    progressBar.visibility = View.VISIBLE
+                }
+                else {
+                    progressBar.visibility = View.GONE
+                }
+            }
+        })
+
 
         // Set up RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
