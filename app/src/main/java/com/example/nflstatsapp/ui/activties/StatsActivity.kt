@@ -3,6 +3,7 @@ package com.example.nflstatsapp.ui.activties
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -15,6 +16,7 @@ import com.example.nflstatsapp.R
 import com.example.nflstatsapp.data.players.Player
 import com.example.nflstatsapp.data.teams.TeamRepository
 import com.example.nflstatsapp.ui.StatsAdapter
+import com.example.nflstatsapp.ui.fragments.SearchPlayerFragment
 import com.example.nflstatsapp.ui.viewModels.PlayerStatsViewModel
 import com.google.android.material.tabs.TabLayout
 
@@ -37,6 +39,7 @@ class StatsActivity : AppCompatActivity() {
     private lateinit var playerHeightTextView: TextView
     private lateinit var playerWeightTextView: TextView
     private lateinit var progressBar: ProgressBar
+    private lateinit var compareButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +58,7 @@ class StatsActivity : AppCompatActivity() {
         playerHeightTextView= findViewById(R.id.playerHeight)
         playerWeightTextView= findViewById(R.id.playerWeight)
         progressBar = findViewById(R.id.progressBar)
+        compareButton = findViewById(R.id.compareButton)
 
         val player = intent.extras?.get("player_data") as? Player
         player?.teamId?.let {
@@ -150,5 +154,13 @@ class StatsActivity : AppCompatActivity() {
             override fun onTabUnselected(tab: TabLayout.Tab?) {}
             override fun onTabReselected(tab: TabLayout.Tab?) {}
         })
+
+        compareButton.setOnClickListener {
+            val searchFragment = SearchPlayerFragment()
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.container, searchFragment) // 'container' is the ID of your main container
+            transaction.addToBackStack(null) // Allows back navigation to return to the previous screen
+            transaction.commit()
+        }
     }
 }

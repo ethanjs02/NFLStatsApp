@@ -117,26 +117,46 @@
             android:gravity="center" />
     </LinearLayout>
 
-    <FrameLayout
+    <!-- Stats Section (Scrollable) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Stats Section (RecyclerView) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:importantForAccessibility="yes"
+                android:contentDescription="@string/player_stats_list"
+                tools:listitem="@layout/item_player_stat" />
+
+            <!-- ProgressBar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </ScrollView>
+
+    <!-- Compare Button -->
+    <Button
+        android:id="@+id/compareButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp">
-        <!-- Stats Section (RecyclerView) -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:importantForAccessibility="yes"
-            android:contentDescription="@string/player_stats_list"
-            tools:listitem="@layout/item_player_stat" />
+        android:text="@string/compare"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"/>
 
-        <!-- ProgressBar -->
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="gone" />
-    </FrameLayout>
 </LinearLayout>

@@ -1,5 +1,6 @@
 package com.example.nflstatsapp.ui.viewModels
 
+import PlayerStatsData
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Log
@@ -12,6 +13,7 @@ import com.example.nflstatsapp.data.api.ApiService
 import com.example.nflstatsapp.data.api.RetrofitClient
 import com.example.nflstatsapp.data.api.PlayerStats
 import com.example.nflstatsapp.data.api.Stat
+import com.example.nflstatsapp.data.players.Player
 import com.example.nflstatsapp.data.teams.TeamRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -34,6 +36,8 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
 
     private var gamesPlayed = 0
 
+    private var teamData = ""
+
     private val _totalFantasyPoints = MutableLiveData<BigDecimal>()
     val totalFantasyPoints: LiveData<BigDecimal> get() = _totalFantasyPoints
 
@@ -54,6 +58,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
 
     fun fetchTeamData(teamId: Int) = liveData(Dispatchers.IO) {
         val team = teamRepository.getTeamById(teamId) // Suspend function call
+        teamData = team?.name.toString()
         emit(team)
     }
 
@@ -265,6 +270,17 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         }
     }
 
+    fun aggregateData(name: String, pos: String, jersey: String): PlayerStatsData {
+        return PlayerStatsData(
+            fullName = name,
+            position =  pos,
+            teamName =  teamData,
+            jerseyNumber =  jersey,
+            headshotData =  _headshotData.value,
+            fantasyPointsPerGame = _fantasyPointsPerGame.value,
+            stats = _playerStats.value
+        )
+    }
 
     fun mapPlayerStatsToList(playerStats: PlayerStats): List<Stat> {
         val statList = mutableListOf<Stat>()

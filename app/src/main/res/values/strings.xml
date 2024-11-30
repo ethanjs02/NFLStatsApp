@@ -6,4 +6,5 @@
     <string name="player_stats_list">player stats</string>
     <string name="total_fantasy_points_0">Total Fantasy Points: 0</string>
     <string name="fantasy_ppg_0">Fantasy PPG: 0</string>
+    <string name="compare">Compare</string>
 </resources>
