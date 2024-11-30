@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Image when the view is pressed -->
+    <item android:drawable="@drawable/nfl" android:state_pressed="true" />
+
+    <!-- Image when the view is focused -->
+    <item android:drawable="@drawable/nfl" android:state_focused="true" />
+
+    <!-- Default image when no state is applied (for normal state) -->
+    <item android:drawable="@drawable/nfl" />
+</selector>

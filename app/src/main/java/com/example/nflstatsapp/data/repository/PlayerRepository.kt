@@ -1,6 +1,7 @@
 package com.example.nflstatsapp.data.players
 
 import androidx.annotation.WorkerThread
+import androidx.lifecycle.LiveData
 import com.example.nflstatsapp.data.players.PlayerDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -33,5 +34,9 @@ class PlayerRepository(private val playerDao: PlayerDao) {
     @WorkerThread
     suspend fun deleteAll() = withContext(Dispatchers.IO) {
         playerDao.deleteAll()
+    }
+
+    fun searchPlayers(query: String): LiveData<List<Player>> {
+        return playerDao.searchPlayers(query)
     }
 }

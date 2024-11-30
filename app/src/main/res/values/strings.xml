@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">NFLStatsApp</string>
+    <string name="player_headshot">player_headshot</string>
+    <string name="scoring_format_spinner">Select Scoring Format</string>
+    <string name="stats_list">"stats list "</string>
+    <string name="player_stats_list">player stats</string>
+    <string name="total_fantasy_points_0">Total Fantasy Points: 0</string>
+    <string name="fantasy_ppg_0">Fantasy PPG: 0</string>
 </resources>

@@ -12,7 +12,7 @@ data class Team(
     @ColumnInfo(name = "shortDisplayName") val shortDisplayName: String,
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "location") val location: String,
-    @ColumnInfo(name = "color") val color: String,
+    @ColumnInfo(name = "color") val color: String?,
     @ColumnInfo(name = "alternateColor") val alternateColor: String?,
     @ColumnInfo(name = "logoUrl") val logoUrl: String
 )

@@ -3,6 +3,7 @@
         {
             "id": "4429275",
             "teamId": "22",
+            "positionId": "9",
             "firstName": "Trey",
             "lastName": "Benson",
             "fullName": "Trey Benson",
@@ -22,6 +23,7 @@
         {
             "id": "3045147",
             "teamId": "22",
+            "positionId": "9",
             "firstName": "James",
             "lastName": "Conner",
             "fullName": "James Conner",
@@ -41,6 +43,7 @@
         {
             "id": "4240631",
             "teamId": "22",
+            "positionId": "9",
             "firstName": "DeeJay",
             "lastName": "Dallas",
             "fullName": "DeeJay Dallas",
@@ -60,6 +63,7 @@
         {
             "id": "4362478",
             "teamId": "22",
+            "positionId": "9",
             "firstName": "Emari",
             "lastName": "Demercado",
             "fullName": "Emari Demercado",
@@ -79,6 +83,7 @@
         {
             "id": "4037235",
             "teamId": "22",
+            "positionId": "1",
             "firstName": "Greg",
             "lastName": "Dortch",
             "fullName": "Greg Dortch",
@@ -98,6 +103,7 @@
         {
             "id": "4432708",
             "teamId": "22",
+            "positionId": "1",
             "firstName": "Marvin",
             "lastName": "Harrison Jr.",
             "fullName": "Marvin Harrison Jr.",
@@ -117,6 +123,7 @@
         {
             "id": "4426844",
             "teamId": "22",
+            "positionId": "7",
             "firstName": "Elijah",
             "lastName": "Higgins",
             "fullName": "Elijah Higgins",
@@ -136,6 +143,7 @@
         {
             "id": "3059722",
             "teamId": "22",
+            "positionId": "1",
             "firstName": "Zay",
             "lastName": "Jones",
             "fullName": "Zay Jones",
@@ -155,6 +163,7 @@
         {
             "id": "4361307",
             "teamId": "22",
+            "positionId": "7",
             "firstName": "Trey",
             "lastName": "McBride",
             "fullName": "Trey McBride",
@@ -164,7 +173,7 @@
             "displayWeight": "246 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-22T08:00Z",
             "jersey": "85",
             "position": "Tight End",
@@ -174,6 +183,7 @@
         {
             "id": "3917315",
             "teamId": "22",
+            "positionId": "8",
             "firstName": "Kyler",
             "lastName": "Murray",
             "fullName": "Kyler Murray",
@@ -193,6 +203,7 @@
         {
             "id": "2978109",
             "teamId": "22",
+            "positionId": "1",
             "firstName": "Zach",
             "lastName": "Pascal",
             "fullName": "Zach Pascal",
@@ -212,6 +223,7 @@
         {
             "id": "4696700",
             "teamId": "22",
+            "positionId": "7",
             "firstName": "Tip",
             "lastName": "Reiman",
             "fullName": "Tip Reiman",
@@ -231,6 +243,7 @@
         {
             "id": "4360175",
             "teamId": "22",
+            "positionId": "8",
             "firstName": "Clayton",
             "lastName": "Tune",
             "fullName": "Clayton Tune",
@@ -250,6 +263,7 @@
         {
             "id": "4259324",
             "teamId": "22",
+            "positionId": "7",
             "firstName": "Travis",
             "lastName": "Vokolek",
             "fullName": "Travis Vokolek",
@@ -269,6 +283,7 @@
         {
             "id": "4428811",
             "teamId": "22",
+            "positionId": "1",
             "firstName": "Xavier",
             "lastName": "Weaver",
             "fullName": "Xavier Weaver",
@@ -288,6 +303,7 @@
         {
             "id": "4360761",
             "teamId": "22",
+            "positionId": "1",
             "firstName": "Michael",
             "lastName": "Wilson",
             "fullName": "Michael Wilson",
@@ -307,6 +323,7 @@
         {
             "id": "4363538",
             "teamId": "22",
+            "positionId": "22",
             "firstName": "Chad",
             "lastName": "Ryland",
             "fullName": "Chad Ryland",
@@ -328,6 +345,7 @@
         {
             "id": "4373626",
             "teamId": "1",
+            "positionId": "9",
             "firstName": "Tyler",
             "lastName": "Allgeier",
             "fullName": "Tyler Allgeier",
@@ -347,6 +365,7 @@
         {
             "id": "14880",
             "teamId": "1",
+            "positionId": "8",
             "firstName": "Kirk",
             "lastName": "Cousins",
             "fullName": "Kirk Cousins",
@@ -366,6 +385,7 @@
         {
             "id": "3120303",
             "teamId": "1",
+            "positionId": "7",
             "firstName": "Ross",
             "lastName": "Dwelley",
             "fullName": "Ross Dwelley",
@@ -385,6 +405,7 @@
         {
             "id": "3047876",
             "teamId": "1",
+            "positionId": "1",
             "firstName": "KhaDarel",
             "lastName": "Hodge",
             "fullName": "KhaDarel Hodge",
@@ -404,6 +425,7 @@
         {
             "id": "4426502",
             "teamId": "1",
+            "positionId": "1",
             "firstName": "Drake",
             "lastName": "London",
             "fullName": "Drake London",
@@ -423,6 +445,7 @@
         {
             "id": "4429001",
             "teamId": "1",
+            "positionId": "9",
             "firstName": "Jase",
             "lastName": "McClellan",
             "fullName": "Jase McClellan",
@@ -442,6 +465,7 @@
         {
             "id": "3728262",
             "teamId": "1",
+            "positionId": "1",
             "firstName": "Ray-Ray",
             "lastName": "McCloud III",
             "fullName": "Ray-Ray McCloud III",
@@ -461,6 +485,7 @@
         {
             "id": "4040655",
             "teamId": "1",
+            "positionId": "1",
             "firstName": "Darnell",
             "lastName": "Mooney",
             "fullName": "Darnell Mooney",
@@ -480,6 +505,7 @@
         {
             "id": "4360423",
             "teamId": "1",
+            "positionId": "8",
             "firstName": "Michael",
             "lastName": "Penix Jr.",
             "fullName": "Michael Penix Jr.",
@@ -499,6 +525,7 @@
         {
             "id": "4360248",
             "teamId": "1",
+            "positionId": "7",
             "firstName": "Kyle",
             "lastName": "Pitts",
             "fullName": "Kyle Pitts",
@@ -518,6 +545,7 @@
         {
             "id": "4430807",
             "teamId": "1",
+            "positionId": "9",
             "firstName": "Bijan",
             "lastName": "Robinson",
             "fullName": "Bijan Robinson",
@@ -537,6 +565,7 @@
         {
             "id": "4428796",
             "teamId": "1",
+            "positionId": "1",
             "firstName": "Casey",
             "lastName": "Washington",
             "fullName": "Casey Washington",
@@ -556,6 +585,7 @@
         {
             "id": "4048259",
             "teamId": "1",
+            "positionId": "9",
             "firstName": "Avery",
             "lastName": "Williams",
             "fullName": "Avery Williams",
@@ -575,6 +605,7 @@
         {
             "id": "4035020",
             "teamId": "1",
+            "positionId": "7",
             "firstName": "Charlie",
             "lastName": "Woerner",
             "fullName": "Charlie Woerner",
@@ -594,6 +625,7 @@
         {
             "id": "3049899",
             "teamId": "1",
+            "positionId": "22",
             "firstName": "Younghoe",
             "lastName": "Koo",
             "fullName": "Younghoe Koo",
@@ -615,6 +647,7 @@
         {
             "id": "2971618",
             "teamId": "33",
+            "positionId": "1",
             "firstName": "Nelson",
             "lastName": "Agholor",
             "fullName": "Nelson Agholor",
@@ -634,6 +667,7 @@
         {
             "id": "4690013",
             "teamId": "33",
+            "positionId": "9",
             "firstName": "Rasheen",
             "lastName": "Ali",
             "fullName": "Rasheen Ali",
@@ -653,6 +687,7 @@
         {
             "id": "3116365",
             "teamId": "33",
+            "positionId": "7",
             "firstName": "Mark",
             "lastName": "Andrews",
             "fullName": "Mark Andrews",
@@ -672,6 +707,7 @@
         {
             "id": "4360939",
             "teamId": "33",
+            "positionId": "1",
             "firstName": "Rashod",
             "lastName": "Bateman",
             "fullName": "Rashod Bateman",
@@ -689,27 +725,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4360939.png"
         },
         {
-            "id": "4698191",
-            "teamId": "33",
-            "firstName": "Chris",
-            "lastName": "Collier",
-            "fullName": "Chris Collier",
-            "displayName": "Chris Collier",
-            "shortName": "C. Collier",
-            "weight": 210,
-            "displayWeight": "210 lbs",
-            "height": 71,
-            "displayHeight": "5' 11\"",
-            "age": 24,
-            "dateOfBirth": "2000-03-24T08:00Z",
-            "jersey": "38",
-            "position": "Running Back",
-            "positionAbbreviation": "RB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4698191.png"
-        },
-        {
             "id": "4429615",
             "teamId": "33",
+            "positionId": "1",
             "firstName": "Zay",
             "lastName": "Flowers",
             "fullName": "Zay Flowers",
@@ -729,6 +747,7 @@
         {
             "id": "3043078",
             "teamId": "33",
+            "positionId": "9",
             "firstName": "Derrick",
             "lastName": "Henry",
             "fullName": "Derrick Henry",
@@ -748,6 +767,7 @@
         {
             "id": "4038441",
             "teamId": "33",
+            "positionId": "9",
             "firstName": "Justice",
             "lastName": "Hill",
             "fullName": "Justice Hill",
@@ -757,7 +777,7 @@
             "displayWeight": "195 lbs",
             "height": 70,
             "displayHeight": "5' 10\"",
-            "age": 26,
+            "age": 27,
             "dateOfBirth": "1997-11-14T08:00Z",
             "jersey": "43",
             "position": "Running Back",
@@ -767,6 +787,7 @@
         {
             "id": "3916387",
             "teamId": "33",
+            "positionId": "8",
             "firstName": "Lamar",
             "lastName": "Jackson",
             "fullName": "Lamar Jackson",
@@ -786,6 +807,7 @@
         {
             "id": "3932905",
             "teamId": "33",
+            "positionId": "1",
             "firstName": "Diontae",
             "lastName": "Johnson",
             "fullName": "Diontae Johnson",
@@ -805,6 +827,7 @@
         {
             "id": "11394",
             "teamId": "33",
+            "positionId": "8",
             "firstName": "Josh",
             "lastName": "Johnson",
             "fullName": "Josh Johnson",
@@ -824,6 +847,7 @@
         {
             "id": "4241263",
             "teamId": "33",
+            "positionId": "7",
             "firstName": "Charlie",
             "lastName": "Kolar",
             "fullName": "Charlie Kolar",
@@ -843,6 +867,7 @@
         {
             "id": "4361050",
             "teamId": "33",
+            "positionId": "7",
             "firstName": "Isaiah",
             "lastName": "Likely",
             "fullName": "Isaiah Likely",
@@ -860,8 +885,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4361050.png"
         },
         {
+            "id": "4596334",
+            "teamId": "33",
+            "positionId": "9",
+            "firstName": "Keaton",
+            "lastName": "Mitchell",
+            "fullName": "Keaton Mitchell",
+            "displayName": "Keaton Mitchell",
+            "shortName": "K. Mitchell",
+            "weight": 191,
+            "displayWeight": "191 lbs",
+            "height": 68,
+            "displayHeight": "5' 8\"",
+            "age": 22,
+            "dateOfBirth": "2002-01-17T08:00Z",
+            "jersey": "34",
+            "position": "Running Back",
+            "positionAbbreviation": "RB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4596334.png"
+        },
+        {
             "id": "2975417",
             "teamId": "33",
+            "positionId": "10",
             "firstName": "Patrick",
             "lastName": "Ricard",
             "fullName": "Patrick Ricard",
@@ -881,6 +927,7 @@
         {
             "id": "4696882",
             "teamId": "33",
+            "positionId": "1",
             "firstName": "Devontez",
             "lastName": "Walker",
             "fullName": "Devontez Walker",
@@ -900,6 +947,7 @@
         {
             "id": "4241424",
             "teamId": "33",
+            "positionId": "1",
             "firstName": "Tylan",
             "lastName": "Wallace",
             "fullName": "Tylan Wallace",
@@ -919,6 +967,7 @@
         {
             "id": "15683",
             "teamId": "33",
+            "positionId": "22",
             "firstName": "Justin",
             "lastName": "Tucker",
             "fullName": "Justin Tucker",
@@ -928,7 +977,7 @@
             "displayWeight": "191 lbs",
             "height": 73,
             "displayHeight": "6' 1\"",
-            "age": 34,
+            "age": 35,
             "dateOfBirth": "1989-11-21T08:00Z",
             "jersey": "9",
             "position": "Place kicker",
@@ -940,6 +989,7 @@
         {
             "id": "3918298",
             "teamId": "2",
+            "positionId": "8",
             "firstName": "Josh",
             "lastName": "Allen",
             "fullName": "Josh Allen",
@@ -959,6 +1009,7 @@
         {
             "id": "4635008",
             "teamId": "2",
+            "positionId": "1",
             "firstName": "Keon",
             "lastName": "Coleman",
             "fullName": "Keon Coleman",
@@ -978,6 +1029,7 @@
         {
             "id": "4379399",
             "teamId": "2",
+            "positionId": "9",
             "firstName": "James",
             "lastName": "Cook",
             "fullName": "James Cook",
@@ -997,6 +1049,7 @@
         {
             "id": "2976499",
             "teamId": "2",
+            "positionId": "1",
             "firstName": "Amari",
             "lastName": "Cooper",
             "fullName": "Amari Cooper",
@@ -1016,6 +1069,7 @@
         {
             "id": "4429501",
             "teamId": "2",
+            "positionId": "9",
             "firstName": "Ray",
             "lastName": "Davis",
             "fullName": "Ray Davis",
@@ -1025,7 +1079,7 @@
             "displayWeight": "220 lbs",
             "height": 68,
             "displayHeight": "5' 8\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-11T08:00Z",
             "jersey": "22",
             "position": "Running Back",
@@ -1035,6 +1089,7 @@
         {
             "id": "4039505",
             "teamId": "2",
+            "positionId": "10",
             "firstName": "Reggie",
             "lastName": "Gilliam",
             "fullName": "Reggie Gilliam",
@@ -1054,6 +1109,7 @@
         {
             "id": "2991662",
             "teamId": "2",
+            "positionId": "1",
             "firstName": "Mack",
             "lastName": "Hollins",
             "fullName": "Mack Hollins",
@@ -1073,6 +1129,7 @@
         {
             "id": "3915411",
             "teamId": "2",
+            "positionId": "9",
             "firstName": "Ty",
             "lastName": "Johnson",
             "fullName": "Ty Johnson",
@@ -1092,6 +1149,7 @@
         {
             "id": "4385690",
             "teamId": "2",
+            "positionId": "7",
             "firstName": "Dalton",
             "lastName": "Kincaid",
             "fullName": "Dalton Kincaid",
@@ -1111,6 +1169,7 @@
         {
             "id": "3930086",
             "teamId": "2",
+            "positionId": "7",
             "firstName": "Dawson",
             "lastName": "Knox",
             "fullName": "Dawson Knox",
@@ -1120,7 +1179,7 @@
             "displayWeight": "254 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 27,
+            "age": 28,
             "dateOfBirth": "1996-11-14T08:00Z",
             "jersey": "88",
             "position": "Tight End",
@@ -1130,6 +1189,7 @@
         {
             "id": "4244049",
             "teamId": "2",
+            "positionId": "7",
             "firstName": "Quintin",
             "lastName": "Morris",
             "fullName": "Quintin Morris",
@@ -1149,6 +1209,7 @@
         {
             "id": "3121427",
             "teamId": "2",
+            "positionId": "1",
             "firstName": "Curtis",
             "lastName": "Samuel",
             "fullName": "Curtis Samuel",
@@ -1168,6 +1229,7 @@
         {
             "id": "4373678",
             "teamId": "2",
+            "positionId": "1",
             "firstName": "Khalil",
             "lastName": "Shakir",
             "fullName": "Khalil Shakir",
@@ -1187,6 +1249,7 @@
         {
             "id": "3039707",
             "teamId": "2",
+            "positionId": "8",
             "firstName": "Mitchell",
             "lastName": "Trubisky",
             "fullName": "Mitchell Trubisky",
@@ -1206,6 +1269,7 @@
         {
             "id": "4036448",
             "teamId": "2",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Virgil",
             "fullName": "Jalen Virgil",
@@ -1225,6 +1289,7 @@
         {
             "id": "3917232",
             "teamId": "2",
+            "positionId": "22",
             "firstName": "Tyler",
             "lastName": "Bass",
             "fullName": "Tyler Bass",
@@ -1246,6 +1311,7 @@
         {
             "id": "4259308",
             "teamId": "29",
+            "positionId": "9",
             "firstName": "Raheem",
             "lastName": "Blackshear",
             "fullName": "Raheem Blackshear",
@@ -1263,8 +1329,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4259308.png"
         },
         {
+            "id": "4678008",
+            "teamId": "29",
+            "positionId": "9",
+            "firstName": "Jonathon",
+            "lastName": "Brooks",
+            "fullName": "Jonathon Brooks",
+            "displayName": "Jonathon Brooks",
+            "shortName": "J. Brooks",
+            "weight": 207,
+            "displayWeight": "207 lbs",
+            "height": 72,
+            "displayHeight": "6' 0\"",
+            "age": 21,
+            "dateOfBirth": "2003-07-21T07:00Z",
+            "jersey": "24",
+            "position": "Running Back",
+            "positionAbbreviation": "RB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4678008.png"
+        },
+        {
             "id": "4695883",
             "teamId": "29",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Coker",
             "fullName": "Jalen Coker",
@@ -1284,6 +1371,7 @@
         {
             "id": "14012",
             "teamId": "29",
+            "positionId": "8",
             "firstName": "Andy",
             "lastName": "Dalton",
             "fullName": "Andy Dalton",
@@ -1303,6 +1391,7 @@
         {
             "id": "4034948",
             "teamId": "29",
+            "positionId": "7",
             "firstName": "Feleipe",
             "lastName": "Franks",
             "fullName": "Feleipe Franks",
@@ -1322,6 +1411,7 @@
         {
             "id": "4241416",
             "teamId": "29",
+            "positionId": "9",
             "firstName": "Chuba",
             "lastName": "Hubbard",
             "fullName": "Chuba Hubbard",
@@ -1341,6 +1431,7 @@
         {
             "id": "4430034",
             "teamId": "29",
+            "positionId": "1",
             "firstName": "Xavier",
             "lastName": "Legette",
             "fullName": "Xavier Legette",
@@ -1358,27 +1449,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4430034.png"
         },
         {
-            "id": "16763",
-            "teamId": "29",
-            "firstName": "Jordan",
-            "lastName": "Matthews",
-            "fullName": "Jordan Matthews",
-            "displayName": "Jordan Matthews",
-            "shortName": "J. Matthews",
-            "weight": 236,
-            "displayWeight": "236 lbs",
-            "height": 75,
-            "displayHeight": "6' 3\"",
-            "age": 32,
-            "dateOfBirth": "1992-07-16T07:00Z",
-            "jersey": "81",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/16763.png"
-        },
-        {
             "id": "4212909",
             "teamId": "29",
+            "positionId": "1",
             "firstName": "David",
             "lastName": "Moore",
             "fullName": "David Moore",
@@ -1398,6 +1471,7 @@
         {
             "id": "4431588",
             "teamId": "29",
+            "positionId": "7",
             "firstName": "Ja'Tavion",
             "lastName": "Sanders",
             "fullName": "Ja'Tavion Sanders",
@@ -1415,46 +1489,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4431588.png"
         },
         {
-            "id": "4045163",
+            "id": "16460",
             "teamId": "29",
-            "firstName": "Miles",
-            "lastName": "Sanders",
-            "fullName": "Miles Sanders",
-            "displayName": "Miles Sanders",
-            "shortName": "M. Sanders",
-            "weight": 210,
-            "displayWeight": "210 lbs",
-            "height": 71,
-            "displayHeight": "5' 11\"",
-            "age": 27,
-            "dateOfBirth": "1997-05-01T07:00Z",
-            "jersey": "6",
-            "position": "Running Back",
-            "positionAbbreviation": "RB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4045163.png"
-        },
-        {
-            "id": "4045305",
-            "teamId": "29",
-            "firstName": "Ian",
-            "lastName": "Thomas",
-            "fullName": "Ian Thomas",
-            "displayName": "Ian Thomas",
-            "shortName": "I. Thomas",
-            "weight": 260,
-            "displayWeight": "260 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 28,
-            "dateOfBirth": "1996-06-06T07:00Z",
-            "jersey": "80",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4045305.png"
+            "positionId": "1",
+            "firstName": "Adam",
+            "lastName": "Thielen",
+            "fullName": "Adam Thielen",
+            "displayName": "Adam Thielen",
+            "shortName": "A. Thielen",
+            "weight": 195,
+            "displayWeight": "195 lbs",
+            "height": 74,
+            "displayHeight": "6' 2\"",
+            "age": 34,
+            "dateOfBirth": "1990-08-22T07:00Z",
+            "jersey": "19",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/16460.png"
         },
         {
             "id": "4374187",
             "teamId": "29",
+            "positionId": "1",
             "firstName": "Deven",
             "lastName": "Thompkins",
             "fullName": "Deven Thompkins",
@@ -1466,7 +1523,7 @@
             "displayHeight": "5' 8\"",
             "age": 24,
             "dateOfBirth": "1999-12-23T08:00Z",
-            "jersey": "87",
+            "jersey": "13",
             "position": "Wide Receiver",
             "positionAbbreviation": "WR",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4374187.png"
@@ -1474,6 +1531,7 @@
         {
             "id": "4372780",
             "teamId": "29",
+            "positionId": "7",
             "firstName": "Tommy",
             "lastName": "Tremble",
             "fullName": "Tommy Tremble",
@@ -1493,6 +1551,7 @@
         {
             "id": "4685720",
             "teamId": "29",
+            "positionId": "8",
             "firstName": "Bryce",
             "lastName": "Young",
             "fullName": "Bryce Young",
@@ -1512,6 +1571,7 @@
         {
             "id": "4034949",
             "teamId": "29",
+            "positionId": "22",
             "firstName": "Eddy",
             "lastName": "Pineiro",
             "fullName": "Eddy Pineiro",
@@ -1533,6 +1593,7 @@
         {
             "id": "15818",
             "teamId": "3",
+            "positionId": "1",
             "firstName": "Keenan",
             "lastName": "Allen",
             "fullName": "Keenan Allen",
@@ -1552,6 +1613,7 @@
         {
             "id": "4434153",
             "teamId": "3",
+            "positionId": "8",
             "firstName": "Tyson",
             "lastName": "Bagent",
             "fullName": "Tyson Bagent",
@@ -1571,6 +1633,7 @@
         {
             "id": "2580216",
             "teamId": "3",
+            "positionId": "1",
             "firstName": "DeAndre",
             "lastName": "Carter",
             "fullName": "DeAndre Carter",
@@ -1590,6 +1653,7 @@
         {
             "id": "3918639",
             "teamId": "3",
+            "positionId": "7",
             "firstName": "Gerald",
             "lastName": "Everett",
             "fullName": "Gerald Everett",
@@ -1609,6 +1673,7 @@
         {
             "id": "4037457",
             "teamId": "3",
+            "positionId": "9",
             "firstName": "Travis",
             "lastName": "Homer",
             "fullName": "Travis Homer",
@@ -1626,8 +1691,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4037457.png"
         },
         {
+            "id": "4039043",
+            "teamId": "3",
+            "positionId": "1",
+            "firstName": "Collin",
+            "lastName": "Johnson",
+            "fullName": "Collin Johnson",
+            "displayName": "Collin Johnson",
+            "shortName": "C. Johnson",
+            "weight": 222,
+            "displayWeight": "222 lbs",
+            "height": 78,
+            "displayHeight": "6' 6\"",
+            "age": 27,
+            "dateOfBirth": "1997-09-23T07:00Z",
+            "jersey": "80",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4039043.png"
+        },
+        {
             "id": "4426386",
             "teamId": "3",
+            "positionId": "9",
             "firstName": "Roschon",
             "lastName": "Johnson",
             "fullName": "Roschon Johnson",
@@ -1647,6 +1733,7 @@
         {
             "id": "4258595",
             "teamId": "3",
+            "positionId": "7",
             "firstName": "Cole",
             "lastName": "Kmet",
             "fullName": "Cole Kmet",
@@ -1666,6 +1753,7 @@
         {
             "id": "9614",
             "teamId": "3",
+            "positionId": "7",
             "firstName": "Marcedes",
             "lastName": "Lewis",
             "fullName": "Marcedes Lewis",
@@ -1685,6 +1773,7 @@
         {
             "id": "3915416",
             "teamId": "3",
+            "positionId": "1",
             "firstName": "DJ",
             "lastName": "Moore",
             "fullName": "DJ Moore",
@@ -1704,6 +1793,7 @@
         {
             "id": "4431299",
             "teamId": "3",
+            "positionId": "1",
             "firstName": "Rome",
             "lastName": "Odunze",
             "fullName": "Rome Odunze",
@@ -1723,6 +1813,7 @@
         {
             "id": "4565908",
             "teamId": "3",
+            "positionId": "1",
             "firstName": "Tyler",
             "lastName": "Scott",
             "fullName": "Tyler Scott",
@@ -1742,6 +1833,7 @@
         {
             "id": "4259545",
             "teamId": "3",
+            "positionId": "9",
             "firstName": "D'Andre",
             "lastName": "Swift",
             "fullName": "D'Andre Swift",
@@ -1761,6 +1853,7 @@
         {
             "id": "4431611",
             "teamId": "3",
+            "positionId": "8",
             "firstName": "Caleb",
             "lastName": "Williams",
             "fullName": "Caleb Williams",
@@ -1770,7 +1863,7 @@
             "displayWeight": "215 lbs",
             "height": 73,
             "displayHeight": "6' 1\"",
-            "age": 22,
+            "age": 23,
             "dateOfBirth": "2001-11-18T08:00Z",
             "jersey": "18",
             "position": "Quarterback",
@@ -1780,6 +1873,7 @@
         {
             "id": "17427",
             "teamId": "3",
+            "positionId": "22",
             "firstName": "Cairo",
             "lastName": "Santos",
             "fullName": "Cairo Santos",
@@ -1789,7 +1883,7 @@
             "displayWeight": "175 lbs",
             "height": 68,
             "displayHeight": "5' 8\"",
-            "age": 32,
+            "age": 33,
             "dateOfBirth": "1991-11-12T08:00Z",
             "jersey": "8",
             "position": "Place kicker",
@@ -1801,6 +1895,7 @@
         {
             "id": "4362238",
             "teamId": "4",
+            "positionId": "9",
             "firstName": "Chase",
             "lastName": "Brown",
             "fullName": "Chase Brown",
@@ -1820,6 +1915,7 @@
         {
             "id": "3886812",
             "teamId": "4",
+            "positionId": "8",
             "firstName": "Jake",
             "lastName": "Browning",
             "fullName": "Jake Browning",
@@ -1839,6 +1935,7 @@
         {
             "id": "3915511",
             "teamId": "4",
+            "positionId": "8",
             "firstName": "Joe",
             "lastName": "Burrow",
             "fullName": "Joe Burrow",
@@ -1858,6 +1955,7 @@
         {
             "id": "4429033",
             "teamId": "4",
+            "positionId": "1",
             "firstName": "Jermaine",
             "lastName": "Burton",
             "fullName": "Jermaine Burton",
@@ -1877,6 +1975,7 @@
         {
             "id": "4362628",
             "teamId": "4",
+            "positionId": "1",
             "firstName": "Ja'Marr",
             "lastName": "Chase",
             "fullName": "Ja'Marr Chase",
@@ -1896,6 +1995,7 @@
         {
             "id": "3116164",
             "teamId": "4",
+            "positionId": "7",
             "firstName": "Mike",
             "lastName": "Gesicki",
             "fullName": "Mike Gesicki",
@@ -1913,8 +2013,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3116164.png"
         },
         {
+            "id": "4700712",
+            "teamId": "4",
+            "positionId": "7",
+            "firstName": "Cam",
+            "lastName": "Grandy",
+            "fullName": "Cam Grandy",
+            "displayName": "Cam Grandy",
+            "shortName": "C. Grandy",
+            "weight": 253,
+            "displayWeight": "253 lbs",
+            "height": 77,
+            "displayHeight": "6' 5\"",
+            "age": 25,
+            "dateOfBirth": "1999-11-19T08:00Z",
+            "jersey": "85",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4700712.png"
+        },
+        {
             "id": "4035886",
             "teamId": "4",
+            "positionId": "9",
             "firstName": "Khalil",
             "lastName": "Herbert",
             "fullName": "Khalil Herbert",
@@ -1926,7 +2047,7 @@
             "displayHeight": "5' 9\"",
             "age": 26,
             "dateOfBirth": "1998-04-21T07:00Z",
-            "jersey": null,
+            "jersey": "34",
             "position": "Running Back",
             "positionAbbreviation": "RB",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4035886.png"
@@ -1934,6 +2055,7 @@
         {
             "id": "4239993",
             "teamId": "4",
+            "positionId": "1",
             "firstName": "Tee",
             "lastName": "Higgins",
             "fullName": "Tee Higgins",
@@ -1953,6 +2075,7 @@
         {
             "id": "3050481",
             "teamId": "4",
+            "positionId": "7",
             "firstName": "Tanner",
             "lastName": "Hudson",
             "fullName": "Tanner Hudson",
@@ -1962,7 +2085,7 @@
             "displayWeight": "239 lbs",
             "height": 77,
             "displayHeight": "6' 5\"",
-            "age": 29,
+            "age": 30,
             "dateOfBirth": "1994-11-12T08:00Z",
             "jersey": "87",
             "position": "Tight End",
@@ -1972,6 +2095,7 @@
         {
             "id": "4368003",
             "teamId": "4",
+            "positionId": "1",
             "firstName": "Andrei",
             "lastName": "Iosivas",
             "fullName": "Andrei Iosivas",
@@ -1991,6 +2115,7 @@
         {
             "id": "3931391",
             "teamId": "4",
+            "positionId": "1",
             "firstName": "Trenton",
             "lastName": "Irwin",
             "fullName": "Trenton Irwin",
@@ -2010,6 +2135,7 @@
         {
             "id": "4257188",
             "teamId": "4",
+            "positionId": "1",
             "firstName": "Charlie",
             "lastName": "Jones",
             "fullName": "Charlie Jones",
@@ -2029,6 +2155,7 @@
         {
             "id": "4384171",
             "teamId": "4",
+            "positionId": "7",
             "firstName": "Tanner",
             "lastName": "McLachlan",
             "fullName": "Tanner McLachlan",
@@ -2046,46 +2173,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4384171.png"
         },
         {
-            "id": "4429012",
-            "teamId": "4",
-            "firstName": "Kendall",
-            "lastName": "Milton",
-            "fullName": "Kendall Milton",
-            "displayName": "Kendall Milton",
-            "shortName": "K. Milton",
-            "weight": 230,
-            "displayWeight": "230 lbs",
-            "height": 73,
-            "displayHeight": "6' 1\"",
-            "age": 22,
-            "dateOfBirth": "2002-02-10T08:00Z",
-            "jersey": "36",
-            "position": "Running Back",
-            "positionAbbreviation": "RB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4429012.png"
-        },
-        {
-            "id": "4035776",
-            "teamId": "4",
-            "firstName": "Kendric",
-            "lastName": "Pryor",
-            "fullName": "Kendric Pryor",
-            "displayName": "Kendric Pryor",
-            "shortName": "K. Pryor",
-            "weight": 189,
-            "displayWeight": "189 lbs",
-            "height": 71,
-            "displayHeight": "5' 11\"",
-            "age": 26,
-            "dateOfBirth": "1998-01-06T08:00Z",
-            "jersey": "19",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4035776.png"
-        },
-        {
             "id": "3127310",
             "teamId": "4",
+            "positionId": "7",
             "firstName": "Drew",
             "lastName": "Sample",
             "fullName": "Drew Sample",
@@ -2103,8 +2193,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3127310.png"
         },
         {
+            "id": "4569371",
+            "teamId": "4",
+            "positionId": "1",
+            "firstName": "Isaiah",
+            "lastName": "Williams",
+            "fullName": "Isaiah Williams",
+            "displayName": "Isaiah Williams",
+            "shortName": "I. Williams",
+            "weight": 185,
+            "displayWeight": "185 lbs",
+            "height": 70,
+            "displayHeight": "5' 10\"",
+            "age": 23,
+            "dateOfBirth": "2001-01-29T08:00Z",
+            "jersey": "18",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4569371.png"
+        },
+        {
             "id": "4035222",
             "teamId": "4",
+            "positionId": "9",
             "firstName": "Trayveon",
             "lastName": "Williams",
             "fullName": "Trayveon Williams",
@@ -2124,6 +2235,7 @@
         {
             "id": "4360234",
             "teamId": "4",
+            "positionId": "22",
             "firstName": "Evan",
             "lastName": "McPherson",
             "fullName": "Evan McPherson",
@@ -2145,6 +2257,7 @@
         {
             "id": "3128452",
             "teamId": "5",
+            "positionId": "7",
             "firstName": "Jordan",
             "lastName": "Akins",
             "fullName": "Jordan Akins",
@@ -2164,6 +2277,7 @@
         {
             "id": "3128720",
             "teamId": "5",
+            "positionId": "9",
             "firstName": "Nick",
             "lastName": "Chubb",
             "fullName": "Nick Chubb",
@@ -2183,6 +2297,7 @@
         {
             "id": "4243830",
             "teamId": "5",
+            "positionId": "1",
             "firstName": "Jaelon",
             "lastName": "Darden",
             "fullName": "Jaelon Darden",
@@ -2202,6 +2317,7 @@
         {
             "id": "4372019",
             "teamId": "5",
+            "positionId": "9",
             "firstName": "Jerome",
             "lastName": "Ford",
             "fullName": "Jerome Ford",
@@ -2221,6 +2337,7 @@
         {
             "id": "3125116",
             "teamId": "5",
+            "positionId": "9",
             "firstName": "D'Onta",
             "lastName": "Foreman",
             "fullName": "D'Onta Foreman",
@@ -2240,6 +2357,7 @@
         {
             "id": "4241463",
             "teamId": "5",
+            "positionId": "1",
             "firstName": "Jerry",
             "lastName": "Jeudy",
             "fullName": "Jerry Jeudy",
@@ -2259,6 +2377,7 @@
         {
             "id": "4372414",
             "teamId": "5",
+            "positionId": "1",
             "firstName": "Elijah",
             "lastName": "Moore",
             "fullName": "Elijah Moore",
@@ -2278,6 +2397,7 @@
         {
             "id": "3123076",
             "teamId": "5",
+            "positionId": "7",
             "firstName": "David",
             "lastName": "Njoku",
             "fullName": "David Njoku",
@@ -2297,6 +2417,7 @@
         {
             "id": "4249836",
             "teamId": "5",
+            "positionId": "9",
             "firstName": "Pierre",
             "lastName": "Strong Jr.",
             "fullName": "Pierre Strong Jr.",
@@ -2316,6 +2437,7 @@
         {
             "id": "3046704",
             "teamId": "5",
+            "positionId": "7",
             "firstName": "Geoff",
             "lastName": "Swaim",
             "fullName": "Geoff Swaim",
@@ -2335,6 +2457,7 @@
         {
             "id": "4367178",
             "teamId": "5",
+            "positionId": "8",
             "firstName": "Dorian",
             "lastName": "Thompson-Robinson",
             "fullName": "Dorian Thompson-Robinson",
@@ -2344,7 +2467,7 @@
             "displayWeight": "203 lbs",
             "height": 74,
             "displayHeight": "6' 2\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-14T08:00Z",
             "jersey": "17",
             "position": "Quarterback",
@@ -2354,6 +2477,7 @@
         {
             "id": "4428678",
             "teamId": "5",
+            "positionId": "1",
             "firstName": "Jamari",
             "lastName": "Thrash",
             "fullName": "Jamari Thrash",
@@ -2373,6 +2497,7 @@
         {
             "id": "4369863",
             "teamId": "5",
+            "positionId": "1",
             "firstName": "Cedric",
             "lastName": "Tillman",
             "fullName": "Cedric Tillman",
@@ -2392,6 +2517,7 @@
         {
             "id": "2969939",
             "teamId": "5",
+            "positionId": "8",
             "firstName": "Jameis",
             "lastName": "Winston",
             "fullName": "Jameis Winston",
@@ -2411,6 +2537,7 @@
         {
             "id": "4250360",
             "teamId": "5",
+            "positionId": "8",
             "firstName": "Bailey",
             "lastName": "Zappe",
             "fullName": "Bailey Zappe",
@@ -2430,6 +2557,7 @@
         {
             "id": "15965",
             "teamId": "5",
+            "positionId": "22",
             "firstName": "Dustin",
             "lastName": "Hopkins",
             "fullName": "Dustin Hopkins",
@@ -2451,6 +2579,7 @@
         {
             "id": "4692835",
             "teamId": "6",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Brooks",
             "fullName": "Jalen Brooks",
@@ -2468,27 +2597,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4692835.png"
         },
         {
-            "id": "3116593",
+            "id": "16731",
             "teamId": "6",
-            "firstName": "Dalvin",
-            "lastName": "Cook",
-            "fullName": "Dalvin Cook",
-            "displayName": "Dalvin Cook",
-            "shortName": "D. Cook",
-            "weight": 210,
-            "displayWeight": "210 lbs",
+            "positionId": "1",
+            "firstName": "Brandin",
+            "lastName": "Cooks",
+            "fullName": "Brandin Cooks",
+            "displayName": "Brandin Cooks",
+            "shortName": "B. Cooks",
+            "weight": 189,
+            "displayWeight": "189 lbs",
             "height": 70,
             "displayHeight": "5' 10\"",
-            "age": 29,
-            "dateOfBirth": "1995-08-10T07:00Z",
-            "jersey": "20",
-            "position": "Running Back",
-            "positionAbbreviation": "RB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3116593.png"
+            "age": 31,
+            "dateOfBirth": "1993-09-25T07:00Z",
+            "jersey": "3",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/16731.png"
         },
         {
             "id": "4038815",
             "teamId": "6",
+            "positionId": "9",
             "firstName": "Rico",
             "lastName": "Dowdle",
             "fullName": "Rico Dowdle",
@@ -2508,6 +2639,7 @@
         {
             "id": "3051392",
             "teamId": "6",
+            "positionId": "9",
             "firstName": "Ezekiel",
             "lastName": "Elliott",
             "fullName": "Ezekiel Elliott",
@@ -2525,8 +2657,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3051392.png"
         },
         {
+            "id": "4242442",
+            "teamId": "6",
+            "positionId": "7",
+            "firstName": "Princeton",
+            "lastName": "Fant",
+            "fullName": "Princeton Fant",
+            "displayName": "Princeton Fant",
+            "shortName": "P. Fant",
+            "weight": 235,
+            "displayWeight": "235 lbs",
+            "height": 74,
+            "displayHeight": "6' 2\"",
+            "age": 25,
+            "dateOfBirth": "1999-03-11T08:00Z",
+            "jersey": "85",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4242442.png"
+        },
+        {
             "id": "4242355",
             "teamId": "6",
+            "positionId": "7",
             "firstName": "Jake",
             "lastName": "Ferguson",
             "fullName": "Jake Ferguson",
@@ -2546,6 +2699,7 @@
         {
             "id": "5083754",
             "teamId": "6",
+            "positionId": "1",
             "firstName": "Ryan",
             "lastName": "Flournoy",
             "fullName": "Ryan Flournoy",
@@ -2565,6 +2719,7 @@
         {
             "id": "4241389",
             "teamId": "6",
+            "positionId": "1",
             "firstName": "CeeDee",
             "lastName": "Lamb",
             "fullName": "CeeDee Lamb",
@@ -2584,6 +2739,7 @@
         {
             "id": "4383351",
             "teamId": "6",
+            "positionId": "8",
             "firstName": "Trey",
             "lastName": "Lance",
             "fullName": "Trey Lance",
@@ -2603,6 +2759,7 @@
         {
             "id": "4383396",
             "teamId": "6",
+            "positionId": "9",
             "firstName": "Hunter",
             "lastName": "Luepke",
             "fullName": "Hunter Luepke",
@@ -2622,6 +2779,7 @@
         {
             "id": "4426485",
             "teamId": "6",
+            "positionId": "1",
             "firstName": "Jonathan",
             "lastName": "Mingo",
             "fullName": "Jonathan Mingo",
@@ -2633,33 +2791,15 @@
             "displayHeight": "6' 2\"",
             "age": 23,
             "dateOfBirth": "2001-04-20T07:00Z",
-            "jersey": null,
+            "jersey": "81",
             "position": "Wide Receiver",
             "positionAbbreviation": "WR",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4426485.png"
         },
         {
-            "id": "2577417",
-            "teamId": "6",
-            "firstName": "Dak",
-            "lastName": "Prescott",
-            "fullName": "Dak Prescott",
-            "displayName": "Dak Prescott",
-            "shortName": "D. Prescott",
-            "weight": 238,
-            "displayWeight": "238 lbs",
-            "height": 74,
-            "displayHeight": "6' 2\"",
-            "age": 31,
-            "dateOfBirth": "1993-07-29T07:00Z",
-            "jersey": "4",
-            "position": "Quarterback",
-            "positionAbbreviation": "QB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2577417.png"
-        },
-        {
             "id": "2972515",
             "teamId": "6",
+            "positionId": "8",
             "firstName": "Cooper",
             "lastName": "Rush",
             "fullName": "Cooper Rush",
@@ -2669,7 +2809,7 @@
             "displayWeight": "225 lbs",
             "height": 75,
             "displayHeight": "6' 3\"",
-            "age": 30,
+            "age": 31,
             "dateOfBirth": "1993-11-21T08:00Z",
             "jersey": "10",
             "position": "Quarterback",
@@ -2679,6 +2819,7 @@
         {
             "id": "4372096",
             "teamId": "6",
+            "positionId": "7",
             "firstName": "Luke",
             "lastName": "Schoonmaker",
             "fullName": "Luke Schoonmaker",
@@ -2698,6 +2839,7 @@
         {
             "id": "4360967",
             "teamId": "6",
+            "positionId": "7",
             "firstName": "Brevyn",
             "lastName": "Spann-Ford",
             "fullName": "Brevyn Spann-Ford",
@@ -2717,6 +2859,7 @@
         {
             "id": "4249417",
             "teamId": "6",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Tolbert",
             "fullName": "Jalen Tolbert",
@@ -2736,6 +2879,7 @@
         {
             "id": "3676833",
             "teamId": "6",
+            "positionId": "1",
             "firstName": "KaVontae",
             "lastName": "Turpin",
             "fullName": "KaVontae Turpin",
@@ -2755,6 +2899,7 @@
         {
             "id": "4431453",
             "teamId": "6",
+            "positionId": "9",
             "firstName": "Deuce",
             "lastName": "Vaughn",
             "fullName": "Deuce Vaughn",
@@ -2774,6 +2919,7 @@
         {
             "id": "3953687",
             "teamId": "6",
+            "positionId": "22",
             "firstName": "Brandon",
             "lastName": "Aubrey",
             "fullName": "Brandon Aubrey",
@@ -2795,6 +2941,7 @@
         {
             "id": "4383440",
             "teamId": "7",
+            "positionId": "7",
             "firstName": "Nate",
             "lastName": "Adkins",
             "fullName": "Nate Adkins",
@@ -2814,6 +2961,7 @@
         {
             "id": "2515270",
             "teamId": "7",
+            "positionId": "10",
             "firstName": "Michael",
             "lastName": "Burton",
             "fullName": "Michael Burton",
@@ -2831,27 +2979,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2515270.png"
         },
         {
-            "id": "4367209",
-            "teamId": "7",
-            "firstName": "Greg",
-            "lastName": "Dulcich",
-            "fullName": "Greg Dulcich",
-            "displayName": "Greg Dulcich",
-            "shortName": "G. Dulcich",
-            "weight": 245,
-            "displayWeight": "245 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 24,
-            "dateOfBirth": "2000-03-26T08:00Z",
-            "jersey": "80",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4367209.png"
-        },
-        {
             "id": "4569682",
             "teamId": "7",
+            "positionId": "9",
             "firstName": "Audric",
             "lastName": "Estime",
             "fullName": "Audric Estime",
@@ -2871,6 +3001,7 @@
         {
             "id": "4431280",
             "teamId": "7",
+            "positionId": "1",
             "firstName": "Troy",
             "lastName": "Franklin",
             "fullName": "Troy Franklin",
@@ -2890,6 +3021,7 @@
         {
             "id": "4039057",
             "teamId": "7",
+            "positionId": "1",
             "firstName": "Lil'Jordan",
             "lastName": "Humphrey",
             "fullName": "Lil'Jordan Humphrey",
@@ -2909,6 +3041,7 @@
         {
             "id": "4360231",
             "teamId": "7",
+            "positionId": "7",
             "firstName": "Lucas",
             "lastName": "Krull",
             "fullName": "Lucas Krull",
@@ -2928,6 +3061,7 @@
         {
             "id": "4722893",
             "teamId": "7",
+            "positionId": "9",
             "firstName": "Jaleel",
             "lastName": "McLaughlin",
             "fullName": "Jaleel McLaughlin",
@@ -2947,6 +3081,7 @@
         {
             "id": "4686472",
             "teamId": "7",
+            "positionId": "1",
             "firstName": "Marvin",
             "lastName": "Mims Jr.",
             "fullName": "Marvin Mims Jr.",
@@ -2966,6 +3101,7 @@
         {
             "id": "4426338",
             "teamId": "7",
+            "positionId": "8",
             "firstName": "Bo",
             "lastName": "Nix",
             "fullName": "Bo Nix",
@@ -2985,6 +3121,7 @@
         {
             "id": "3892775",
             "teamId": "7",
+            "positionId": "8",
             "firstName": "Jarrett",
             "lastName": "Stidham",
             "fullName": "Jarrett Stidham",
@@ -3004,6 +3141,7 @@
         {
             "id": "3128429",
             "teamId": "7",
+            "positionId": "1",
             "firstName": "Courtland",
             "lastName": "Sutton",
             "fullName": "Courtland Sutton",
@@ -3023,6 +3161,7 @@
         {
             "id": "3911853",
             "teamId": "7",
+            "positionId": "7",
             "firstName": "Adam",
             "lastName": "Trautman",
             "fullName": "Adam Trautman",
@@ -3042,6 +3181,7 @@
         {
             "id": "4569559",
             "teamId": "7",
+            "positionId": "1",
             "firstName": "Devaughn",
             "lastName": "Vele",
             "fullName": "Devaughn Vele",
@@ -3061,6 +3201,7 @@
         {
             "id": "4361579",
             "teamId": "7",
+            "positionId": "9",
             "firstName": "Javonte",
             "lastName": "Williams",
             "fullName": "Javonte Williams",
@@ -3080,6 +3221,7 @@
         {
             "id": "4361259",
             "teamId": "7",
+            "positionId": "8",
             "firstName": "Zach",
             "lastName": "Wilson",
             "fullName": "Zach Wilson",
@@ -3099,6 +3241,7 @@
         {
             "id": "2985659",
             "teamId": "7",
+            "positionId": "22",
             "firstName": "Wil",
             "lastName": "Lutz",
             "fullName": "Wil Lutz",
@@ -3118,8 +3261,29 @@
     ],
     [
         {
+            "id": "3914307",
+            "teamId": "8",
+            "positionId": "1",
+            "firstName": "Maurice",
+            "lastName": "Alexander",
+            "fullName": "Maurice Alexander",
+            "displayName": "Maurice Alexander",
+            "shortName": "M. Alexander",
+            "weight": 174,
+            "displayWeight": "174 lbs",
+            "height": 71,
+            "displayHeight": "5' 11\"",
+            "age": 27,
+            "dateOfBirth": "1997-01-10T08:00Z",
+            "jersey": "1",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3914307.png"
+        },
+        {
             "id": "4429795",
             "teamId": "8",
+            "positionId": "9",
             "firstName": "Jahmyr",
             "lastName": "Gibbs",
             "fullName": "Jahmyr Gibbs",
@@ -3139,6 +3303,7 @@
         {
             "id": "3046779",
             "teamId": "8",
+            "positionId": "8",
             "firstName": "Jared",
             "lastName": "Goff",
             "fullName": "Jared Goff",
@@ -3158,6 +3323,7 @@
         {
             "id": "4240858",
             "teamId": "8",
+            "positionId": "8",
             "firstName": "Hendon",
             "lastName": "Hooker",
             "fullName": "Hendon Hooker",
@@ -3177,6 +3343,7 @@
         {
             "id": "3116136",
             "teamId": "8",
+            "positionId": "9",
             "firstName": "Justin",
             "lastName": "Jackson",
             "fullName": "Justin Jackson",
@@ -3196,6 +3363,7 @@
         {
             "id": "4430027",
             "teamId": "8",
+            "positionId": "7",
             "firstName": "Sam",
             "lastName": "LaPorta",
             "fullName": "Sam LaPorta",
@@ -3215,6 +3383,7 @@
         {
             "id": "4035538",
             "teamId": "8",
+            "positionId": "9",
             "firstName": "David",
             "lastName": "Montgomery",
             "fullName": "David Montgomery",
@@ -3234,6 +3403,7 @@
         {
             "id": "3134353",
             "teamId": "8",
+            "positionId": "1",
             "firstName": "Tim",
             "lastName": "Patrick",
             "fullName": "Tim Patrick",
@@ -3243,7 +3413,7 @@
             "displayWeight": "210 lbs",
             "height": 77,
             "displayHeight": "6' 5\"",
-            "age": 30,
+            "age": 31,
             "dateOfBirth": "1993-11-23T08:00Z",
             "jersey": "17",
             "position": "Wide Receiver",
@@ -3251,27 +3421,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3134353.png"
         },
         {
-            "id": "2973405",
-            "teamId": "8",
-            "firstName": "Kalif",
-            "lastName": "Raymond",
-            "fullName": "Kalif Raymond",
-            "displayName": "Kalif Raymond",
-            "shortName": "K. Raymond",
-            "weight": 180,
-            "displayWeight": "180 lbs",
-            "height": 68,
-            "displayHeight": "5' 8\"",
-            "age": 30,
-            "dateOfBirth": "1994-08-08T07:00Z",
-            "jersey": "11",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2973405.png"
-        },
-        {
             "id": "4421446",
             "teamId": "8",
+            "positionId": "9",
             "firstName": "Craig",
             "lastName": "Reynolds",
             "fullName": "Craig Reynolds",
@@ -3291,6 +3443,7 @@
         {
             "id": "16799",
             "teamId": "8",
+            "positionId": "1",
             "firstName": "Allen",
             "lastName": "Robinson",
             "fullName": "Allen Robinson",
@@ -3310,6 +3463,7 @@
         {
             "id": "4374302",
             "teamId": "8",
+            "positionId": "1",
             "firstName": "Amon-Ra",
             "lastName": "St. Brown",
             "fullName": "Amon-Ra St. Brown",
@@ -3329,6 +3483,7 @@
         {
             "id": "4912274",
             "teamId": "8",
+            "positionId": "9",
             "firstName": "Sione",
             "lastName": "Vaki",
             "fullName": "Sione Vaki",
@@ -3346,27 +3501,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4912274.png"
         },
         {
-            "id": "4569371",
-            "teamId": "8",
-            "firstName": "Isaiah",
-            "lastName": "Williams",
-            "fullName": "Isaiah Williams",
-            "displayName": "Isaiah Williams",
-            "shortName": "I. Williams",
-            "weight": 186,
-            "displayWeight": "186 lbs",
-            "height": 70,
-            "displayHeight": "5' 10\"",
-            "age": 23,
-            "dateOfBirth": "2001-01-29T08:00Z",
-            "jersey": "83",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4569371.png"
-        },
-        {
             "id": "4426388",
             "teamId": "8",
+            "positionId": "1",
             "firstName": "Jameson",
             "lastName": "Williams",
             "fullName": "Jameson Williams",
@@ -3386,6 +3523,7 @@
         {
             "id": "4242392",
             "teamId": "8",
+            "positionId": "7",
             "firstName": "Brock",
             "lastName": "Wright",
             "fullName": "Brock Wright",
@@ -3395,7 +3533,7 @@
             "displayWeight": "250 lbs",
             "height": 77,
             "displayHeight": "6' 5\"",
-            "age": 25,
+            "age": 26,
             "dateOfBirth": "1998-11-27T08:00Z",
             "jersey": "89",
             "position": "Tight End",
@@ -3405,6 +3543,7 @@
         {
             "id": "4608362",
             "teamId": "8",
+            "positionId": "7",
             "firstName": "Shane",
             "lastName": "Zylstra",
             "fullName": "Shane Zylstra",
@@ -3414,7 +3553,7 @@
             "displayWeight": "244 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 27,
+            "age": 28,
             "dateOfBirth": "1996-11-16T08:00Z",
             "jersey": "84",
             "position": "Tight End",
@@ -3424,6 +3563,7 @@
         {
             "id": "4689936",
             "teamId": "8",
+            "positionId": "22",
             "firstName": "Jake",
             "lastName": "Bates",
             "fullName": "Jake Bates",
@@ -3445,6 +3585,7 @@
         {
             "id": "3149687",
             "teamId": "9",
+            "positionId": "9",
             "firstName": "Chris",
             "lastName": "Brooks",
             "fullName": "Chris Brooks",
@@ -3464,6 +3605,7 @@
         {
             "id": "4361432",
             "teamId": "9",
+            "positionId": "1",
             "firstName": "Romeo",
             "lastName": "Doubs",
             "fullName": "Romeo Doubs",
@@ -3483,6 +3625,7 @@
         {
             "id": "4379401",
             "teamId": "9",
+            "positionId": "7",
             "firstName": "John",
             "lastName": "FitzPatrick",
             "fullName": "John FitzPatrick",
@@ -3502,6 +3645,7 @@
         {
             "id": "4689334",
             "teamId": "9",
+            "positionId": "1",
             "firstName": "Malik",
             "lastName": "Heath",
             "fullName": "Malik Heath",
@@ -3521,6 +3665,7 @@
         {
             "id": "4047365",
             "teamId": "9",
+            "positionId": "9",
             "firstName": "Josh",
             "lastName": "Jacobs",
             "fullName": "Josh Jacobs",
@@ -3540,6 +3685,7 @@
         {
             "id": "4572680",
             "teamId": "9",
+            "positionId": "7",
             "firstName": "Tucker",
             "lastName": "Kraft",
             "fullName": "Tucker Kraft",
@@ -3559,6 +3705,7 @@
         {
             "id": "4036378",
             "teamId": "9",
+            "positionId": "8",
             "firstName": "Jordan",
             "lastName": "Love",
             "fullName": "Jordan Love",
@@ -3578,6 +3725,7 @@
         {
             "id": "4259305",
             "teamId": "9",
+            "positionId": "1",
             "firstName": "Bo",
             "lastName": "Melton",
             "fullName": "Bo Melton",
@@ -3597,6 +3745,7 @@
         {
             "id": "4362249",
             "teamId": "9",
+            "positionId": "1",
             "firstName": "Jayden",
             "lastName": "Reed",
             "fullName": "Jayden Reed",
@@ -3616,6 +3765,7 @@
         {
             "id": "4373030",
             "teamId": "9",
+            "positionId": "7",
             "firstName": "Ben",
             "lastName": "Sims",
             "fullName": "Ben Sims",
@@ -3635,6 +3785,7 @@
         {
             "id": "4248528",
             "teamId": "9",
+            "positionId": "1",
             "firstName": "Christian",
             "lastName": "Watson",
             "fullName": "Christian Watson",
@@ -3654,6 +3805,7 @@
         {
             "id": "4428850",
             "teamId": "9",
+            "positionId": "1",
             "firstName": "Dontayvion",
             "lastName": "Wicks",
             "fullName": "Dontayvion Wicks",
@@ -3673,6 +3825,7 @@
         {
             "id": "4242512",
             "teamId": "9",
+            "positionId": "8",
             "firstName": "Malik",
             "lastName": "Willis",
             "fullName": "Malik Willis",
@@ -3692,6 +3845,7 @@
         {
             "id": "4887558",
             "teamId": "9",
+            "positionId": "9",
             "firstName": "Emanuel",
             "lastName": "Wilson",
             "fullName": "Emanuel Wilson",
@@ -3711,6 +3865,7 @@
         {
             "id": "16339",
             "teamId": "9",
+            "positionId": "22",
             "firstName": "Brandon",
             "lastName": "McManus",
             "fullName": "Brandon McManus",
@@ -3730,8 +3885,29 @@
     ],
     [
         {
+            "id": "4258173",
+            "teamId": "34",
+            "positionId": "1",
+            "firstName": "Nico",
+            "lastName": "Collins",
+            "fullName": "Nico Collins",
+            "displayName": "Nico Collins",
+            "shortName": "N. Collins",
+            "weight": 222,
+            "displayWeight": "222 lbs",
+            "height": 76,
+            "displayHeight": "6' 4\"",
+            "age": 25,
+            "dateOfBirth": "1999-03-19T08:00Z",
+            "jersey": "12",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4258173.png"
+        },
+        {
             "id": "4366031",
             "teamId": "34",
+            "positionId": "1",
             "firstName": "Tank",
             "lastName": "Dell",
             "fullName": "Tank Dell",
@@ -3751,6 +3927,7 @@
         {
             "id": "4686422",
             "teamId": "34",
+            "positionId": "1",
             "firstName": "Xavier",
             "lastName": "Hutchinson",
             "fullName": "Xavier Hutchinson",
@@ -3770,6 +3947,7 @@
         {
             "id": "4567096",
             "teamId": "34",
+            "positionId": "1",
             "firstName": "John",
             "lastName": "Metchie III",
             "fullName": "John Metchie III",
@@ -3789,6 +3967,7 @@
         {
             "id": "4242546",
             "teamId": "34",
+            "positionId": "8",
             "firstName": "Davis",
             "lastName": "Mills",
             "fullName": "Davis Mills",
@@ -3808,6 +3987,7 @@
         {
             "id": "3116385",
             "teamId": "34",
+            "positionId": "9",
             "firstName": "Joe",
             "lastName": "Mixon",
             "fullName": "Joe Mixon",
@@ -3827,6 +4007,7 @@
         {
             "id": "2983509",
             "teamId": "34",
+            "positionId": "9",
             "firstName": "Dare",
             "lastName": "Ogunbowale",
             "fullName": "Dare Ogunbowale",
@@ -3846,6 +4027,7 @@
         {
             "id": "4360238",
             "teamId": "34",
+            "positionId": "9",
             "firstName": "Dameon",
             "lastName": "Pierce",
             "fullName": "Dameon Pierce",
@@ -3865,6 +4047,7 @@
         {
             "id": "4374045",
             "teamId": "34",
+            "positionId": "7",
             "firstName": "Teagan",
             "lastName": "Quitoriano",
             "fullName": "Teagan Quitoriano",
@@ -3884,6 +4067,7 @@
         {
             "id": "3117256",
             "teamId": "34",
+            "positionId": "7",
             "firstName": "Dalton",
             "lastName": "Schultz",
             "fullName": "Dalton Schultz",
@@ -3903,6 +4087,7 @@
         {
             "id": "3917960",
             "teamId": "34",
+            "positionId": "1",
             "firstName": "Steven",
             "lastName": "Sims",
             "fullName": "Steven Sims",
@@ -3922,6 +4107,7 @@
         {
             "id": "4426496",
             "teamId": "34",
+            "positionId": "7",
             "firstName": "Cade",
             "lastName": "Stover",
             "fullName": "Cade Stover",
@@ -3941,6 +4127,7 @@
         {
             "id": "4432577",
             "teamId": "34",
+            "positionId": "8",
             "firstName": "C.J.",
             "lastName": "Stroud",
             "fullName": "C.J. Stroud",
@@ -3958,27 +4145,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4432577.png"
         },
         {
-            "id": "4039607",
-            "teamId": "34",
-            "firstName": "J.J.",
-            "lastName": "Taylor",
-            "fullName": "J.J. Taylor",
-            "displayName": "J.J. Taylor",
-            "shortName": "J.J. Taylor",
-            "weight": 185,
-            "displayWeight": "185 lbs",
-            "height": 66,
-            "displayHeight": "5' 6\"",
-            "age": 26,
-            "dateOfBirth": "1998-01-04T08:00Z",
-            "jersey": "26",
-            "position": "Running Back",
-            "positionAbbreviation": "RB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4039607.png"
-        },
-        {
             "id": "15880",
             "teamId": "34",
+            "positionId": "1",
             "firstName": "Robert",
             "lastName": "Woods",
             "fullName": "Robert Woods",
@@ -3998,6 +4167,7 @@
         {
             "id": "2971573",
             "teamId": "34",
+            "positionId": "22",
             "firstName": "Ka'imi",
             "lastName": "Fairbairn",
             "fullName": "Ka'imi Fairbairn",
@@ -4019,6 +4189,7 @@
         {
             "id": "2998565",
             "teamId": "11",
+            "positionId": "7",
             "firstName": "Mo",
             "lastName": "Alie-Cox",
             "fullName": "Mo Alie-Cox",
@@ -4038,6 +4209,7 @@
         {
             "id": "4688813",
             "teamId": "11",
+            "positionId": "1",
             "firstName": "Josh",
             "lastName": "Downs",
             "fullName": "Josh Downs",
@@ -4057,6 +4229,7 @@
         {
             "id": "4061956",
             "teamId": "11",
+            "positionId": "1",
             "firstName": "Ashton",
             "lastName": "Dulin",
             "fullName": "Ashton Dulin",
@@ -4076,6 +4249,7 @@
         {
             "id": "4241820",
             "teamId": "11",
+            "positionId": "8",
             "firstName": "Sam",
             "lastName": "Ehlinger",
             "fullName": "Sam Ehlinger",
@@ -4095,6 +4269,7 @@
         {
             "id": "11252",
             "teamId": "11",
+            "positionId": "8",
             "firstName": "Joe",
             "lastName": "Flacco",
             "fullName": "Joe Flacco",
@@ -4114,6 +4289,7 @@
         {
             "id": "4429676",
             "teamId": "11",
+            "positionId": "9",
             "firstName": "Tyler",
             "lastName": "Goodson",
             "fullName": "Tyler Goodson",
@@ -4123,7 +4299,7 @@
             "displayWeight": "197 lbs",
             "height": 69,
             "displayHeight": "5' 9\"",
-            "age": 23,
+            "age": 24,
             "dateOfBirth": "2000-11-10T08:00Z",
             "jersey": "31",
             "position": "Running Back",
@@ -4133,6 +4309,7 @@
         {
             "id": "4429684",
             "teamId": "11",
+            "positionId": "1",
             "firstName": "Anthony",
             "lastName": "Gould",
             "fullName": "Anthony Gould",
@@ -4152,6 +4329,7 @@
         {
             "id": "4039160",
             "teamId": "11",
+            "positionId": "7",
             "firstName": "Kylen",
             "lastName": "Granson",
             "fullName": "Kylen Granson",
@@ -4171,6 +4349,7 @@
         {
             "id": "4362523",
             "teamId": "11",
+            "positionId": "7",
             "firstName": "Will",
             "lastName": "Mallory",
             "fullName": "Will Mallory",
@@ -4190,6 +4369,7 @@
         {
             "id": "4597500",
             "teamId": "11",
+            "positionId": "1",
             "firstName": "Adonai",
             "lastName": "Mitchell",
             "fullName": "Adonai Mitchell",
@@ -4209,6 +4389,7 @@
         {
             "id": "4722908",
             "teamId": "11",
+            "positionId": "7",
             "firstName": "Drew",
             "lastName": "Ogletree",
             "fullName": "Drew Ogletree",
@@ -4228,6 +4409,7 @@
         {
             "id": "4360078",
             "teamId": "11",
+            "positionId": "1",
             "firstName": "Alec",
             "lastName": "Pierce",
             "fullName": "Alec Pierce",
@@ -4247,6 +4429,7 @@
         {
             "id": "4035687",
             "teamId": "11",
+            "positionId": "1",
             "firstName": "Michael",
             "lastName": "Pittman Jr.",
             "fullName": "Michael Pittman Jr.",
@@ -4266,6 +4449,7 @@
         {
             "id": "4429084",
             "teamId": "11",
+            "positionId": "8",
             "firstName": "Anthony",
             "lastName": "Richardson",
             "fullName": "Anthony Richardson",
@@ -4285,6 +4469,7 @@
         {
             "id": "4241401",
             "teamId": "11",
+            "positionId": "9",
             "firstName": "Trey",
             "lastName": "Sermon",
             "fullName": "Trey Sermon",
@@ -4304,6 +4489,7 @@
         {
             "id": "4242335",
             "teamId": "11",
+            "positionId": "9",
             "firstName": "Jonathan",
             "lastName": "Taylor",
             "fullName": "Jonathan Taylor",
@@ -4323,6 +4509,7 @@
         {
             "id": "4249087",
             "teamId": "11",
+            "positionId": "22",
             "firstName": "Matt",
             "lastName": "Gay",
             "fullName": "Matt Gay",
@@ -4342,8 +4529,29 @@
     ],
     [
         {
+            "id": "2979520",
+            "teamId": "30",
+            "positionId": "8",
+            "firstName": "C.J.",
+            "lastName": "Beathard",
+            "fullName": "C.J. Beathard",
+            "displayName": "C.J. Beathard",
+            "shortName": "C.J. Beathard",
+            "weight": 215,
+            "displayWeight": "215 lbs",
+            "height": 74,
+            "displayHeight": "6' 2\"",
+            "age": 31,
+            "dateOfBirth": "1993-11-16T08:00Z",
+            "jersey": "3",
+            "position": "Quarterback",
+            "positionAbbreviation": "QB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2979520.png"
+        },
+        {
             "id": "4429013",
             "teamId": "30",
+            "positionId": "9",
             "firstName": "Tank",
             "lastName": "Bigsby",
             "fullName": "Tank Bigsby",
@@ -4361,46 +4569,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4429013.png"
         },
         {
-            "id": "4241588",
-            "teamId": "30",
-            "firstName": "Elijah",
-            "lastName": "Cooks",
-            "fullName": "Elijah Cooks",
-            "displayName": "Elijah Cooks",
-            "shortName": "E. Cooks",
-            "weight": 215,
-            "displayWeight": "215 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 26,
-            "dateOfBirth": "1998-10-13T07:00Z",
-            "jersey": "14",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4241588.png"
-        },
-        {
-            "id": "4243537",
-            "teamId": "30",
-            "firstName": "Gabe",
-            "lastName": "Davis",
-            "fullName": "Gabe Davis",
-            "displayName": "Gabe Davis",
-            "shortName": "G. Davis",
-            "weight": 210,
-            "displayWeight": "210 lbs",
-            "height": 74,
-            "displayHeight": "6' 2\"",
-            "age": 25,
-            "dateOfBirth": "1999-04-01T08:00Z",
-            "jersey": "0",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4243537.png"
-        },
-        {
             "id": "3914151",
             "teamId": "30",
+            "positionId": "7",
             "firstName": "Josiah",
             "lastName": "Deguara",
             "fullName": "Josiah Deguara",
@@ -4418,8 +4589,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3914151.png"
         },
         {
+            "id": "4039050",
+            "teamId": "30",
+            "positionId": "1",
+            "firstName": "Devin",
+            "lastName": "Duvernay",
+            "fullName": "Devin Duvernay",
+            "displayName": "Devin Duvernay",
+            "shortName": "D. Duvernay",
+            "weight": 20,
+            "displayWeight": "20 lbs",
+            "height": 71,
+            "displayHeight": "5' 11\"",
+            "age": 27,
+            "dateOfBirth": "1997-09-12T07:00Z",
+            "jersey": "12",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4039050.png"
+        },
+        {
             "id": "3051876",
             "teamId": "30",
+            "positionId": "7",
             "firstName": "Evan",
             "lastName": "Engram",
             "fullName": "Evan Engram",
@@ -4439,6 +4631,7 @@
         {
             "id": "4239996",
             "teamId": "30",
+            "positionId": "9",
             "firstName": "Travis",
             "lastName": "Etienne Jr.",
             "fullName": "Travis Etienne Jr.",
@@ -4458,6 +4651,7 @@
         {
             "id": "4040612",
             "teamId": "30",
+            "positionId": "7",
             "firstName": "Luke",
             "lastName": "Farrell",
             "fullName": "Luke Farrell",
@@ -4477,6 +4671,7 @@
         {
             "id": "3139602",
             "teamId": "30",
+            "positionId": "9",
             "firstName": "D'Ernest",
             "lastName": "Johnson",
             "fullName": "D'Ernest Johnson",
@@ -4496,6 +4691,7 @@
         {
             "id": "4241464",
             "teamId": "30",
+            "positionId": "8",
             "firstName": "Mac",
             "lastName": "Jones",
             "fullName": "Mac Jones",
@@ -4515,6 +4711,7 @@
         {
             "id": "4245131",
             "teamId": "30",
+            "positionId": "1",
             "firstName": "Tim",
             "lastName": "Jones",
             "fullName": "Tim Jones",
@@ -4534,6 +4731,7 @@
         {
             "id": "4360310",
             "teamId": "30",
+            "positionId": "8",
             "firstName": "Trevor",
             "lastName": "Lawrence",
             "fullName": "Trevor Lawrence",
@@ -4551,8 +4749,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4360310.png"
         },
         {
+            "id": "4567095",
+            "teamId": "30",
+            "positionId": "9",
+            "firstName": "Keilan",
+            "lastName": "Robinson",
+            "fullName": "Keilan Robinson",
+            "displayName": "Keilan Robinson",
+            "shortName": "K. Robinson",
+            "weight": 191,
+            "displayWeight": "191 lbs",
+            "height": 68,
+            "displayHeight": "5' 8\"",
+            "age": 24,
+            "dateOfBirth": "2000-02-16T08:00Z",
+            "jersey": "31",
+            "position": "Running Back",
+            "positionAbbreviation": "RB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4567095.png"
+        },
+        {
             "id": "4430539",
             "teamId": "30",
+            "positionId": "7",
             "firstName": "Brenton",
             "lastName": "Strange",
             "fullName": "Brenton Strange",
@@ -4572,6 +4791,7 @@
         {
             "id": "4432773",
             "teamId": "30",
+            "positionId": "1",
             "firstName": "Brian",
             "lastName": "Thomas Jr.",
             "fullName": "Brian Thomas Jr.",
@@ -4589,27 +4809,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4432773.png"
         },
         {
-            "id": "4244856",
-            "teamId": "30",
-            "firstName": "Austin",
-            "lastName": "Trammell",
-            "fullName": "Austin Trammell",
-            "displayName": "Austin Trammell",
-            "shortName": "A. Trammell",
-            "weight": 185,
-            "displayWeight": "185 lbs",
-            "height": 70,
-            "displayHeight": "5' 10\"",
-            "age": 26,
-            "dateOfBirth": "1998-07-04T07:00Z",
-            "jersey": "86",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4244856.png"
-        },
-        {
             "id": "4432620",
             "teamId": "30",
+            "positionId": "1",
             "firstName": "Parker",
             "lastName": "Washington",
             "fullName": "Parker Washington",
@@ -4629,6 +4831,7 @@
         {
             "id": "4686361",
             "teamId": "30",
+            "positionId": "22",
             "firstName": "Cam",
             "lastName": "Little",
             "fullName": "Cam Little",
@@ -4650,6 +4853,7 @@
         {
             "id": "4242214",
             "teamId": "12",
+            "positionId": "9",
             "firstName": "Clyde",
             "lastName": "Edwards-Helaire",
             "fullName": "Clyde Edwards-Helaire",
@@ -4669,6 +4873,7 @@
         {
             "id": "4240472",
             "teamId": "12",
+            "positionId": "7",
             "firstName": "Noah",
             "lastName": "Gray",
             "fullName": "Noah Gray",
@@ -4688,6 +4893,7 @@
         {
             "id": "4035004",
             "teamId": "12",
+            "positionId": "1",
             "firstName": "Mecole",
             "lastName": "Hardman",
             "fullName": "Mecole Hardman",
@@ -4705,27 +4911,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4035004.png"
         },
         {
-            "id": "4258248",
-            "teamId": "12",
-            "firstName": "Peyton",
-            "lastName": "Hendershot",
-            "fullName": "Peyton Hendershot",
-            "displayName": "Peyton Hendershot",
-            "shortName": "P. Hendershot",
-            "weight": 254,
-            "displayWeight": "254 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 25,
-            "dateOfBirth": "1999-04-23T07:00Z",
-            "jersey": "88",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4258248.png"
-        },
-        {
             "id": "15795",
             "teamId": "12",
+            "positionId": "1",
             "firstName": "DeAndre",
             "lastName": "Hopkins",
             "fullName": "DeAndre Hopkins",
@@ -4745,6 +4933,7 @@
         {
             "id": "3059915",
             "teamId": "12",
+            "positionId": "9",
             "firstName": "Kareem",
             "lastName": "Hunt",
             "fullName": "Kareem Hunt",
@@ -4764,6 +4953,7 @@
         {
             "id": "15847",
             "teamId": "12",
+            "positionId": "7",
             "firstName": "Travis",
             "lastName": "Kelce",
             "fullName": "Travis Kelce",
@@ -4783,6 +4973,7 @@
         {
             "id": "3139477",
             "teamId": "12",
+            "positionId": "8",
             "firstName": "Patrick",
             "lastName": "Mahomes",
             "fullName": "Patrick Mahomes",
@@ -4802,6 +4993,7 @@
         {
             "id": "3116389",
             "teamId": "12",
+            "positionId": "9",
             "firstName": "Samaje",
             "lastName": "Perine",
             "fullName": "Samaje Perine",
@@ -4819,27 +5011,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3116389.png"
         },
         {
-            "id": "4360306",
-            "teamId": "12",
-            "firstName": "Justyn",
-            "lastName": "Ross",
-            "fullName": "Justyn Ross",
-            "displayName": "Justyn Ross",
-            "shortName": "J. Ross",
-            "weight": 210,
-            "displayWeight": "210 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 24,
-            "dateOfBirth": "1999-12-15T08:00Z",
-            "jersey": "8",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4360306.png"
-        },
-        {
             "id": "3120348",
             "teamId": "12",
+            "positionId": "1",
             "firstName": "JuJu",
             "lastName": "Smith-Schuster",
             "fullName": "JuJu Smith-Schuster",
@@ -4849,7 +5023,7 @@
             "displayWeight": "215 lbs",
             "height": 73,
             "displayHeight": "6' 1\"",
-            "age": 27,
+            "age": 28,
             "dateOfBirth": "1996-11-22T08:00Z",
             "jersey": "9",
             "position": "Wide Receiver",
@@ -4859,6 +5033,7 @@
         {
             "id": "4714365",
             "teamId": "12",
+            "positionId": "9",
             "firstName": "Carson",
             "lastName": "Steele",
             "fullName": "Carson Steele",
@@ -4878,6 +5053,7 @@
         {
             "id": "3118892",
             "teamId": "12",
+            "positionId": "1",
             "firstName": "Justin",
             "lastName": "Watson",
             "fullName": "Justin Watson",
@@ -4897,6 +5073,7 @@
         {
             "id": "2573079",
             "teamId": "12",
+            "positionId": "8",
             "firstName": "Carson",
             "lastName": "Wentz",
             "fullName": "Carson Wentz",
@@ -4916,6 +5093,7 @@
         {
             "id": "4683062",
             "teamId": "12",
+            "positionId": "1",
             "firstName": "Xavier",
             "lastName": "Worthy",
             "fullName": "Xavier Worthy",
@@ -4933,29 +5111,31 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4683062.png"
         },
         {
-            "id": "3055899",
+            "id": "4571557",
             "teamId": "12",
-            "firstName": "Harrison",
-            "lastName": "Butker",
-            "fullName": "Harrison Butker",
-            "displayName": "Harrison Butker",
-            "shortName": "H. Butker",
-            "weight": 205,
-            "displayWeight": "205 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 29,
-            "dateOfBirth": "1995-07-14T07:00Z",
-            "jersey": "7",
+            "positionId": "22",
+            "firstName": "Spencer",
+            "lastName": "Shrader",
+            "fullName": "Spencer Shrader",
+            "displayName": "Spencer Shrader",
+            "shortName": "S. Shrader",
+            "weight": 201,
+            "displayWeight": "201 lbs",
+            "height": 74,
+            "displayHeight": "6' 2\"",
+            "age": 25,
+            "dateOfBirth": "1999-05-19T07:00Z",
+            "jersey": "40",
             "position": "Place kicker",
             "positionAbbreviation": "PK",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3055899.png"
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4571557.png"
         }
     ],
     [
         {
             "id": "2576336",
             "teamId": "13",
+            "positionId": "9",
             "firstName": "Ameer",
             "lastName": "Abdullah",
             "fullName": "Ameer Abdullah",
@@ -4973,27 +5153,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2576336.png"
         },
         {
-            "id": "3919510",
-            "teamId": "13",
-            "firstName": "Alex",
-            "lastName": "Bachman",
-            "fullName": "Alex Bachman",
-            "displayName": "Alex Bachman",
-            "shortName": "A. Bachman",
-            "weight": 190,
-            "displayWeight": "190 lbs",
-            "height": 72,
-            "displayHeight": "6' 0\"",
-            "age": 28,
-            "dateOfBirth": "1996-05-29T07:00Z",
-            "jersey": "81",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3919510.png"
-        },
-        {
             "id": "4432665",
             "teamId": "13",
+            "positionId": "7",
             "firstName": "Brock",
             "lastName": "Bowers",
             "fullName": "Brock Bowers",
@@ -5013,6 +5175,7 @@
         {
             "id": "4040774",
             "teamId": "13",
+            "positionId": "7",
             "firstName": "Harrison",
             "lastName": "Bryant",
             "fullName": "Harrison Bryant",
@@ -5032,6 +5195,7 @@
         {
             "id": "4426399",
             "teamId": "13",
+            "positionId": "1",
             "firstName": "Ramel",
             "lastName": "Keyton",
             "fullName": "Ramel Keyton",
@@ -5051,6 +5215,7 @@
         {
             "id": "4366963",
             "teamId": "13",
+            "positionId": "9",
             "firstName": "Dylan",
             "lastName": "Laube",
             "fullName": "Dylan Laube",
@@ -5070,6 +5235,7 @@
         {
             "id": "4048244",
             "teamId": "13",
+            "positionId": "9",
             "firstName": "Alexander",
             "lastName": "Mattison",
             "fullName": "Alexander Mattison",
@@ -5087,8 +5253,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4048244.png"
         },
         {
+            "id": "4429086",
+            "teamId": "13",
+            "positionId": "7",
+            "firstName": "Michael",
+            "lastName": "Mayer",
+            "fullName": "Michael Mayer",
+            "displayName": "Michael Mayer",
+            "shortName": "M. Mayer",
+            "weight": 265,
+            "displayWeight": "265 lbs",
+            "height": 76,
+            "displayHeight": "6' 4\"",
+            "age": 23,
+            "dateOfBirth": "2001-07-06T07:00Z",
+            "jersey": "87",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4429086.png"
+        },
+        {
             "id": "3916433",
             "teamId": "13",
+            "positionId": "1",
             "firstName": "Jakobi",
             "lastName": "Meyers",
             "fullName": "Jakobi Meyers",
@@ -5098,7 +5285,7 @@
             "displayWeight": "200 lbs",
             "height": 74,
             "displayHeight": "6' 2\"",
-            "age": 27,
+            "age": 28,
             "dateOfBirth": "1996-11-09T08:00Z",
             "jersey": "16",
             "position": "Wide Receiver",
@@ -5108,6 +5295,7 @@
         {
             "id": "4038524",
             "teamId": "13",
+            "positionId": "8",
             "firstName": "Gardner",
             "lastName": "Minshew",
             "fullName": "Gardner Minshew",
@@ -5127,6 +5315,7 @@
         {
             "id": "4239086",
             "teamId": "13",
+            "positionId": "8",
             "firstName": "Desmond",
             "lastName": "Ridder",
             "fullName": "Desmond Ridder",
@@ -5146,6 +5335,7 @@
         {
             "id": "4361426",
             "teamId": "13",
+            "positionId": "7",
             "firstName": "Justin",
             "lastName": "Shorter",
             "fullName": "Justin Shorter",
@@ -5165,6 +5355,7 @@
         {
             "id": "4428718",
             "teamId": "13",
+            "positionId": "1",
             "firstName": "Tre",
             "lastName": "Tucker",
             "fullName": "Tre Tucker",
@@ -5184,6 +5375,7 @@
         {
             "id": "4036211",
             "teamId": "13",
+            "positionId": "1",
             "firstName": "DJ",
             "lastName": "Turner",
             "fullName": "DJ Turner",
@@ -5203,6 +5395,7 @@
         {
             "id": "4361777",
             "teamId": "13",
+            "positionId": "9",
             "firstName": "Zamir",
             "lastName": "White",
             "fullName": "Zamir White",
@@ -5222,6 +5415,7 @@
         {
             "id": "3051909",
             "teamId": "13",
+            "positionId": "22",
             "firstName": "Daniel",
             "lastName": "Carlson",
             "fullName": "Daniel Carlson",
@@ -5243,6 +5437,7 @@
         {
             "id": "3115394",
             "teamId": "24",
+            "positionId": "1",
             "firstName": "DJ",
             "lastName": "Chark Jr.",
             "fullName": "DJ Chark Jr.",
@@ -5262,6 +5457,7 @@
         {
             "id": "4362477",
             "teamId": "24",
+            "positionId": "1",
             "firstName": "Derius",
             "lastName": "Davis",
             "fullName": "Derius Davis",
@@ -5281,6 +5477,7 @@
         {
             "id": "3127292",
             "teamId": "24",
+            "positionId": "7",
             "firstName": "Will",
             "lastName": "Dissly",
             "fullName": "Will Dissly",
@@ -5300,6 +5497,7 @@
         {
             "id": "4241985",
             "teamId": "24",
+            "positionId": "9",
             "firstName": "J.K.",
             "lastName": "Dobbins",
             "fullName": "J.K. Dobbins",
@@ -5317,27 +5515,49 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4241985.png"
         },
         {
-            "id": "4360739",
+            "id": "3051926",
             "teamId": "24",
-            "firstName": "Simi",
-            "lastName": "Fehoko",
-            "fullName": "Simi Fehoko",
-            "displayName": "Simi Fehoko",
-            "shortName": "S. Fehoko",
-            "weight": 218,
-            "displayWeight": "218 lbs",
+            "positionId": "9",
+            "firstName": "Gus",
+            "lastName": "Edwards",
+            "fullName": "Gus Edwards",
+            "displayName": "Gus Edwards",
+            "shortName": "G. Edwards",
+            "weight": 238,
+            "displayWeight": "238 lbs",
+            "height": 73,
+            "displayHeight": "6' 1\"",
+            "age": 29,
+            "dateOfBirth": "1995-04-13T07:00Z",
+            "jersey": "4",
+            "position": "Running Back",
+            "positionAbbreviation": "RB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3051926.png"
+        },
+        {
+            "id": "4242558",
+            "teamId": "24",
+            "positionId": "7",
+            "firstName": "Tucker",
+            "lastName": "Fisk",
+            "fullName": "Tucker Fisk",
+            "displayName": "Tucker Fisk",
+            "shortName": "T. Fisk",
+            "weight": 285,
+            "displayWeight": "285 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 27,
-            "dateOfBirth": "1997-11-05T08:00Z",
-            "jersey": "87",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4360739.png"
+            "age": 25,
+            "dateOfBirth": "1999-01-19T08:00Z",
+            "jersey": "42",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4242558.png"
         },
         {
             "id": "4372071",
             "teamId": "24",
+            "positionId": "9",
             "firstName": "Hassan",
             "lastName": "Haskins",
             "fullName": "Hassan Haskins",
@@ -5347,7 +5567,7 @@
             "displayWeight": "228 lbs",
             "height": 74,
             "displayHeight": "6' 2\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-26T08:00Z",
             "jersey": "28",
             "position": "Running Back",
@@ -5357,6 +5577,7 @@
         {
             "id": "2565969",
             "teamId": "24",
+            "positionId": "8",
             "firstName": "Taylor",
             "lastName": "Heinicke",
             "fullName": "Taylor Heinicke",
@@ -5376,6 +5597,7 @@
         {
             "id": "4038941",
             "teamId": "24",
+            "positionId": "8",
             "firstName": "Justin",
             "lastName": "Herbert",
             "fullName": "Justin Herbert",
@@ -5393,27 +5615,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4038941.png"
         },
         {
-            "id": "3924365",
-            "teamId": "24",
-            "firstName": "Hayden",
-            "lastName": "Hurst",
-            "fullName": "Hayden Hurst",
-            "displayName": "Hayden Hurst",
-            "shortName": "H. Hurst",
-            "weight": 245,
-            "displayWeight": "245 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 31,
-            "dateOfBirth": "1993-08-24T07:00Z",
-            "jersey": "88",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3924365.png"
-        },
-        {
             "id": "4429025",
             "teamId": "24",
+            "positionId": "1",
             "firstName": "Quentin",
             "lastName": "Johnston",
             "fullName": "Quentin Johnston",
@@ -5433,6 +5637,7 @@
         {
             "id": "4612826",
             "teamId": "24",
+            "positionId": "1",
             "firstName": "Ladd",
             "lastName": "McConkey",
             "fullName": "Ladd McConkey",
@@ -5442,7 +5647,7 @@
             "displayWeight": "185 lbs",
             "height": 72,
             "displayHeight": "6' 0\"",
-            "age": 22,
+            "age": 23,
             "dateOfBirth": "2001-11-11T08:00Z",
             "jersey": "15",
             "position": "Wide Receiver",
@@ -5452,6 +5657,7 @@
         {
             "id": "4242433",
             "teamId": "24",
+            "positionId": "1",
             "firstName": "Joshua",
             "lastName": "Palmer",
             "fullName": "Joshua Palmer",
@@ -5471,6 +5677,7 @@
         {
             "id": "4241802",
             "teamId": "24",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Reagor",
             "fullName": "Jalen Reagor",
@@ -5490,6 +5697,7 @@
         {
             "id": "4250764",
             "teamId": "24",
+            "positionId": "7",
             "firstName": "Stone",
             "lastName": "Smartt",
             "fullName": "Stone Smartt",
@@ -5509,6 +5717,7 @@
         {
             "id": "3120590",
             "teamId": "24",
+            "positionId": "8",
             "firstName": "Easton",
             "lastName": "Stick",
             "fullName": "Easton Stick",
@@ -5526,27 +5735,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3120590.png"
         },
         {
-            "id": "2511973",
-            "teamId": "24",
-            "firstName": "Eric",
-            "lastName": "Tomlinson",
-            "fullName": "Eric Tomlinson",
-            "displayName": "Eric Tomlinson",
-            "shortName": "E. Tomlinson",
-            "weight": 265,
-            "displayWeight": "265 lbs",
-            "height": 78,
-            "displayHeight": "6' 6\"",
-            "age": 32,
-            "dateOfBirth": "1992-04-22T07:00Z",
-            "jersey": "83",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2511973.png"
-        },
-        {
             "id": "4430968",
             "teamId": "24",
+            "positionId": "9",
             "firstName": "Kimani",
             "lastName": "Vidal",
             "fullName": "Kimani Vidal",
@@ -5566,6 +5757,7 @@
         {
             "id": "4362081",
             "teamId": "24",
+            "positionId": "22",
             "firstName": "Cameron",
             "lastName": "Dicker",
             "fullName": "Cameron Dicker",
@@ -5587,6 +5779,7 @@
         {
             "id": "4426553",
             "teamId": "14",
+            "positionId": "7",
             "firstName": "Davis",
             "lastName": "Allen",
             "fullName": "Davis Allen",
@@ -5606,6 +5799,7 @@
         {
             "id": "4360797",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Tutu",
             "lastName": "Atwell",
             "fullName": "Tutu Atwell",
@@ -5625,6 +5819,7 @@
         {
             "id": "4259553",
             "teamId": "14",
+            "positionId": "8",
             "firstName": "Stetson",
             "lastName": "Bennett",
             "fullName": "Stetson Bennett",
@@ -5644,6 +5839,7 @@
         {
             "id": "4429096",
             "teamId": "14",
+            "positionId": "9",
             "firstName": "Blake",
             "lastName": "Corum",
             "fullName": "Blake Corum",
@@ -5653,7 +5849,7 @@
             "displayWeight": "210 lbs",
             "height": 68,
             "displayHeight": "5' 8\"",
-            "age": 23,
+            "age": 24,
             "dateOfBirth": "2000-11-25T08:00Z",
             "jersey": "22",
             "position": "Running Back",
@@ -5663,6 +5859,7 @@
         {
             "id": "16760",
             "teamId": "14",
+            "positionId": "8",
             "firstName": "Jimmy",
             "lastName": "Garoppolo",
             "fullName": "Jimmy Garoppolo",
@@ -5682,6 +5879,7 @@
         {
             "id": "2310331",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Tyler",
             "lastName": "Johnson",
             "fullName": "Tyler Johnson",
@@ -5701,6 +5899,7 @@
         {
             "id": "2977187",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Cooper",
             "lastName": "Kupp",
             "fullName": "Cooper Kupp",
@@ -5720,6 +5919,7 @@
         {
             "id": "4239944",
             "teamId": "14",
+            "positionId": "7",
             "firstName": "Hunter",
             "lastName": "Long",
             "fullName": "Hunter Long",
@@ -5739,6 +5939,7 @@
         {
             "id": "4426515",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Puka",
             "lastName": "Nacua",
             "fullName": "Puka Nacua",
@@ -5758,6 +5959,7 @@
         {
             "id": "4242557",
             "teamId": "14",
+            "positionId": "7",
             "firstName": "Colby",
             "lastName": "Parkinson",
             "fullName": "Colby Parkinson",
@@ -5777,6 +5979,7 @@
         {
             "id": "4243003",
             "teamId": "14",
+            "positionId": "9",
             "firstName": "Ronnie",
             "lastName": "Rivers",
             "fullName": "Ronnie Rivers",
@@ -5796,6 +5999,7 @@
         {
             "id": "3043116",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Demarcus",
             "lastName": "Robinson",
             "fullName": "Demarcus Robinson",
@@ -5815,6 +6019,7 @@
         {
             "id": "4391845",
             "teamId": "14",
+            "positionId": "9",
             "firstName": "Cody",
             "lastName": "Schrader",
             "fullName": "Cody Schrader",
@@ -5834,6 +6039,7 @@
         {
             "id": "4386544",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Xavier",
             "lastName": "Smith",
             "fullName": "Xavier Smith",
@@ -5853,6 +6059,7 @@
         {
             "id": "12483",
             "teamId": "14",
+            "positionId": "8",
             "firstName": "Matthew",
             "lastName": "Stafford",
             "fullName": "Matthew Stafford",
@@ -5872,6 +6079,7 @@
         {
             "id": "4569382",
             "teamId": "14",
+            "positionId": "1",
             "firstName": "Jordan",
             "lastName": "Whittington",
             "fullName": "Jordan Whittington",
@@ -5891,6 +6099,7 @@
         {
             "id": "4430737",
             "teamId": "14",
+            "positionId": "9",
             "firstName": "Kyren",
             "lastName": "Williams",
             "fullName": "Kyren Williams",
@@ -5910,6 +6119,7 @@
         {
             "id": "4566192",
             "teamId": "14",
+            "positionId": "22",
             "firstName": "Joshua",
             "lastName": "Karty",
             "fullName": "Joshua Karty",
@@ -5931,6 +6141,7 @@
         {
             "id": "4429160",
             "teamId": "15",
+            "positionId": "9",
             "firstName": "De'Von",
             "lastName": "Achane",
             "fullName": "De'Von Achane",
@@ -5950,6 +6161,7 @@
         {
             "id": "16733",
             "teamId": "15",
+            "positionId": "1",
             "firstName": "Odell",
             "lastName": "Beckham Jr.",
             "fullName": "Odell Beckham Jr.",
@@ -5967,27 +6179,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/16733.png"
         },
         {
-            "id": "4047422",
+            "id": "3052056",
             "teamId": "15",
-            "firstName": "Tanner",
-            "lastName": "Conner",
-            "fullName": "Tanner Conner",
-            "displayName": "Tanner Conner",
-            "shortName": "T. Conner",
-            "weight": 232,
-            "displayWeight": "232 lbs",
-            "height": 75,
-            "displayHeight": "6' 3\"",
-            "age": 26,
-            "dateOfBirth": "1998-03-20T08:00Z",
-            "jersey": "80",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4047422.png"
+            "positionId": "1",
+            "firstName": "River",
+            "lastName": "Cracraft",
+            "fullName": "River Cracraft",
+            "displayName": "River Cracraft",
+            "shortName": "R. Cracraft",
+            "weight": 198,
+            "displayWeight": "198 lbs",
+            "height": 72,
+            "displayHeight": "6' 0\"",
+            "age": 30,
+            "dateOfBirth": "1994-11-01T08:00Z",
+            "jersey": "85",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3052056.png"
         },
         {
             "id": "4043016",
             "teamId": "15",
+            "positionId": "1",
             "firstName": "Dee",
             "lastName": "Eskridge",
             "fullName": "Dee Eskridge",
@@ -6007,6 +6221,7 @@
         {
             "id": "4365395",
             "teamId": "15",
+            "positionId": "7",
             "firstName": "Julian",
             "lastName": "Hill",
             "fullName": "Julian Hill",
@@ -6026,6 +6241,7 @@
         {
             "id": "3116406",
             "teamId": "15",
+            "positionId": "1",
             "firstName": "Tyreek",
             "lastName": "Hill",
             "fullName": "Tyreek Hill",
@@ -6045,6 +6261,7 @@
         {
             "id": "3917668",
             "teamId": "15",
+            "positionId": "10",
             "firstName": "Alec",
             "lastName": "Ingold",
             "fullName": "Alec Ingold",
@@ -6064,6 +6281,7 @@
         {
             "id": "2576414",
             "teamId": "15",
+            "positionId": "9",
             "firstName": "Raheem",
             "lastName": "Mostert",
             "fullName": "Raheem Mostert",
@@ -6083,6 +6301,7 @@
         {
             "id": "3054212",
             "teamId": "15",
+            "positionId": "7",
             "firstName": "Jonnu",
             "lastName": "Smith",
             "fullName": "Jonnu Smith",
@@ -6102,6 +6321,7 @@
         {
             "id": "3052897",
             "teamId": "15",
+            "positionId": "7",
             "firstName": "Durham",
             "lastName": "Smythe",
             "fullName": "Durham Smythe",
@@ -6119,8 +6339,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3052897.png"
         },
         {
+            "id": "4034862",
+            "teamId": "15",
+            "positionId": "7",
+            "firstName": "Jack",
+            "lastName": "Stoll",
+            "fullName": "Jack Stoll",
+            "displayName": "Jack Stoll",
+            "shortName": "J. Stoll",
+            "weight": 247,
+            "displayWeight": "247 lbs",
+            "height": 76,
+            "displayHeight": "6' 4\"",
+            "age": 26,
+            "dateOfBirth": "1998-01-28T08:00Z",
+            "jersey": "80",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4034862.png"
+        },
+        {
             "id": "4241479",
             "teamId": "15",
+            "positionId": "8",
             "firstName": "Tua",
             "lastName": "Tagovailoa",
             "fullName": "Tua Tagovailoa",
@@ -6140,6 +6381,7 @@
         {
             "id": "4036419",
             "teamId": "15",
+            "positionId": "8",
             "firstName": "Skylar",
             "lastName": "Thompson",
             "fullName": "Skylar Thompson",
@@ -6159,6 +6401,7 @@
         {
             "id": "4372016",
             "teamId": "15",
+            "positionId": "1",
             "firstName": "Jaylen",
             "lastName": "Waddle",
             "fullName": "Jaylen Waddle",
@@ -6168,7 +6411,7 @@
             "displayWeight": "185 lbs",
             "height": 70,
             "displayHeight": "5' 10\"",
-            "age": 25,
+            "age": 26,
             "dateOfBirth": "1998-11-25T08:00Z",
             "jersey": "17",
             "position": "Wide Receiver",
@@ -6178,6 +6421,7 @@
         {
             "id": "4569603",
             "teamId": "15",
+            "positionId": "1",
             "firstName": "Malik",
             "lastName": "Washington",
             "fullName": "Malik Washington",
@@ -6197,6 +6441,7 @@
         {
             "id": "3122976",
             "teamId": "15",
+            "positionId": "9",
             "firstName": "Jeff",
             "lastName": "Wilson Jr.",
             "fullName": "Jeff Wilson Jr.",
@@ -6206,7 +6451,7 @@
             "displayWeight": "210 lbs",
             "height": 72,
             "displayHeight": "6' 0\"",
-            "age": 27,
+            "age": 28,
             "dateOfBirth": "1996-11-16T08:00Z",
             "jersey": "23",
             "position": "Running Back",
@@ -6216,6 +6461,7 @@
         {
             "id": "4682745",
             "teamId": "15",
+            "positionId": "9",
             "firstName": "Jaylen",
             "lastName": "Wright",
             "fullName": "Jaylen Wright",
@@ -6235,6 +6481,7 @@
         {
             "id": "3124679",
             "teamId": "15",
+            "positionId": "22",
             "firstName": "Jason",
             "lastName": "Sanders",
             "fullName": "Jason Sanders",
@@ -6244,7 +6491,7 @@
             "displayWeight": "195 lbs",
             "height": 71,
             "displayHeight": "5' 11\"",
-            "age": 28,
+            "age": 29,
             "dateOfBirth": "1995-11-16T08:00Z",
             "jersey": "7",
             "position": "Place kicker",
@@ -6256,6 +6503,7 @@
         {
             "id": "4429205",
             "teamId": "16",
+            "positionId": "1",
             "firstName": "Jordan",
             "lastName": "Addison",
             "fullName": "Jordan Addison",
@@ -6275,6 +6523,7 @@
         {
             "id": "4240021",
             "teamId": "16",
+            "positionId": "9",
             "firstName": "Cam",
             "lastName": "Akers",
             "fullName": "Cam Akers",
@@ -6294,6 +6543,7 @@
         {
             "id": "4242431",
             "teamId": "16",
+            "positionId": "9",
             "firstName": "Ty",
             "lastName": "Chandler",
             "fullName": "Ty Chandler",
@@ -6313,6 +6563,7 @@
         {
             "id": "3912547",
             "teamId": "16",
+            "positionId": "8",
             "firstName": "Sam",
             "lastName": "Darnold",
             "fullName": "Sam Darnold",
@@ -6332,6 +6583,7 @@
         {
             "id": "4012556",
             "teamId": "16",
+            "positionId": "10",
             "firstName": "C.J.",
             "lastName": "Ham",
             "fullName": "C.J. Ham",
@@ -6351,6 +6603,7 @@
         {
             "id": "4036133",
             "teamId": "16",
+            "positionId": "7",
             "firstName": "T.J.",
             "lastName": "Hockenson",
             "fullName": "T.J. Hockenson",
@@ -6370,6 +6623,7 @@
         {
             "id": "4262921",
             "teamId": "16",
+            "positionId": "1",
             "firstName": "Justin",
             "lastName": "Jefferson",
             "fullName": "Justin Jefferson",
@@ -6389,6 +6643,7 @@
         {
             "id": "3042519",
             "teamId": "16",
+            "positionId": "9",
             "firstName": "Aaron",
             "lastName": "Jones",
             "fullName": "Aaron Jones",
@@ -6408,6 +6663,7 @@
         {
             "id": "3059989",
             "teamId": "16",
+            "positionId": "8",
             "firstName": "Nick",
             "lastName": "Mullens",
             "fullName": "Nick Mullens",
@@ -6427,6 +6683,7 @@
         {
             "id": "3052096",
             "teamId": "16",
+            "positionId": "7",
             "firstName": "Johnny",
             "lastName": "Mundt",
             "fullName": "Johnny Mundt",
@@ -6436,7 +6693,7 @@
             "displayWeight": "233 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 29,
+            "age": 30,
             "dateOfBirth": "1994-11-23T08:00Z",
             "jersey": "86",
             "position": "Tight End",
@@ -6446,6 +6703,7 @@
         {
             "id": "4382466",
             "teamId": "16",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Nailor",
             "fullName": "Jalen Nailor",
@@ -6465,6 +6723,7 @@
         {
             "id": "3921690",
             "teamId": "16",
+            "positionId": "7",
             "firstName": "Josh",
             "lastName": "Oliver",
             "fullName": "Josh Oliver",
@@ -6484,6 +6743,7 @@
         {
             "id": "3115255",
             "teamId": "16",
+            "positionId": "1",
             "firstName": "Brandon",
             "lastName": "Powell",
             "fullName": "Brandon Powell",
@@ -6503,6 +6763,7 @@
         {
             "id": "3722362",
             "teamId": "16",
+            "positionId": "8",
             "firstName": "Brett",
             "lastName": "Rypien",
             "fullName": "Brett Rypien",
@@ -6522,6 +6783,7 @@
         {
             "id": "3122168",
             "teamId": "16",
+            "positionId": "1",
             "firstName": "Trent",
             "lastName": "Sherfield Sr.",
             "fullName": "Trent Sherfield Sr.",
@@ -6537,12 +6799,33 @@
             "position": "Wide Receiver",
             "positionAbbreviation": "WR",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3122168.png"
+        },
+        {
+            "id": "4051167",
+            "teamId": "16",
+            "positionId": "22",
+            "firstName": "John Parker",
+            "lastName": "Romo",
+            "fullName": "John Parker Romo",
+            "displayName": "John Parker Romo",
+            "shortName": "J. Romo",
+            "weight": 175,
+            "displayWeight": "175 lbs",
+            "height": 71,
+            "displayHeight": "5' 11\"",
+            "age": 27,
+            "dateOfBirth": "1997-08-24T07:00Z",
+            "jersey": "96",
+            "position": "Place kicker",
+            "positionAbbreviation": "PK",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4051167.png"
         }
     ],
     [
         {
             "id": "4692022",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "Javon",
             "lastName": "Baker",
             "fullName": "Javon Baker",
@@ -6562,6 +6845,7 @@
         {
             "id": "4429262",
             "teamId": "17",
+            "positionId": "7",
             "firstName": "Jaheim",
             "lastName": "Bell",
             "fullName": "Jaheim Bell",
@@ -6581,6 +6865,7 @@
         {
             "id": "3045523",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "Kendrick",
             "lastName": "Bourne",
             "fullName": "Kendrick Bourne",
@@ -6600,6 +6885,7 @@
         {
             "id": "4429022",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "Kayshon",
             "lastName": "Boutte",
             "fullName": "Kayshon Boutte",
@@ -6619,6 +6905,7 @@
         {
             "id": "2578570",
             "teamId": "17",
+            "positionId": "8",
             "firstName": "Jacoby",
             "lastName": "Brissett",
             "fullName": "Jacoby Brissett",
@@ -6638,6 +6925,7 @@
         {
             "id": "4427095",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "DeMario",
             "lastName": "Douglas",
             "fullName": "DeMario Douglas",
@@ -6657,6 +6945,7 @@
         {
             "id": "4360294",
             "teamId": "17",
+            "positionId": "9",
             "firstName": "Antonio",
             "lastName": "Gibson",
             "fullName": "Antonio Gibson",
@@ -6676,6 +6965,7 @@
         {
             "id": "3928925",
             "teamId": "17",
+            "positionId": "9",
             "firstName": "JaMycal",
             "lastName": "Hasty",
             "fullName": "JaMycal Hasty",
@@ -6695,6 +6985,7 @@
         {
             "id": "3046439",
             "teamId": "17",
+            "positionId": "7",
             "firstName": "Hunter",
             "lastName": "Henry",
             "fullName": "Hunter Henry",
@@ -6714,6 +7005,7 @@
         {
             "id": "3043275",
             "teamId": "17",
+            "positionId": "7",
             "firstName": "Austin",
             "lastName": "Hooper",
             "fullName": "Austin Hooper",
@@ -6733,6 +7025,7 @@
         {
             "id": "3115328",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "Hurd",
             "fullName": "Jalen Hurd",
@@ -6752,6 +7045,7 @@
         {
             "id": "4431452",
             "teamId": "17",
+            "positionId": "8",
             "firstName": "Drake",
             "lastName": "Maye",
             "fullName": "Drake Maye",
@@ -6771,6 +7065,7 @@
         {
             "id": "4360698",
             "teamId": "17",
+            "positionId": "8",
             "firstName": "Joe",
             "lastName": "Milton III",
             "fullName": "Joe Milton III",
@@ -6790,6 +7085,7 @@
         {
             "id": "3916566",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "K.J.",
             "lastName": "Osborn",
             "fullName": "K.J. Osborn",
@@ -6809,6 +7105,7 @@
         {
             "id": "4430637",
             "teamId": "17",
+            "positionId": "1",
             "firstName": "Ja'Lynn",
             "lastName": "Polk",
             "fullName": "Ja'Lynn Polk",
@@ -6828,6 +7125,7 @@
         {
             "id": "4569173",
             "teamId": "17",
+            "positionId": "9",
             "firstName": "Rhamondre",
             "lastName": "Stevenson",
             "fullName": "Rhamondre Stevenson",
@@ -6845,27 +7143,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4569173.png"
         },
         {
-            "id": "4362921",
-            "teamId": "17",
-            "firstName": "Tyquan",
-            "lastName": "Thornton",
-            "fullName": "Tyquan Thornton",
-            "displayName": "Tyquan Thornton",
-            "shortName": "T. Thornton",
-            "weight": 185,
-            "displayWeight": "185 lbs",
-            "height": 74,
-            "displayHeight": "6' 2\"",
-            "age": 24,
-            "dateOfBirth": "2000-08-07T07:00Z",
-            "jersey": "11",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4362921.png"
-        },
-        {
             "id": "3124084",
             "teamId": "17",
+            "positionId": "22",
             "firstName": "Joey",
             "lastName": "Slye",
             "fullName": "Joey Slye",
@@ -6887,6 +7167,7 @@
         {
             "id": "16757",
             "teamId": "18",
+            "positionId": "8",
             "firstName": "Derek",
             "lastName": "Carr",
             "fullName": "Derek Carr",
@@ -6906,6 +7187,7 @@
         {
             "id": "4243322",
             "teamId": "18",
+            "positionId": "8",
             "firstName": "Jake",
             "lastName": "Haener",
             "fullName": "Jake Haener",
@@ -6925,6 +7207,7 @@
         {
             "id": "2468609",
             "teamId": "18",
+            "positionId": "7",
             "firstName": "Taysom",
             "lastName": "Hill",
             "fullName": "Taysom Hill",
@@ -6944,6 +7227,7 @@
         {
             "id": "4373634",
             "teamId": "18",
+            "positionId": "7",
             "firstName": "Dallin",
             "lastName": "Holker",
             "fullName": "Dallin Holker",
@@ -6961,27 +7245,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4373634.png"
         },
         {
-            "id": "4698301",
-            "teamId": "18",
-            "firstName": "Jermaine",
-            "lastName": "Jackson",
-            "fullName": "Jermaine Jackson",
-            "displayName": "Jermaine Jackson",
-            "shortName": "J. Jackson",
-            "weight": 170,
-            "displayWeight": "170 lbs",
-            "height": 67,
-            "displayHeight": "5' 7\"",
-            "age": 24,
-            "dateOfBirth": "2000-06-02T07:00Z",
-            "jersey": "80",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4698301.png"
-        },
-        {
             "id": "3929645",
             "teamId": "18",
+            "positionId": "7",
             "firstName": "Juwan",
             "lastName": "Johnson",
             "fullName": "Juwan Johnson",
@@ -7001,6 +7267,7 @@
         {
             "id": "3054850",
             "teamId": "18",
+            "positionId": "9",
             "firstName": "Alvin",
             "lastName": "Kamara",
             "fullName": "Alvin Kamara",
@@ -7020,6 +7287,7 @@
         {
             "id": "4243004",
             "teamId": "18",
+            "positionId": "9",
             "firstName": "Jordan",
             "lastName": "Mims",
             "fullName": "Jordan Mims",
@@ -7039,6 +7307,7 @@
         {
             "id": "3843945",
             "teamId": "18",
+            "positionId": "7",
             "firstName": "Foster",
             "lastName": "Moreau",
             "fullName": "Foster Moreau",
@@ -7056,27 +7325,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3843945.png"
         },
         {
-            "id": "4361370",
-            "teamId": "18",
-            "firstName": "Chris",
-            "lastName": "Olave",
-            "fullName": "Chris Olave",
-            "displayName": "Chris Olave",
-            "shortName": "C. Olave",
-            "weight": 187,
-            "displayWeight": "187 lbs",
-            "height": 72,
-            "displayHeight": "6' 0\"",
-            "age": 24,
-            "dateOfBirth": "2000-06-27T07:00Z",
-            "jersey": "12",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4361370.png"
-        },
-        {
             "id": "3929914",
             "teamId": "18",
+            "positionId": "10",
             "firstName": "Adam",
             "lastName": "Prentice",
             "fullName": "Adam Prentice",
@@ -7096,6 +7347,7 @@
         {
             "id": "4426339",
             "teamId": "18",
+            "positionId": "8",
             "firstName": "Spencer",
             "lastName": "Rattler",
             "fullName": "Spencer Rattler",
@@ -7115,6 +7367,7 @@
         {
             "id": "4573697",
             "teamId": "18",
+            "positionId": "1",
             "firstName": "Mason",
             "lastName": "Tipton",
             "fullName": "Mason Tipton",
@@ -7134,6 +7387,7 @@
         {
             "id": "3051738",
             "teamId": "18",
+            "positionId": "1",
             "firstName": "Marquez",
             "lastName": "Valdes-Scantling",
             "fullName": "Marquez Valdes-Scantling",
@@ -7153,6 +7407,7 @@
         {
             "id": "2980453",
             "teamId": "18",
+            "positionId": "9",
             "firstName": "Jamaal",
             "lastName": "Williams",
             "fullName": "Jamaal Williams",
@@ -7172,6 +7427,7 @@
         {
             "id": "4036335",
             "teamId": "18",
+            "positionId": "1",
             "firstName": "Cedrick",
             "lastName": "Wilson Jr.",
             "fullName": "Cedrick Wilson Jr.",
@@ -7191,6 +7447,7 @@
         {
             "id": "4259619",
             "teamId": "18",
+            "positionId": "22",
             "firstName": "Blake",
             "lastName": "Grupe",
             "fullName": "Blake Grupe",
@@ -7212,6 +7469,7 @@
         {
             "id": "4361516",
             "teamId": "19",
+            "positionId": "7",
             "firstName": "Daniel",
             "lastName": "Bellinger",
             "fullName": "Daniel Bellinger",
@@ -7229,8 +7487,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4361516.png"
         },
         {
+            "id": "3045169",
+            "teamId": "19",
+            "positionId": "8",
+            "firstName": "Tim",
+            "lastName": "Boyle",
+            "fullName": "Tim Boyle",
+            "displayName": "Tim Boyle",
+            "shortName": "T. Boyle",
+            "weight": 232,
+            "displayWeight": "232 lbs",
+            "height": 76,
+            "displayHeight": "6' 4\"",
+            "age": 30,
+            "dateOfBirth": "1994-10-03T07:00Z",
+            "jersey": "12",
+            "position": "Quarterback",
+            "positionAbbreviation": "QB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3045169.png"
+        },
+        {
             "id": "4240391",
             "teamId": "19",
+            "positionId": "8",
             "firstName": "Tommy",
             "lastName": "DeVito",
             "fullName": "Tommy DeVito",
@@ -7248,8 +7527,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4240391.png"
         },
         {
+            "id": "4367209",
+            "teamId": "19",
+            "positionId": "7",
+            "firstName": "Greg",
+            "lastName": "Dulcich",
+            "fullName": "Greg Dulcich",
+            "displayName": "Greg Dulcich",
+            "shortName": "G. Dulcich",
+            "weight": 245,
+            "displayWeight": "245 lbs",
+            "height": 76,
+            "displayHeight": "6' 4\"",
+            "age": 24,
+            "dateOfBirth": "2000-03-26T08:00Z",
+            "jersey": "80",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4367209.png"
+        },
+        {
             "id": "4362227",
             "teamId": "19",
+            "positionId": "1",
             "firstName": "Bryce",
             "lastName": "Ford-Wheaton",
             "fullName": "Bryce Ford-Wheaton",
@@ -7269,6 +7569,7 @@
         {
             "id": "4570561",
             "teamId": "19",
+            "positionId": "9",
             "firstName": "Eric",
             "lastName": "Gray",
             "fullName": "Eric Gray",
@@ -7288,6 +7589,7 @@
         {
             "id": "4692590",
             "teamId": "19",
+            "positionId": "1",
             "firstName": "Jalin",
             "lastName": "Hyatt",
             "fullName": "Jalin Hyatt",
@@ -7307,6 +7609,7 @@
         {
             "id": "4429148",
             "teamId": "19",
+            "positionId": "7",
             "firstName": "Theo",
             "lastName": "Johnson",
             "fullName": "Theo Johnson",
@@ -7324,27 +7627,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4429148.png"
         },
         {
-            "id": "3917792",
-            "teamId": "19",
-            "firstName": "Daniel",
-            "lastName": "Jones",
-            "fullName": "Daniel Jones",
-            "displayName": "Daniel Jones",
-            "shortName": "D. Jones",
-            "weight": 230,
-            "displayWeight": "230 lbs",
-            "height": 77,
-            "displayHeight": "6' 5\"",
-            "age": 27,
-            "dateOfBirth": "1997-05-27T07:00Z",
-            "jersey": "8",
-            "position": "Quarterback",
-            "positionAbbreviation": "QB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3917792.png"
-        },
-        {
             "id": "3924327",
             "teamId": "19",
+            "positionId": "8",
             "firstName": "Drew",
             "lastName": "Lock",
             "fullName": "Drew Lock",
@@ -7354,7 +7639,7 @@
             "displayWeight": "228 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 27,
+            "age": 28,
             "dateOfBirth": "1996-11-10T08:00Z",
             "jersey": "2",
             "position": "Quarterback",
@@ -7364,6 +7649,7 @@
         {
             "id": "2531358",
             "teamId": "19",
+            "positionId": "7",
             "firstName": "Chris",
             "lastName": "Manhertz",
             "fullName": "Chris Manhertz",
@@ -7383,6 +7669,7 @@
         {
             "id": "4595348",
             "teamId": "19",
+            "positionId": "1",
             "firstName": "Malik",
             "lastName": "Nabers",
             "fullName": "Malik Nabers",
@@ -7402,6 +7689,7 @@
         {
             "id": "4569587",
             "teamId": "19",
+            "positionId": "1",
             "firstName": "Wan'Dale",
             "lastName": "Robinson",
             "fullName": "Wan'Dale Robinson",
@@ -7421,6 +7709,7 @@
         {
             "id": "4040761",
             "teamId": "19",
+            "positionId": "9",
             "firstName": "Devin",
             "lastName": "Singletary",
             "fullName": "Devin Singletary",
@@ -7440,6 +7729,7 @@
         {
             "id": "3916945",
             "teamId": "19",
+            "positionId": "1",
             "firstName": "Darius",
             "lastName": "Slayton",
             "fullName": "Darius Slayton",
@@ -7459,6 +7749,7 @@
         {
             "id": "4240573",
             "teamId": "19",
+            "positionId": "1",
             "firstName": "Ihmir",
             "lastName": "Smith-Marsette",
             "fullName": "Ihmir Smith-Marsette",
@@ -7478,6 +7769,7 @@
         {
             "id": "4360516",
             "teamId": "19",
+            "positionId": "9",
             "firstName": "Tyrone",
             "lastName": "Tracy Jr.",
             "fullName": "Tyrone Tracy Jr.",
@@ -7487,7 +7779,7 @@
             "displayWeight": "210 lbs",
             "height": 71,
             "displayHeight": "5' 11\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-23T08:00Z",
             "jersey": "29",
             "position": "Running Back",
@@ -7495,29 +7787,31 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4360516.png"
         },
         {
-            "id": "5092436",
+            "id": "12460",
             "teamId": "19",
-            "firstName": "Jude",
-            "lastName": "McAtamney",
-            "fullName": "Jude McAtamney",
-            "displayName": "Jude McAtamney",
-            "shortName": "J. McAtamney",
-            "weight": 205,
-            "displayWeight": "205 lbs",
+            "positionId": "22",
+            "firstName": "Graham",
+            "lastName": "Gano",
+            "fullName": "Graham Gano",
+            "displayName": "Graham Gano",
+            "shortName": "G. Gano",
+            "weight": 202,
+            "displayWeight": "202 lbs",
             "height": 74,
             "displayHeight": "6' 2\"",
-            "age": 24,
-            "dateOfBirth": "2000-05-09T07:00Z",
-            "jersey": "99",
+            "age": 37,
+            "dateOfBirth": "1987-04-09T07:00Z",
+            "jersey": "9",
             "position": "Place kicker",
             "positionAbbreviation": "PK",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/5092436.png"
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/12460.png"
         }
     ],
     [
         {
             "id": "4429202",
             "teamId": "20",
+            "positionId": "9",
             "firstName": "Israel",
             "lastName": "Abanikanda",
             "fullName": "Israel Abanikanda",
@@ -7537,6 +7831,7 @@
         {
             "id": "16800",
             "teamId": "20",
+            "positionId": "1",
             "firstName": "Davante",
             "lastName": "Adams",
             "fullName": "Davante Adams",
@@ -7556,6 +7851,7 @@
         {
             "id": "4685247",
             "teamId": "20",
+            "positionId": "9",
             "firstName": "Braelon",
             "lastName": "Allen",
             "fullName": "Braelon Allen",
@@ -7575,6 +7871,7 @@
         {
             "id": "3929636",
             "teamId": "20",
+            "positionId": "1",
             "firstName": "Irvin",
             "lastName": "Charles",
             "fullName": "Irvin Charles",
@@ -7594,6 +7891,7 @@
         {
             "id": "3915486",
             "teamId": "20",
+            "positionId": "7",
             "firstName": "Tyler",
             "lastName": "Conklin",
             "fullName": "Tyler Conklin",
@@ -7613,6 +7911,7 @@
         {
             "id": "4613104",
             "teamId": "20",
+            "positionId": "1",
             "firstName": "Malachi",
             "lastName": "Corley",
             "fullName": "Malachi Corley",
@@ -7632,6 +7931,7 @@
         {
             "id": "4695404",
             "teamId": "20",
+            "positionId": "9",
             "firstName": "Isaiah",
             "lastName": "Davis",
             "fullName": "Isaiah Davis",
@@ -7651,6 +7951,7 @@
         {
             "id": "4427278",
             "teamId": "20",
+            "positionId": "1",
             "firstName": "Xavier",
             "lastName": "Gipson",
             "fullName": "Xavier Gipson",
@@ -7670,6 +7971,7 @@
         {
             "id": "4427366",
             "teamId": "20",
+            "positionId": "9",
             "firstName": "Breece",
             "lastName": "Hall",
             "fullName": "Breece Hall",
@@ -7689,6 +7991,7 @@
         {
             "id": "8439",
             "teamId": "20",
+            "positionId": "8",
             "firstName": "Aaron",
             "lastName": "Rodgers",
             "fullName": "Aaron Rodgers",
@@ -7708,6 +8011,7 @@
         {
             "id": "4361372",
             "teamId": "20",
+            "positionId": "7",
             "firstName": "Jeremy",
             "lastName": "Ruckert",
             "fullName": "Jeremy Ruckert",
@@ -7727,6 +8031,7 @@
         {
             "id": "14163",
             "teamId": "20",
+            "positionId": "8",
             "firstName": "Tyrod",
             "lastName": "Taylor",
             "fullName": "Tyrod Taylor",
@@ -7746,6 +8051,7 @@
         {
             "id": "4569618",
             "teamId": "20",
+            "positionId": "1",
             "firstName": "Garrett",
             "lastName": "Wilson",
             "fullName": "Garrett Wilson",
@@ -7765,6 +8071,7 @@
         {
             "id": "4044144",
             "teamId": "20",
+            "positionId": "7",
             "firstName": "Kenny",
             "lastName": "Yeboah",
             "fullName": "Kenny Yeboah",
@@ -7782,29 +8089,31 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4044144.png"
         },
         {
-            "id": "4243371",
+            "id": "4242519",
             "teamId": "20",
-            "firstName": "Riley",
-            "lastName": "Patterson",
-            "fullName": "Riley Patterson",
-            "displayName": "Riley Patterson",
-            "shortName": "R. Patterson",
-            "weight": 190,
-            "displayWeight": "190 lbs",
-            "height": 72,
-            "displayHeight": "6' 0\"",
-            "age": 25,
-            "dateOfBirth": "1999-09-07T07:00Z",
-            "jersey": "46",
+            "positionId": "22",
+            "firstName": "Anders",
+            "lastName": "Carlson",
+            "fullName": "Anders Carlson",
+            "displayName": "Anders Carlson",
+            "shortName": "A. Carlson",
+            "weight": 220,
+            "displayWeight": "220 lbs",
+            "height": 77,
+            "displayHeight": "6' 5\"",
+            "age": 26,
+            "dateOfBirth": "1998-06-16T07:00Z",
+            "jersey": "18",
             "position": "Place kicker",
             "positionAbbreviation": "PK",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4243371.png"
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4242519.png"
         }
     ],
     [
         {
             "id": "3929630",
             "teamId": "21",
+            "positionId": "9",
             "firstName": "Saquon",
             "lastName": "Barkley",
             "fullName": "Saquon Barkley",
@@ -7824,6 +8133,7 @@
         {
             "id": "4047646",
             "teamId": "21",
+            "positionId": "1",
             "firstName": "A.J.",
             "lastName": "Brown",
             "fullName": "A.J. Brown",
@@ -7843,6 +8153,7 @@
         {
             "id": "4241374",
             "teamId": "21",
+            "positionId": "7",
             "firstName": "Grant",
             "lastName": "Calcaterra",
             "fullName": "Grant Calcaterra",
@@ -7860,8 +8171,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4241374.png"
         },
         {
+            "id": "3926231",
+            "teamId": "21",
+            "positionId": "1",
+            "firstName": "Britain",
+            "lastName": "Covey",
+            "fullName": "Britain Covey",
+            "displayName": "Britain Covey",
+            "shortName": "B. Covey",
+            "weight": 173,
+            "displayWeight": "173 lbs",
+            "height": 68,
+            "displayHeight": "5' 8\"",
+            "age": 27,
+            "dateOfBirth": "1997-03-18T08:00Z",
+            "jersey": "18",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3926231.png"
+        },
+        {
             "id": "4361409",
             "teamId": "21",
+            "positionId": "1",
             "firstName": "Jahan",
             "lastName": "Dotson",
             "fullName": "Jahan Dotson",
@@ -7881,6 +8213,7 @@
         {
             "id": "4371733",
             "teamId": "21",
+            "positionId": "9",
             "firstName": "Kenneth",
             "lastName": "Gainwell",
             "fullName": "Kenneth Gainwell",
@@ -7900,6 +8233,7 @@
         {
             "id": "3121023",
             "teamId": "21",
+            "positionId": "7",
             "firstName": "Dallas",
             "lastName": "Goedert",
             "fullName": "Dallas Goedert",
@@ -7919,6 +8253,7 @@
         {
             "id": "4040715",
             "teamId": "21",
+            "positionId": "8",
             "firstName": "Jalen",
             "lastName": "Hurts",
             "fullName": "Jalen Hurts",
@@ -7936,27 +8271,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4040715.png"
         },
         {
-            "id": "4248557",
-            "teamId": "21",
-            "firstName": "E.J.",
-            "lastName": "Jenkins",
-            "fullName": "E.J. Jenkins",
-            "displayName": "E.J. Jenkins",
-            "shortName": "E.J. Jenkins",
-            "weight": 245,
-            "displayWeight": "245 lbs",
-            "height": 78,
-            "displayHeight": "6' 6\"",
-            "age": 26,
-            "dateOfBirth": "1998-11-03T08:00Z",
-            "jersey": "84",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4248557.png"
-        },
-        {
             "id": "4685201",
             "teamId": "21",
+            "positionId": "8",
             "firstName": "Tanner",
             "lastName": "McKee",
             "fullName": "Tanner McKee",
@@ -7976,6 +8293,7 @@
         {
             "id": "4240703",
             "teamId": "21",
+            "positionId": "8",
             "firstName": "Kenny",
             "lastName": "Pickett",
             "fullName": "Kenny Pickett",
@@ -7995,6 +8313,7 @@
         {
             "id": "4431545",
             "teamId": "21",
+            "positionId": "9",
             "firstName": "Will",
             "lastName": "Shipley",
             "fullName": "Will Shipley",
@@ -8014,6 +8333,7 @@
         {
             "id": "4428532",
             "teamId": "21",
+            "positionId": "1",
             "firstName": "Ainias",
             "lastName": "Smith",
             "fullName": "Ainias Smith",
@@ -8033,6 +8353,7 @@
         {
             "id": "4241478",
             "teamId": "21",
+            "positionId": "1",
             "firstName": "DeVonta",
             "lastName": "Smith",
             "fullName": "DeVonta Smith",
@@ -8042,7 +8363,7 @@
             "displayWeight": "170 lbs",
             "height": 72,
             "displayHeight": "6' 0\"",
-            "age": 25,
+            "age": 26,
             "dateOfBirth": "1998-11-14T08:00Z",
             "jersey": "6",
             "position": "Wide Receiver",
@@ -8050,27 +8371,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4241478.png"
         },
         {
-            "id": "4034862",
-            "teamId": "21",
-            "firstName": "Jack",
-            "lastName": "Stoll",
-            "fullName": "Jack Stoll",
-            "displayName": "Jack Stoll",
-            "shortName": "J. Stoll",
-            "weight": 247,
-            "displayWeight": "247 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 26,
-            "dateOfBirth": "1998-01-28T08:00Z",
-            "jersey": "87",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4034862.png"
-        },
-        {
             "id": "4686104",
             "teamId": "21",
+            "positionId": "1",
             "firstName": "Johnny",
             "lastName": "Wilson",
             "fullName": "Johnny Wilson",
@@ -8090,6 +8393,7 @@
         {
             "id": "3050478",
             "teamId": "21",
+            "positionId": "22",
             "firstName": "Jake",
             "lastName": "Elliott",
             "fullName": "Jake Elliott",
@@ -8111,6 +8415,7 @@
         {
             "id": "3115293",
             "teamId": "23",
+            "positionId": "8",
             "firstName": "Kyle",
             "lastName": "Allen",
             "fullName": "Kyle Allen",
@@ -8130,6 +8435,7 @@
         {
             "id": "4243389",
             "teamId": "23",
+            "positionId": "1",
             "firstName": "Calvin",
             "lastName": "Austin III",
             "fullName": "Calvin Austin III",
@@ -8149,6 +8455,7 @@
         {
             "id": "4362887",
             "teamId": "23",
+            "positionId": "8",
             "firstName": "Justin",
             "lastName": "Fields",
             "fullName": "Justin Fields",
@@ -8168,6 +8475,7 @@
         {
             "id": "4361411",
             "teamId": "23",
+            "positionId": "7",
             "firstName": "Pat",
             "lastName": "Freiermuth",
             "fullName": "Pat Freiermuth",
@@ -8187,6 +8495,7 @@
         {
             "id": "4241457",
             "teamId": "23",
+            "positionId": "9",
             "firstName": "Najee",
             "lastName": "Harris",
             "fullName": "Najee Harris",
@@ -8206,6 +8515,7 @@
         {
             "id": "4241961",
             "teamId": "23",
+            "positionId": "7",
             "firstName": "Connor",
             "lastName": "Heyward",
             "fullName": "Connor Heyward",
@@ -8225,6 +8535,7 @@
         {
             "id": "3930066",
             "teamId": "23",
+            "positionId": "1",
             "firstName": "Van",
             "lastName": "Jefferson",
             "fullName": "Van Jefferson",
@@ -8244,6 +8555,7 @@
         {
             "id": "3914397",
             "teamId": "23",
+            "positionId": "1",
             "firstName": "Scotty",
             "lastName": "Miller",
             "fullName": "Scotty Miller",
@@ -8263,6 +8575,7 @@
         {
             "id": "15807",
             "teamId": "23",
+            "positionId": "9",
             "firstName": "Cordarrelle",
             "lastName": "Patterson",
             "fullName": "Cordarrelle Patterson",
@@ -8282,6 +8595,7 @@
         {
             "id": "4426354",
             "teamId": "23",
+            "positionId": "1",
             "firstName": "George",
             "lastName": "Pickens",
             "fullName": "George Pickens",
@@ -8301,6 +8615,7 @@
         {
             "id": "2508256",
             "teamId": "23",
+            "positionId": "7",
             "firstName": "MyCole",
             "lastName": "Pruitt",
             "fullName": "MyCole Pruitt",
@@ -8318,8 +8633,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2508256.png"
         },
         {
+            "id": "4035656",
+            "teamId": "23",
+            "positionId": "1",
+            "firstName": "Ben",
+            "lastName": "Skowronek",
+            "fullName": "Ben Skowronek",
+            "displayName": "Ben Skowronek",
+            "shortName": "B. Skowronek",
+            "weight": 224,
+            "displayWeight": "224 lbs",
+            "height": 75,
+            "displayHeight": "6' 3\"",
+            "age": 27,
+            "dateOfBirth": "1997-06-27T07:00Z",
+            "jersey": "15",
+            "position": "Wide Receiver",
+            "positionAbbreviation": "WR",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4035656.png"
+        },
+        {
             "id": "4039274",
             "teamId": "23",
+            "positionId": "9",
             "firstName": "Jonathan",
             "lastName": "Ward",
             "fullName": "Jonathan Ward",
@@ -8339,6 +8675,7 @@
         {
             "id": "4569987",
             "teamId": "23",
+            "positionId": "9",
             "firstName": "Jaylen",
             "lastName": "Warren",
             "fullName": "Jaylen Warren",
@@ -8358,6 +8695,7 @@
         {
             "id": "4430802",
             "teamId": "23",
+            "positionId": "7",
             "firstName": "Darnell",
             "lastName": "Washington",
             "fullName": "Darnell Washington",
@@ -8377,44 +8715,27 @@
         {
             "id": "3045138",
             "teamId": "23",
+            "positionId": "1",
             "firstName": "Mike",
             "lastName": "Williams",
             "fullName": "Mike Williams",
             "displayName": "Mike Williams",
             "shortName": "M. Williams",
-            "weight": 218,
-            "displayWeight": "218 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
+            "weight": 220,
+            "displayWeight": "220 lbs",
+            "height": 75,
+            "displayHeight": "6' 3\"",
             "age": 30,
             "dateOfBirth": "1994-10-04T07:00Z",
-            "jersey": null,
+            "jersey": "18",
             "position": "Wide Receiver",
             "positionAbbreviation": "WR",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3045138.png"
         },
         {
-            "id": "4250969",
-            "teamId": "23",
-            "firstName": "Rodney",
-            "lastName": "Williams",
-            "fullName": "Rodney Williams",
-            "displayName": "Rodney Williams",
-            "shortName": "R. Williams",
-            "weight": 235,
-            "displayWeight": "235 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 26,
-            "dateOfBirth": "1998-04-08T07:00Z",
-            "jersey": "87",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4250969.png"
-        },
-        {
             "id": "14881",
             "teamId": "23",
+            "positionId": "8",
             "firstName": "Russell",
             "lastName": "Wilson",
             "fullName": "Russell Wilson",
@@ -8434,6 +8755,7 @@
         {
             "id": "17372",
             "teamId": "23",
+            "positionId": "22",
             "firstName": "Chris",
             "lastName": "Boswell",
             "fullName": "Chris Boswell",
@@ -8455,6 +8777,7 @@
         {
             "id": "2574511",
             "teamId": "25",
+            "positionId": "8",
             "firstName": "Brandon",
             "lastName": "Allen",
             "fullName": "Brandon Allen",
@@ -8474,6 +8797,7 @@
         {
             "id": "4372063",
             "teamId": "25",
+            "positionId": "1",
             "firstName": "Ronnie",
             "lastName": "Bell",
             "fullName": "Ronnie Bell",
@@ -8493,6 +8817,7 @@
         {
             "id": "2578533",
             "teamId": "25",
+            "positionId": "1",
             "firstName": "Chris",
             "lastName": "Conley",
             "fullName": "Chris Conley",
@@ -8512,6 +8837,7 @@
         {
             "id": "4575665",
             "teamId": "25",
+            "positionId": "1",
             "firstName": "Jacob",
             "lastName": "Cowing",
             "fullName": "Jacob Cowing",
@@ -8531,6 +8857,7 @@
         {
             "id": "3044720",
             "teamId": "25",
+            "positionId": "8",
             "firstName": "Joshua",
             "lastName": "Dobbs",
             "fullName": "Joshua Dobbs",
@@ -8550,6 +8877,7 @@
         {
             "id": "4372561",
             "teamId": "25",
+            "positionId": "9",
             "firstName": "Isaac",
             "lastName": "Guerendo",
             "fullName": "Isaac Guerendo",
@@ -8569,6 +8897,7 @@
         {
             "id": "3886598",
             "teamId": "25",
+            "positionId": "1",
             "firstName": "Jauan",
             "lastName": "Jennings",
             "fullName": "Jauan Jennings",
@@ -8588,6 +8917,7 @@
         {
             "id": "16002",
             "teamId": "25",
+            "positionId": "10",
             "firstName": "Kyle",
             "lastName": "Juszczyk",
             "fullName": "Kyle Juszczyk",
@@ -8607,6 +8937,7 @@
         {
             "id": "3040151",
             "teamId": "25",
+            "positionId": "7",
             "firstName": "George",
             "lastName": "Kittle",
             "fullName": "George Kittle",
@@ -8626,6 +8957,7 @@
         {
             "id": "4360569",
             "teamId": "25",
+            "positionId": "9",
             "firstName": "Jordan",
             "lastName": "Mason",
             "fullName": "Jordan Mason",
@@ -8643,8 +8975,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4360569.png"
         },
         {
+            "id": "3117251",
+            "teamId": "25",
+            "positionId": "9",
+            "firstName": "Christian",
+            "lastName": "McCaffrey",
+            "fullName": "Christian McCaffrey",
+            "displayName": "Christian McCaffrey",
+            "shortName": "C. McCaffrey",
+            "weight": 210,
+            "displayWeight": "210 lbs",
+            "height": 71,
+            "displayHeight": "5' 11\"",
+            "age": 28,
+            "dateOfBirth": "1996-06-07T07:00Z",
+            "jersey": "23",
+            "position": "Running Back",
+            "positionAbbreviation": "RB",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3117251.png"
+        },
+        {
             "id": "4428209",
             "teamId": "25",
+            "positionId": "1",
             "firstName": "Ricky",
             "lastName": "Pearsall",
             "fullName": "Ricky Pearsall",
@@ -8664,6 +9017,7 @@
         {
             "id": "4361741",
             "teamId": "25",
+            "positionId": "8",
             "firstName": "Brock",
             "lastName": "Purdy",
             "fullName": "Brock Purdy",
@@ -8683,6 +9037,7 @@
         {
             "id": "3126486",
             "teamId": "25",
+            "positionId": "1",
             "firstName": "Deebo",
             "lastName": "Samuel Sr.",
             "fullName": "Deebo Samuel Sr.",
@@ -8702,6 +9057,7 @@
         {
             "id": "2975863",
             "teamId": "25",
+            "positionId": "7",
             "firstName": "Eric",
             "lastName": "Saubert",
             "fullName": "Eric Saubert",
@@ -8719,27 +9075,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2975863.png"
         },
         {
-            "id": "4039358",
-            "teamId": "25",
-            "firstName": "Patrick",
-            "lastName": "Taylor Jr.",
-            "fullName": "Patrick Taylor Jr.",
-            "displayName": "Patrick Taylor Jr.",
-            "shortName": "P. Taylor Jr.",
-            "weight": 217,
-            "displayWeight": "217 lbs",
-            "height": 74,
-            "displayHeight": "6' 2\"",
-            "age": 26,
-            "dateOfBirth": "1998-04-29T07:00Z",
-            "jersey": "32",
-            "position": "Running Back",
-            "positionAbbreviation": "RB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4039358.png"
-        },
-        {
             "id": "4259147",
             "teamId": "25",
+            "positionId": "7",
             "firstName": "Jake",
             "lastName": "Tonges",
             "fullName": "Jake Tonges",
@@ -8759,6 +9097,7 @@
         {
             "id": "4360290",
             "teamId": "25",
+            "positionId": "7",
             "firstName": "Brayden",
             "lastName": "Willis",
             "fullName": "Brayden Willis",
@@ -8768,7 +9107,7 @@
             "displayWeight": "240 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-11T08:00Z",
             "jersey": "9",
             "position": "Tight End",
@@ -8778,6 +9117,7 @@
         {
             "id": "4372066",
             "teamId": "25",
+            "positionId": "22",
             "firstName": "Jake",
             "lastName": "Moody",
             "fullName": "Jake Moody",
@@ -8787,7 +9127,7 @@
             "displayWeight": "210 lbs",
             "height": 73,
             "displayHeight": "6' 1\"",
-            "age": 24,
+            "age": 25,
             "dateOfBirth": "1999-11-23T08:00Z",
             "jersey": "4",
             "position": "Place kicker",
@@ -8799,6 +9139,7 @@
         {
             "id": "4576297",
             "teamId": "26",
+            "positionId": "7",
             "firstName": "AJ",
             "lastName": "Barner",
             "fullName": "AJ Barner",
@@ -8818,6 +9159,7 @@
         {
             "id": "4360405",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "Jake",
             "lastName": "Bobo",
             "fullName": "Jake Bobo",
@@ -8837,6 +9179,7 @@
         {
             "id": "2971281",
             "teamId": "26",
+            "positionId": "7",
             "firstName": "Pharaoh",
             "lastName": "Brown",
             "fullName": "Pharaoh Brown",
@@ -8856,6 +9199,7 @@
         {
             "id": "4426385",
             "teamId": "26",
+            "positionId": "9",
             "firstName": "Zach",
             "lastName": "Charbonnet",
             "fullName": "Zach Charbonnet",
@@ -8875,6 +9219,7 @@
         {
             "id": "4036131",
             "teamId": "26",
+            "positionId": "7",
             "firstName": "Noah",
             "lastName": "Fant",
             "fullName": "Noah Fant",
@@ -8884,7 +9229,7 @@
             "displayWeight": "249 lbs",
             "height": 76,
             "displayHeight": "6' 4\"",
-            "age": 26,
+            "age": 27,
             "dateOfBirth": "1997-11-20T08:00Z",
             "jersey": "87",
             "position": "Tight End",
@@ -8892,8 +9237,29 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4036131.png"
         },
         {
+            "id": "4047839",
+            "teamId": "26",
+            "positionId": "7",
+            "firstName": "N'Keal",
+            "lastName": "Harry",
+            "fullName": "N'Keal Harry",
+            "displayName": "N'Keal Harry",
+            "shortName": "N. Harry",
+            "weight": 228,
+            "displayWeight": "228 lbs",
+            "height": 75,
+            "displayHeight": "6' 3\"",
+            "age": 26,
+            "dateOfBirth": "1997-12-17T08:00Z",
+            "jersey": "84",
+            "position": "Tight End",
+            "positionAbbreviation": "TE",
+            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4047839.png"
+        },
+        {
             "id": "4426875",
             "teamId": "26",
+            "positionId": "8",
             "firstName": "Sam",
             "lastName": "Howell",
             "fullName": "Sam Howell",
@@ -8913,6 +9279,7 @@
         {
             "id": "2577327",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "Tyler",
             "lastName": "Lockett",
             "fullName": "Tyler Lockett",
@@ -8932,6 +9299,7 @@
         {
             "id": "4427391",
             "teamId": "26",
+            "positionId": "9",
             "firstName": "Kenny",
             "lastName": "McIntosh",
             "fullName": "Kenny McIntosh",
@@ -8951,6 +9319,7 @@
         {
             "id": "4047650",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "DK",
             "lastName": "Metcalf",
             "fullName": "DK Metcalf",
@@ -8970,6 +9339,7 @@
         {
             "id": "4243176",
             "teamId": "26",
+            "positionId": "7",
             "firstName": "Brady",
             "lastName": "Russell",
             "fullName": "Brady Russell",
@@ -8989,6 +9359,7 @@
         {
             "id": "4243160",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "Laviska",
             "lastName": "Shenault Jr.",
             "fullName": "Laviska Shenault Jr.",
@@ -9008,6 +9379,7 @@
         {
             "id": "15864",
             "teamId": "26",
+            "positionId": "8",
             "firstName": "Geno",
             "lastName": "Smith",
             "fullName": "Geno Smith",
@@ -9027,6 +9399,7 @@
         {
             "id": "4430878",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "Jaxon",
             "lastName": "Smith-Njigba",
             "fullName": "Jaxon Smith-Njigba",
@@ -9046,6 +9419,7 @@
         {
             "id": "4567048",
             "teamId": "26",
+            "positionId": "9",
             "firstName": "Kenneth",
             "lastName": "Walker III",
             "fullName": "Kenneth Walker III",
@@ -9065,6 +9439,7 @@
         {
             "id": "4241983",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "Cody",
             "lastName": "White",
             "fullName": "Cody White",
@@ -9084,6 +9459,7 @@
         {
             "id": "4401805",
             "teamId": "26",
+            "positionId": "1",
             "firstName": "Dareke",
             "lastName": "Young",
             "fullName": "Dareke Young",
@@ -9103,6 +9479,7 @@
         {
             "id": "2473037",
             "teamId": "26",
+            "positionId": "22",
             "firstName": "Jason",
             "lastName": "Myers",
             "fullName": "Jason Myers",
@@ -9122,27 +9499,9 @@
     ],
     [
         {
-            "id": "4035170",
-            "teamId": "27",
-            "firstName": "Marquez",
-            "lastName": "Callaway",
-            "fullName": "Marquez Callaway",
-            "displayName": "Marquez Callaway",
-            "shortName": "M. Callaway",
-            "weight": 204,
-            "displayWeight": "204 lbs",
-            "height": 74,
-            "displayHeight": "6' 2\"",
-            "age": 26,
-            "dateOfBirth": "1998-03-27T08:00Z",
-            "jersey": "85",
-            "position": "Wide Receiver",
-            "positionAbbreviation": "WR",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4035170.png"
-        },
-        {
             "id": "4361112",
             "teamId": "27",
+            "positionId": "7",
             "firstName": "Devin",
             "lastName": "Culp",
             "fullName": "Devin Culp",
@@ -9162,6 +9521,7 @@
         {
             "id": "4372505",
             "teamId": "27",
+            "positionId": "7",
             "firstName": "Payne",
             "lastName": "Durham",
             "fullName": "Payne Durham",
@@ -9181,6 +9541,7 @@
         {
             "id": "16737",
             "teamId": "27",
+            "positionId": "1",
             "firstName": "Mike",
             "lastName": "Evans",
             "fullName": "Mike Evans",
@@ -9200,6 +9561,7 @@
         {
             "id": "4596448",
             "teamId": "27",
+            "positionId": "9",
             "firstName": "Bucky",
             "lastName": "Irving",
             "fullName": "Bucky Irving",
@@ -9219,6 +9581,7 @@
         {
             "id": "4429006",
             "teamId": "27",
+            "positionId": "1",
             "firstName": "Rakim",
             "lastName": "Jarrett",
             "fullName": "Rakim Jarrett",
@@ -9238,6 +9601,7 @@
         {
             "id": "4034779",
             "teamId": "27",
+            "positionId": "7",
             "firstName": "Ko",
             "lastName": "Kieft",
             "fullName": "Ko Kieft",
@@ -9257,6 +9621,7 @@
         {
             "id": "3052587",
             "teamId": "27",
+            "positionId": "8",
             "firstName": "Baker",
             "lastName": "Mayfield",
             "fullName": "Baker Mayfield",
@@ -9276,6 +9641,7 @@
         {
             "id": "4430834",
             "teamId": "27",
+            "positionId": "1",
             "firstName": "Jalen",
             "lastName": "McMillan",
             "fullName": "Jalen McMillan",
@@ -9295,6 +9661,7 @@
         {
             "id": "4369466",
             "teamId": "27",
+            "positionId": "1",
             "firstName": "Ryan",
             "lastName": "Miller",
             "fullName": "Ryan Miller",
@@ -9314,6 +9681,7 @@
         {
             "id": "4243331",
             "teamId": "27",
+            "positionId": "7",
             "firstName": "Cade",
             "lastName": "Otton",
             "fullName": "Cade Otton",
@@ -9333,6 +9701,7 @@
         {
             "id": "4426407",
             "teamId": "27",
+            "positionId": "1",
             "firstName": "Trey",
             "lastName": "Palmer",
             "fullName": "Trey Palmer",
@@ -9352,6 +9721,7 @@
         {
             "id": "2976592",
             "teamId": "27",
+            "positionId": "1",
             "firstName": "Sterling",
             "lastName": "Shepard",
             "fullName": "Sterling Shepard",
@@ -9371,6 +9741,7 @@
         {
             "id": "4034946",
             "teamId": "27",
+            "positionId": "8",
             "firstName": "Kyle",
             "lastName": "Trask",
             "fullName": "Kyle Trask",
@@ -9390,6 +9761,7 @@
         {
             "id": "4430871",
             "teamId": "27",
+            "positionId": "9",
             "firstName": "Sean",
             "lastName": "Tucker",
             "fullName": "Sean Tucker",
@@ -9409,6 +9781,7 @@
         {
             "id": "4697815",
             "teamId": "27",
+            "positionId": "9",
             "firstName": "Rachaad",
             "lastName": "White",
             "fullName": "Rachaad White",
@@ -9428,6 +9801,7 @@
         {
             "id": "3150744",
             "teamId": "27",
+            "positionId": "22",
             "firstName": "Chase",
             "lastName": "McLaughlin",
             "fullName": "Chase McLaughlin",
@@ -9449,6 +9823,7 @@
         {
             "id": "3045144",
             "teamId": "10",
+            "positionId": "1",
             "firstName": "Tyler",
             "lastName": "Boyd",
             "fullName": "Tyler Boyd",
@@ -9458,7 +9833,7 @@
             "displayWeight": "203 lbs",
             "height": 74,
             "displayHeight": "6' 2\"",
-            "age": 29,
+            "age": 30,
             "dateOfBirth": "1994-11-15T08:00Z",
             "jersey": "83",
             "position": "Wide Receiver",
@@ -9468,6 +9843,7 @@
         {
             "id": "4367567",
             "teamId": "10",
+            "positionId": "9",
             "firstName": "Julius",
             "lastName": "Chestnut",
             "fullName": "Julius Chestnut",
@@ -9487,6 +9863,7 @@
         {
             "id": "4427575",
             "teamId": "10",
+            "positionId": "1",
             "firstName": "Jha'Quan",
             "lastName": "Jackson",
             "fullName": "Jha'Quan Jackson",
@@ -9506,6 +9883,7 @@
         {
             "id": "3910544",
             "teamId": "10",
+            "positionId": "9",
             "firstName": "Joshua",
             "lastName": "Kelley",
             "fullName": "Joshua Kelley",
@@ -9515,7 +9893,7 @@
             "displayWeight": "212 lbs",
             "height": 71,
             "displayHeight": "5' 11\"",
-            "age": 26,
+            "age": 27,
             "dateOfBirth": "1997-11-20T08:00Z",
             "jersey": "25",
             "position": "Running Back",
@@ -9525,6 +9903,7 @@
         {
             "id": "4361418",
             "teamId": "10",
+            "positionId": "8",
             "firstName": "Will",
             "lastName": "Levis",
             "fullName": "Will Levis",
@@ -9544,6 +9923,7 @@
         {
             "id": "4360978",
             "teamId": "10",
+            "positionId": "7",
             "firstName": "David",
             "lastName": "Martin-Robinson",
             "fullName": "David Martin-Robinson",
@@ -9563,6 +9943,7 @@
         {
             "id": "4360635",
             "teamId": "10",
+            "positionId": "7",
             "firstName": "Chig",
             "lastName": "Okonkwo",
             "fullName": "Chig Okonkwo",
@@ -9582,6 +9963,7 @@
         {
             "id": "4362617",
             "teamId": "10",
+            "positionId": "1",
             "firstName": "Bryce",
             "lastName": "Oliver",
             "fullName": "Bryce Oliver",
@@ -9601,6 +9983,7 @@
         {
             "id": "3916148",
             "teamId": "10",
+            "positionId": "9",
             "firstName": "Tony",
             "lastName": "Pollard",
             "fullName": "Tony Pollard",
@@ -9620,6 +10003,7 @@
         {
             "id": "3925357",
             "teamId": "10",
+            "positionId": "1",
             "firstName": "Calvin",
             "lastName": "Ridley",
             "fullName": "Calvin Ridley",
@@ -9639,6 +10023,7 @@
         {
             "id": "3116407",
             "teamId": "10",
+            "positionId": "8",
             "firstName": "Mason",
             "lastName": "Rudolph",
             "fullName": "Mason Rudolph",
@@ -9656,27 +10041,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3116407.png"
         },
         {
-            "id": "2511109",
-            "teamId": "10",
-            "firstName": "Trevor",
-            "lastName": "Siemian",
-            "fullName": "Trevor Siemian",
-            "displayName": "Trevor Siemian",
-            "shortName": "T. Siemian",
-            "weight": 220,
-            "displayWeight": "220 lbs",
-            "height": 75,
-            "displayHeight": "6' 3\"",
-            "age": 32,
-            "dateOfBirth": "1991-12-26T08:00Z",
-            "jersey": "3",
-            "position": "Quarterback",
-            "positionAbbreviation": "QB",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/2511109.png"
-        },
-        {
             "id": "4428557",
             "teamId": "10",
+            "positionId": "9",
             "firstName": "Tyjae",
             "lastName": "Spears",
             "fullName": "Tyjae Spears",
@@ -9696,6 +10063,7 @@
         {
             "id": "2576399",
             "teamId": "10",
+            "positionId": "7",
             "firstName": "Nick",
             "lastName": "Vannett",
             "fullName": "Nick Vannett",
@@ -9715,6 +10083,7 @@
         {
             "id": "3929785",
             "teamId": "10",
+            "positionId": "1",
             "firstName": "Nick",
             "lastName": "Westbrook-Ikhine",
             "fullName": "Nick Westbrook-Ikhine",
@@ -9734,6 +10103,7 @@
         {
             "id": "4360086",
             "teamId": "10",
+            "positionId": "7",
             "firstName": "Josh",
             "lastName": "Whyle",
             "fullName": "Josh Whyle",
@@ -9753,6 +10123,7 @@
         {
             "id": "10621",
             "teamId": "10",
+            "positionId": "22",
             "firstName": "Nick",
             "lastName": "Folk",
             "fullName": "Nick Folk",
@@ -9774,6 +10145,7 @@
         {
             "id": "4048228",
             "teamId": "28",
+            "positionId": "7",
             "firstName": "John",
             "lastName": "Bates",
             "fullName": "John Bates",
@@ -9783,7 +10155,7 @@
             "displayWeight": "259 lbs",
             "height": 78,
             "displayHeight": "6' 6\"",
-            "age": 26,
+            "age": 27,
             "dateOfBirth": "1997-11-06T08:00Z",
             "jersey": "87",
             "position": "Tight End",
@@ -9793,6 +10165,7 @@
         {
             "id": "4361577",
             "teamId": "28",
+            "positionId": "1",
             "firstName": "Dyami",
             "lastName": "Brown",
             "fullName": "Dyami Brown",
@@ -9812,6 +10185,7 @@
         {
             "id": "3121409",
             "teamId": "28",
+            "positionId": "1",
             "firstName": "Noah",
             "lastName": "Brown",
             "fullName": "Noah Brown",
@@ -9831,6 +10205,7 @@
         {
             "id": "4426348",
             "teamId": "28",
+            "positionId": "8",
             "firstName": "Jayden",
             "lastName": "Daniels",
             "fullName": "Jayden Daniels",
@@ -9850,6 +10225,7 @@
         {
             "id": "2574630",
             "teamId": "28",
+            "positionId": "8",
             "firstName": "Jeff",
             "lastName": "Driskel",
             "fullName": "Jeff Driskel",
@@ -9869,6 +10245,7 @@
         {
             "id": "3068267",
             "teamId": "28",
+            "positionId": "9",
             "firstName": "Austin",
             "lastName": "Ekeler",
             "fullName": "Austin Ekeler",
@@ -9888,6 +10265,7 @@
         {
             "id": "15835",
             "teamId": "28",
+            "positionId": "7",
             "firstName": "Zach",
             "lastName": "Ertz",
             "fullName": "Zach Ertz",
@@ -9897,7 +10275,7 @@
             "displayWeight": "250 lbs",
             "height": 77,
             "displayHeight": "6' 5\"",
-            "age": 33,
+            "age": 34,
             "dateOfBirth": "1990-11-10T08:00Z",
             "jersey": "86",
             "position": "Tight End",
@@ -9907,6 +10285,7 @@
         {
             "id": "2576980",
             "teamId": "28",
+            "positionId": "8",
             "firstName": "Marcus",
             "lastName": "Mariota",
             "fullName": "Marcus Mariota",
@@ -9926,6 +10305,7 @@
         {
             "id": "4426948",
             "teamId": "28",
+            "positionId": "1",
             "firstName": "Luke",
             "lastName": "McCaffrey",
             "fullName": "Luke McCaffrey",
@@ -9945,6 +10325,7 @@
         {
             "id": "3121422",
             "teamId": "28",
+            "positionId": "1",
             "firstName": "Terry",
             "lastName": "McLaurin",
             "fullName": "Terry McLaurin",
@@ -9964,6 +10345,7 @@
         {
             "id": "3127586",
             "teamId": "28",
+            "positionId": "9",
             "firstName": "Jeremy",
             "lastName": "McNichols",
             "fullName": "Jeremy McNichols",
@@ -9983,6 +10365,7 @@
         {
             "id": "4241474",
             "teamId": "28",
+            "positionId": "9",
             "firstName": "Brian",
             "lastName": "Robinson Jr.",
             "fullName": "Brian Robinson Jr.",
@@ -10002,6 +10385,7 @@
         {
             "id": "4362619",
             "teamId": "28",
+            "positionId": "9",
             "firstName": "Chris",
             "lastName": "Rodriguez Jr.",
             "fullName": "Chris Rodriguez Jr.",
@@ -10013,7 +10397,7 @@
             "displayHeight": "5' 11\"",
             "age": 25,
             "dateOfBirth": "1999-09-26T07:00Z",
-            "jersey": "23",
+            "jersey": "36",
             "position": "Running Back",
             "positionAbbreviation": "RB",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4362619.png"
@@ -10021,6 +10405,7 @@
         {
             "id": "4690923",
             "teamId": "28",
+            "positionId": "7",
             "firstName": "Ben",
             "lastName": "Sinnott",
             "fullName": "Ben Sinnott",
@@ -10038,27 +10423,9 @@
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4690923.png"
         },
         {
-            "id": "4361088",
-            "teamId": "28",
-            "firstName": "Colson",
-            "lastName": "Yankoff",
-            "fullName": "Colson Yankoff",
-            "displayName": "Colson Yankoff",
-            "shortName": "C. Yankoff",
-            "weight": 225,
-            "displayWeight": "225 lbs",
-            "height": 76,
-            "displayHeight": "6' 4\"",
-            "age": 24,
-            "dateOfBirth": "2000-03-01T08:00Z",
-            "jersey": "41",
-            "position": "Tight End",
-            "positionAbbreviation": "TE",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/4361088.png"
-        },
-        {
             "id": "3917914",
             "teamId": "28",
+            "positionId": "1",
             "firstName": "Olamide",
             "lastName": "Zaccheaus",
             "fullName": "Olamide Zaccheaus",
@@ -10074,25 +10441,6 @@
             "position": "Wide Receiver",
             "positionAbbreviation": "WR",
             "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3917914.png"
-        },
-        {
-            "id": "3821683",
-            "teamId": "28",
-            "firstName": "Austin",
-            "lastName": "Seibert",
-            "fullName": "Austin Seibert",
-            "displayName": "Austin Seibert",
-            "shortName": "A. Seibert",
-            "weight": 211,
-            "displayWeight": "211 lbs",
-            "height": 69,
-            "displayHeight": "5' 9\"",
-            "age": 27,
-            "dateOfBirth": "1996-11-15T08:00Z",
-            "jersey": "3",
-            "position": "Place kicker",
-            "positionAbbreviation": "PK",
-            "href": "https://a.espncdn.com/i/headshots/nfl/players/full/3821683.png"
         }
     ]
 ]

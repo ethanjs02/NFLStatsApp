@@ -3,11 +3,13 @@ package com.example.nflstatsapp.data.players
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 
 @Entity(tableName = "players")
 data class Player (
     @PrimaryKey(autoGenerate = false) val id: Int?,
     @ColumnInfo(name = "teamId") val teamId: Int,
+    @ColumnInfo(name = "positionId") val positionId: Int,
     @ColumnInfo(name = "firstName") val firstName: String,
     @ColumnInfo(name = "lastName") val lastName: String,
     @ColumnInfo(name = "fullName") val fullName: String,
@@ -22,6 +24,5 @@ data class Player (
     @ColumnInfo(name = "jersey") val jersey: String?,
     @ColumnInfo(name = "position") val position: String,
     @ColumnInfo(name = "positionAbbreviation") val positionAbbreviation: String,
-    @ColumnInfo(name = "headshotUrl") val headshotUrl: String, // URL to the player's headshot image
-    @ColumnInfo(name = "headshotAltText") val headshotAltText: String
-)
+    @ColumnInfo(name = "href") val href: String?, // URL to the player's headshot image
+): Serializable

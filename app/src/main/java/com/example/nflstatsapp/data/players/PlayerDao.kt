@@ -1,5 +1,6 @@
 package com.example.nflstatsapp.data.players
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
@@ -18,4 +19,7 @@ interface PlayerDao {
 
     @Query("DELETE from players")
     fun deleteAll()
+
+    @Query("SELECT * FROM players WHERE fullName LIKE :query || '%' ORDER BY fullName ASC")
+    fun searchPlayers(query: String): LiveData<List<Player>>
 }
