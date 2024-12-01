@@ -1,5 +1,6 @@
 package com.example.nflstatsapp.ui.viewModels
 
+import PlayerStatsData
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Log
@@ -11,12 +12,14 @@ import androidx.lifecycle.viewModelScope
 import com.example.nflstatsapp.data.api.ApiService
 import com.example.nflstatsapp.data.api.RetrofitClient
 import com.example.nflstatsapp.data.api.PlayerStats
-import com.example.nflstatsapp.data.api.Stat
+import com.example.nflstatsapp.data.stats.Comparison
+import com.example.nflstatsapp.data.stats.Stat
 import com.example.nflstatsapp.data.teams.TeamRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import retrofit2.Response
+import java.io.ByteArrayOutputStream
 import java.math.BigDecimal
 import java.math.RoundingMode
 
@@ -33,6 +36,8 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
     val playerStats: LiveData<PlayerStats?> get() = _playerStats
 
     private var gamesPlayed = 0
+
+    private var teamData = ""
 
     private val _totalFantasyPoints = MutableLiveData<BigDecimal>()
     val totalFantasyPoints: LiveData<BigDecimal> get() = _totalFantasyPoints
@@ -54,6 +59,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
 
     fun fetchTeamData(teamId: Int) = liveData(Dispatchers.IO) {
         val team = teamRepository.getTeamById(teamId) // Suspend function call
+        teamData = team?.name.toString()
         emit(team)
     }
 
@@ -108,7 +114,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
 
 
     // Function to fetch player stats from API
-    fun fetchPlayerStats(playerId: String, teamId: String, posId: String) {
+    fun fetchPlayerStats(playerId: String, teamId: String, posId: String, tabValue: String) {
         // Show loading spinner
         _isLoading.postValue(true)
 
@@ -130,7 +136,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
 
                     //Calculate fantasy points
                     if (playerStatsResponse != null) {
-                        fantasyPointsCalculator(playerStatsResponse)
+                        fantasyPointsCalculator(playerStatsResponse, tabValue)
                     }
 
                     withContext(Dispatchers.Main) {
@@ -156,7 +162,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         }
     }
 
-    private fun fantasyPointsCalculator(playerStats: PlayerStats) {
+    private fun fantasyPointsCalculator(playerStats: PlayerStats, tabValue: String) {
         // Safely access nullable properties and perform calculations
         playerStats.totalPassingYards?.toBigDecimal()?.let {
             val points = it.divide(BigDecimal(25), 2, RoundingMode.HALF_UP) // 1 point for every 25 passing yards
@@ -244,8 +250,19 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         Log.d("FantasyPoints", "Standard: $standard, Half PPR: $halfPpr, PPR: $ppr")
 
         // Calculate total fantasy points per game
-        _totalFantasyPoints.postValue(standard)
-        _fantasyPointsPerGame.postValue(standard.divide(BigDecimal(playerStats.gamesPlayed?.toInt() ?: 1), 2, RoundingMode.HALF_UP))
+        if (tabValue == "Standard") {
+            _totalFantasyPoints.postValue(standard)
+            _fantasyPointsPerGame.postValue(standard.divide(BigDecimal(playerStats.gamesPlayed?.toInt() ?: 1), 2, RoundingMode.HALF_UP))
+        } else if (tabValue == "Half-PPR") {
+            // Logic for "Half-PPR"
+            _totalFantasyPoints.postValue(halfPpr)
+            _fantasyPointsPerGame.postValue(halfPpr.divide(BigDecimal(playerStats.gamesPlayed?.toInt() ?: 1), 2, RoundingMode.HALF_UP))
+        } else {
+            // Logic for "PPR"
+            _totalFantasyPoints.postValue(ppr)
+            _fantasyPointsPerGame.postValue(ppr.divide(BigDecimal(playerStats.gamesPlayed?.toInt() ?: 1), 2, RoundingMode.HALF_UP))
+        }
+
     }
 
     private fun updateFantasyPoints(totalPoints: BigDecimal, gamesPlayed: Int) {
@@ -265,50 +282,166 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         }
     }
 
+    fun aggregateData(name: String?, pos: String?, jersey: String?): PlayerStatsData {
+        // Convert Bitmap to ByteArray
+        val byteArrayOutputStream = ByteArrayOutputStream()
+        _headshotData.value?.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream)
+        val headshotByteArray = byteArrayOutputStream.toByteArray()
 
-    fun mapPlayerStatsToList(playerStats: PlayerStats): List<Stat> {
+        return PlayerStatsData(
+            fullName = name,
+            position = pos,
+            teamName = teamData,
+            jerseyNumber = jersey,
+            fantasyPointsPerGame = _fantasyPointsPerGame.value,
+            headshotData = headshotByteArray,
+            stats = _playerStats.value
+        )
+    }
+
+    fun mapPlayerStatsToList(playerStats: PlayerStats, pos: String): List<Stat> {
         val statList = mutableListOf<Stat>()
 
-        // Map each stat to a name and value
+        // Games Played is always the top stat
         playerStats.gamesPlayed?.let { statList.add(Stat("Games Played", it)) }
-        playerStats.totalPassingYards?.let { statList.add(Stat("Total Passing Yards", it)) }
-        playerStats.avgPassingYards?.let { statList.add(Stat("Avg Passing Yards", it)) }
-        playerStats.totalPassingTDs?.let { statList.add(Stat("Total Passing TDs", it)) }
-        playerStats.totalPassAttempts?.let { statList.add(Stat("Total Pass Attempts", it)) }
-        playerStats.totalInterceptions?.let { statList.add(Stat("Total Interceptions", it)) }
-        playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
-        playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
-        playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
-        playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
-        playerStats.avgRushAttempts?.let { statList.add(Stat("Avg Rush Attempts", it)) }
-        playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
-        playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
-        playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
-        playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
-        playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
-        playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
-        playerStats.totalFumbles?.let { statList.add(Stat("Total Fumbles", it)) }
+
+        when (pos) {
+            "Quarterback" -> {
+                playerStats.totalPassingYards?.let { statList.add(Stat("Total Passing Yards", it)) }
+                playerStats.avgPassingYards?.let { statList.add(Stat("Avg Passing Yards", it)) }
+                playerStats.totalPassingTDs?.let { statList.add(Stat("Total Passing TDs", it)) }
+                playerStats.totalPassAttempts?.let { statList.add(Stat("Total Pass Attempts", it)) }
+                playerStats.totalInterceptions?.let { statList.add(Stat("Total Interceptions", it)) }
+                playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
+                playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+                playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
+                playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
+            }
+            "Running Back", "Fullback" -> {
+                playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
+                playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+                playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
+                playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
+                playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
+                playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
+                playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
+                playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
+                playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
+            }
+            "Wide Receiver", "Tight End" -> {
+                playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
+                playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
+                playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
+                playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
+                playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
+
+                if ((playerStats.totalRushingYards?.toInt())!! > 0) {
+                    playerStats.totalRushingYards.let { statList.add(Stat("Total Rushing Yards", it)) }
+                    playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+                    playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                }
+            }
+
+            "Place kicker" -> {
+                playerStats.extraPointAttempts?.let { statList.add(Stat("Extra Point Attempts", it)) }
+                playerStats.extraPointPct?.let { statList.add(Stat("Extra Point %", it)) }
+                playerStats.extraPointsMade?.let { statList.add(Stat("Extra Points Made", it)) }
+                playerStats.fieldGoalAttempts?.let { statList.add(Stat("Field Goal Attempts", it)) }
+                playerStats.fieldGoalPct?.let { statList.add(Stat("Field Goal %", it)) }
+                playerStats.fieldGoalsMade?.let { statList.add(Stat("Field Goals Made", it)) }
+                playerStats.fieldGoalAttempts1_19?.let { statList.add(Stat("Field Goal Attempts 1-19", it)) }
+                playerStats.fieldGoalsMade1_19?.let { statList.add(Stat("Field Goals Made 1-19", it)) }
+                playerStats.fieldGoalAttempts20_29?.let { statList.add(Stat("Field Goal Attempts 20-29", it)) }
+                playerStats.fieldGoalsMade20_29?.let { statList.add(Stat("Field Goals Made 20-29", it)) }
+                playerStats.fieldGoalAttempts30_39?.let { statList.add(Stat("Field Goal Attempts 30-39", it)) }
+                playerStats.fieldGoalsMade30_39?.let { statList.add(Stat("Field Goals Made 30-39", it)) }
+                playerStats.fieldGoalAttempts40_49?.let { statList.add(Stat("Field Goal Attempts 40-49", it)) }
+                playerStats.fieldGoalsMade40_49?.let { statList.add(Stat("Field Goals Made 40-49", it)) }
+                playerStats.fieldGoalAttempts50_59?.let { statList.add(Stat("Field Goal Attempts 50-59", it)) }
+                playerStats.fieldGoalsMade50_59?.let { statList.add(Stat("Field Goals Made 50-59", it)) }
+                playerStats.fieldGoalAttempts60_99?.let { statList.add(Stat("Field Goal Attempts 60-99", it)) }
+                playerStats.fieldGoalsMade60_99?.let { statList.add(Stat("Field Goals Made 60-99", it)) }
+                playerStats.longFieldGoalMade?.let { statList.add(Stat("Long Field Goal Made", it)) }
+
+            }
+        }
+
+        // Include fumbles for all positions
         playerStats.fumblesLost?.let { statList.add(Stat("Fumbles Lost", it)) }
-        playerStats.extraPointAttempts?.let { statList.add(Stat("Extra Point Attempts", it)) }
-        playerStats.extraPointPct?.let { statList.add(Stat("Extra Point %", it)) }
-        playerStats.extraPointsMade?.let { statList.add(Stat("Extra Points Made", it)) }
-        playerStats.fieldGoalAttempts?.let { statList.add(Stat("Field Goal Attempts", it)) }
-        playerStats.fieldGoalPct?.let { statList.add(Stat("Field Goal %", it)) }
-        playerStats.fieldGoalsMade?.let { statList.add(Stat("Field Goals Made", it)) }
-        playerStats.fieldGoalAttempts1_19?.let { statList.add(Stat("Field Goal Attempts 1-19", it)) }
-        playerStats.fieldGoalsMade1_19?.let { statList.add(Stat("Field Goals Made 1-19", it)) }
-        playerStats.fieldGoalAttempts20_29?.let { statList.add(Stat("Field Goal Attempts 20-29", it)) }
-        playerStats.fieldGoalsMade20_29?.let { statList.add(Stat("Field Goals Made 20-29", it)) }
-        playerStats.fieldGoalAttempts30_39?.let { statList.add(Stat("Field Goal Attempts 30-39", it)) }
-        playerStats.fieldGoalsMade30_39?.let { statList.add(Stat("Field Goals Made 30-39", it)) }
-        playerStats.fieldGoalAttempts40_49?.let { statList.add(Stat("Field Goal Attempts 40-49", it)) }
-        playerStats.fieldGoalsMade40_49?.let { statList.add(Stat("Field Goals Made 40-49", it)) }
-        playerStats.fieldGoalAttempts50_59?.let { statList.add(Stat("Field Goal Attempts 50-59", it)) }
-        playerStats.fieldGoalsMade50_59?.let { statList.add(Stat("Field Goals Made 50-59", it)) }
-        playerStats.fieldGoalAttempts60_99?.let { statList.add(Stat("Field Goal Attempts 60-99", it)) }
-        playerStats.fieldGoalsMade60_99?.let { statList.add(Stat("Field Goals Made 60-99", it)) }
-        playerStats.longFieldGoalMade?.let { statList.add(Stat("Long Field Goal Made", it)) }
 
         return statList
     }
+
+    fun mapStatsToComparison(player1: PlayerStats, player2: PlayerStats): List<Comparison> {
+        val comparisonList = mutableListOf<Comparison>()
+
+        // Helper function to add comparisons
+        fun addComparison(statName: String, value1: String?, value2: String?) {
+            if (value1 != null && value2 != null) {
+                comparisonList.add(Comparison(statName, value1, value2))
+            }
+        }
+
+        player1.fantasyPpg?.let { Log.d("in map", it) }
+        player2.fantasyPpg?.let { Log.d("in map", it) }
+
+
+        // Games Played comparison
+        addComparison("Games Played", player1.gamesPlayed, player2.gamesPlayed)
+        addComparison("Fantasy PPG", player1.fantasyPpg, player2.fantasyPpg)
+
+        // Quarterback Stats
+        addComparison("Total Passing Yards", player1.totalPassingYards, player2.totalPassingYards)
+        addComparison("Avg Passing Yards", player1.avgPassingYards, player2.avgPassingYards)
+        addComparison("Total Passing TDs", player1.totalPassingTDs, player2.totalPassingTDs)
+        addComparison("Total Pass Attempts", player1.totalPassAttempts, player2.totalPassAttempts)
+        addComparison("Total Interceptions", player1.totalInterceptions, player2.totalInterceptions)
+
+        // Rushing Stats (for all players)
+        addComparison("Total Rushing Yards", player1.totalRushingYards, player2.totalRushingYards)
+        addComparison("Avg Rushing Yards", player1.avgRushingYards, player2.avgRushingYards)
+        addComparison("Total Rushing TDs", player1.totalRushingTDs, player2.totalRushingTDs)
+        addComparison("Total Rush Attempts", player1.totalRushAttempts, player2.totalRushAttempts)
+        addComparison("Rushing Share %", player1.rushShare, player2.rushShare)
+
+        // Receiving Stats
+        addComparison("Total Receiving Yards", player1.totalReceivingYards, player2.totalReceivingYards)
+        addComparison("Receiving Yards Per Game", player1.receivingYardsPerGame, player2.receivingYardsPerGame)
+        addComparison("Total Receiving TDs", player1.totalReceivingTDs, player2.totalReceivingTDs)
+        addComparison("Total Receptions", player1.totalReceptions, player2.totalReceptions)
+        addComparison("Target Share %", player1.targetShare, player2.targetShare)
+
+        // Place Kicker Stats
+        addComparison("Extra Point Attempts", player1.extraPointAttempts, player2.extraPointAttempts)
+        addComparison("Extra Point %", player1.extraPointPct, player2.extraPointPct)
+        addComparison("Extra Points Made", player1.extraPointsMade, player2.extraPointsMade)
+        addComparison("Field Goal Attempts", player1.fieldGoalAttempts, player2.fieldGoalAttempts)
+        addComparison("Field Goal %", player1.fieldGoalPct, player2.fieldGoalPct)
+        addComparison("Field Goals Made", player1.fieldGoalsMade, player2.fieldGoalsMade)
+        addComparison("Field Goal Attempts 1-19", player1.fieldGoalAttempts1_19, player2.fieldGoalAttempts1_19)
+        addComparison("Field Goals Made 1-19", player1.fieldGoalsMade1_19, player2.fieldGoalsMade1_19)
+        addComparison("Field Goal Attempts 20-29", player1.fieldGoalAttempts20_29, player2.fieldGoalAttempts20_29)
+        addComparison("Field Goals Made 20-29", player1.fieldGoalsMade20_29, player2.fieldGoalsMade20_29)
+        addComparison("Field Goal Attempts 30-39", player1.fieldGoalAttempts30_39, player2.fieldGoalAttempts30_39)
+        addComparison("Field Goals Made 30-39", player1.fieldGoalsMade30_39, player2.fieldGoalsMade30_39)
+        addComparison("Field Goal Attempts 40-49", player1.fieldGoalAttempts40_49, player2.fieldGoalAttempts40_49)
+        addComparison("Field Goals Made 40-49", player1.fieldGoalsMade40_49, player2.fieldGoalsMade40_49)
+        addComparison("Field Goal Attempts 50-59", player1.fieldGoalAttempts50_59, player2.fieldGoalAttempts50_59)
+        addComparison("Field Goals Made 50-59", player1.fieldGoalsMade50_59, player2.fieldGoalsMade50_59)
+        addComparison("Field Goal Attempts 60-99", player1.fieldGoalAttempts60_99, player2.fieldGoalAttempts60_99)
+        addComparison("Field Goals Made 60-99", player1.fieldGoalsMade60_99, player2.fieldGoalsMade60_99)
+        addComparison("Long Field Goal Made", player1.longFieldGoalMade, player2.longFieldGoalMade)
+
+        // Fumbles Lost comparison
+        addComparison("Fumbles Lost", player1.fumblesLost, player2.fumblesLost)
+
+        Log.d("In comparison map", comparisonList.toString())
+
+        return comparisonList
+    }
+
+
 }
+

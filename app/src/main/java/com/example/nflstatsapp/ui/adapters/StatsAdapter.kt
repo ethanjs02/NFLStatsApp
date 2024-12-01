@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.nflstatsapp.R
-import com.example.nflstatsapp.data.api.Stat
+import com.example.nflstatsapp.data.stats.Stat
 
 class StatsAdapter(private val statList: List<Stat>) : RecyclerView.Adapter<StatsAdapter.StatsViewHolder>() {
 

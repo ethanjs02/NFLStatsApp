@@ -3,6 +3,7 @@ package com.example.nflstatsapp.ui.activties
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
@@ -15,6 +16,7 @@ import com.example.nflstatsapp.R
 import com.example.nflstatsapp.data.players.Player
 import com.example.nflstatsapp.data.teams.TeamRepository
 import com.example.nflstatsapp.ui.StatsAdapter
+import com.example.nflstatsapp.ui.fragments.SearchPlayerFragment
 import com.example.nflstatsapp.ui.viewModels.PlayerStatsViewModel
 import com.google.android.material.tabs.TabLayout
 
@@ -37,6 +39,7 @@ class StatsActivity : AppCompatActivity() {
     private lateinit var playerHeightTextView: TextView
     private lateinit var playerWeightTextView: TextView
     private lateinit var progressBar: ProgressBar
+    private lateinit var compareButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,6 +58,8 @@ class StatsActivity : AppCompatActivity() {
         playerHeightTextView= findViewById(R.id.playerHeight)
         playerWeightTextView= findViewById(R.id.playerWeight)
         progressBar = findViewById(R.id.progressBar)
+        compareButton = findViewById(R.id.compareButton)
+        var tabValue = "Standard"
 
         val player = intent.extras?.get("player_data") as? Player
         player?.teamId?.let {
@@ -97,7 +102,7 @@ class StatsActivity : AppCompatActivity() {
         }
 
         // Fetch player stats using ViewModel
-        playerStatsViewModel.fetchPlayerStats(player?.id.toString(), player?.teamId.toString(), player?.positionId.toString())
+        playerStatsViewModel.fetchPlayerStats(player?.id.toString(), player?.teamId.toString(), player?.positionId.toString(), tabValue)
 
         playerStatsViewModel.totalFantasyPoints.observe(this, Observer { fantasyPoints ->
             fantasyPoints?.let {
@@ -124,7 +129,6 @@ class StatsActivity : AppCompatActivity() {
             }
         })
 
-
         // Set up RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -132,8 +136,8 @@ class StatsActivity : AppCompatActivity() {
         playerStatsViewModel.playerStats.observe(this, Observer { stats ->
             stats?.let {
                 // Map the PlayerStats to a list of Stat objects
-                val statList = playerStatsViewModel.mapPlayerStatsToList(it)
-                val adapter = StatsAdapter(statList)
+                val statList = player?.let { it1 -> playerStatsViewModel.mapPlayerStatsToList(it, it1.position) }
+                val adapter = statList?.let { it1 -> StatsAdapter(it1) }
                 recyclerView.adapter = adapter
             }
         })
@@ -141,6 +145,7 @@ class StatsActivity : AppCompatActivity() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 val selectedTab = tab?.text.toString()
+                tabValue = selectedTab
                 Log.d("StatsActivity", "Selected Tab: $selectedTab")
                 // Update data or UI based on the selected tab
                 // Example: Filter stats by scoring type
@@ -150,5 +155,26 @@ class StatsActivity : AppCompatActivity() {
             override fun onTabUnselected(tab: TabLayout.Tab?) {}
             override fun onTabReselected(tab: TabLayout.Tab?) {}
         })
+
+        compareButton.setOnClickListener {
+            compareButton.visibility = View.GONE
+            val data = playerStatsViewModel.aggregateData(player?.fullName, player?.position, player?.jersey)
+            Log.d("compare", data.toString())
+            val searchFragment = SearchPlayerFragment.newInstance(data, tabValue)
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, searchFragment)
+                .addToBackStack(null)
+                .commit()
+            val transaction = supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.container, searchFragment) // 'container' is the ID of your main container
+            transaction.addToBackStack(null) // Allows back navigation to return to the previous screen
+            transaction.commit()
+        }
+
+        supportFragmentManager.addOnBackStackChangedListener {
+            if (supportFragmentManager.backStackEntryCount == 0) {
+                compareButton.visibility = View.VISIBLE
+            }
+        }
     }
 }

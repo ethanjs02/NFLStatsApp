@@ -72,9 +72,6 @@ class MainActivity : AppCompatActivity() {
         val closeIcon = searchView.findViewById<ImageView>(androidx.appcompat.R.id.search_close_btn)
         closeIcon.setColorFilter(ContextCompat.getColor(this, R.color.red), PorterDuff.Mode.SRC_IN)
 
-
-
-
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return false

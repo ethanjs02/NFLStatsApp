@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.activties.StatsActivity" />
+        <activity android:name=".ui.activties.ComparisonActivity" />
     </application>
 
 </manifest>
