@@ -312,11 +312,13 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
                 playerStats.totalPassingTDs?.let { statList.add(Stat("Total Passing TDs", it)) }
                 playerStats.totalPassAttempts?.let { statList.add(Stat("Total Pass Attempts", it)) }
                 playerStats.totalInterceptions?.let { statList.add(Stat("Total Interceptions", it)) }
+                playerStats.teamPassAttempts?.let { statList.add(Stat("Team Passing Attempts", it)) }
                 playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
                 playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
                 playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
                 playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
                 playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
+                playerStats.teamRushAttempts?.let { statList.add(Stat("Team Rushing Attempts", it))}
             }
             "Running Back", "Fullback" -> {
                 playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
@@ -324,11 +326,13 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
                 playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
                 playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
                 playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
+                playerStats.teamRushAttempts?.let { statList.add(Stat("Team Rushing Attempts", it))}
                 playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
                 playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
                 playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
                 playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
                 playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
+                playerStats.teamPassAttempts?.let { statList.add(Stat("Team Passing Attempts", it))}
             }
             "Wide Receiver", "Tight End" -> {
                 playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
@@ -336,11 +340,13 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
                 playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
                 playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
                 playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
+                playerStats.teamPassAttempts?.let { statList.add(Stat("Team Passing Attempts", it))}
 
                 if ((playerStats.totalRushingYards?.toInt())!! > 0) {
                     playerStats.totalRushingYards.let { statList.add(Stat("Total Rushing Yards", it)) }
                     playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
                     playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                    playerStats.teamRushAttempts?.let { statList.add(Stat("Team Rushing Attempts", it))}
                 }
             }
 
@@ -405,6 +411,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         addComparison("Total Rushing TDs", player1.totalRushingTDs, player2.totalRushingTDs)
         addComparison("Total Rush Attempts", player1.totalRushAttempts, player2.totalRushAttempts)
         addComparison("Rushing Share %", player1.rushShare, player2.rushShare)
+        addComparison("Team Rushing Attempts", player1.teamRushAttempts, player2.teamRushAttempts)
 
         // Receiving Stats
         addComparison("Total Receiving Yards", player1.totalReceivingYards, player2.totalReceivingYards)
@@ -412,6 +419,7 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         addComparison("Total Receiving TDs", player1.totalReceivingTDs, player2.totalReceivingTDs)
         addComparison("Total Receptions", player1.totalReceptions, player2.totalReceptions)
         addComparison("Target Share %", player1.targetShare, player2.targetShare)
+        addComparison("Team Passing Attempts", player1.teamPassAttempts, player2.teamPassAttempts)
 
         // Place Kicker Stats
         addComparison("Extra Point Attempts", player1.extraPointAttempts, player2.extraPointAttempts)
