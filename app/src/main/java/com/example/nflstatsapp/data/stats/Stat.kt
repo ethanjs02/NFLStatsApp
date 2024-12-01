@@ -1,4 +1,4 @@
-package com.example.nflstatsapp.data.api
+package com.example.nflstatsapp.data.stats
 
 data class Stat(
     val statName: String,

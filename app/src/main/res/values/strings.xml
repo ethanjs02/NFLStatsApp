@@ -9,4 +9,6 @@
     <string name="compare">Compare</string>
     <string name="logo_description">logo</string>
     <string name="app_title">NFL Stats App</string>
+    <string name="player1_image">player 1 image</string>
+    <string name="player2_image">player 2 image</string>
 </resources>

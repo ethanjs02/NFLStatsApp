@@ -1,6 +1,9 @@
 package com.example.nflstatsapp.data.api
 
+import java.io.Serializable
+
 data class PlayerStats(
+    var fantasyPpg: String?,
     val gamesPlayed: String?,
     val totalPassingYards: String?,
     val avgPassingYards: String?,
@@ -39,4 +42,4 @@ data class PlayerStats(
     val fieldGoalsMade50_59: String?,
     val fieldGoalsMade60_99: String?,
     val longFieldGoalMade: String?,
-)
+): Serializable

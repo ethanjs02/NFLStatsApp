@@ -59,6 +59,7 @@ class StatsActivity : AppCompatActivity() {
         playerWeightTextView= findViewById(R.id.playerWeight)
         progressBar = findViewById(R.id.progressBar)
         compareButton = findViewById(R.id.compareButton)
+        var tabValue = "Standard"
 
         val player = intent.extras?.get("player_data") as? Player
         player?.teamId?.let {
@@ -101,7 +102,7 @@ class StatsActivity : AppCompatActivity() {
         }
 
         // Fetch player stats using ViewModel
-        playerStatsViewModel.fetchPlayerStats(player?.id.toString(), player?.teamId.toString(), player?.positionId.toString())
+        playerStatsViewModel.fetchPlayerStats(player?.id.toString(), player?.teamId.toString(), player?.positionId.toString(), tabValue)
 
         playerStatsViewModel.totalFantasyPoints.observe(this, Observer { fantasyPoints ->
             fantasyPoints?.let {
@@ -128,7 +129,6 @@ class StatsActivity : AppCompatActivity() {
             }
         })
 
-
         // Set up RecyclerView
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -145,6 +145,7 @@ class StatsActivity : AppCompatActivity() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 val selectedTab = tab?.text.toString()
+                tabValue = selectedTab
                 Log.d("StatsActivity", "Selected Tab: $selectedTab")
                 // Update data or UI based on the selected tab
                 // Example: Filter stats by scoring type
@@ -157,11 +158,23 @@ class StatsActivity : AppCompatActivity() {
 
         compareButton.setOnClickListener {
             compareButton.visibility = View.GONE
-            val searchFragment = SearchPlayerFragment()
+            val data = playerStatsViewModel.aggregateData(player?.fullName, player?.position, player?.jersey)
+            Log.d("compare", data.toString())
+            val searchFragment = SearchPlayerFragment.newInstance(data, tabValue)
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.container, searchFragment)
+                .addToBackStack(null)
+                .commit()
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.container, searchFragment) // 'container' is the ID of your main container
             transaction.addToBackStack(null) // Allows back navigation to return to the previous screen
             transaction.commit()
+        }
+
+        supportFragmentManager.addOnBackStackChangedListener {
+            if (supportFragmentManager.backStackEntryCount == 0) {
+                compareButton.visibility = View.VISIBLE
+            }
         }
     }
 }
