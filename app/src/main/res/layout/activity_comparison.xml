@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scrollbars="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Player Names and Images Section -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:background="#FFFFFF"
+        android:layout_margin="4dp"
+        android:elevation="4dp"
+        android:padding="8dp">
+
+        <!-- Player 1 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- Player 1 Image -->
+            <ImageView
+                android:id="@+id/player1Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/player1_image"
+                android:background="#EEEEEE"
+                android:elevation="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Player 1 Info Details -->
+            <TextView
+                android:id="@+id/player1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1 Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/player1Position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/player1Jersey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jersey #"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+        </LinearLayout>
+
+        <!-- Player 2 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <!-- Player 2 Image -->
+            <ImageView
+                android:id="@+id/player2Image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/player2_image"
+                android:background="#EEEEEE"
+                android:elevation="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Player 2 Info Details -->
+            <TextView
+                android:id="@+id/player2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2 Name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/player2Position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/player2Jersey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jersey #"
+                android:textSize="16sp"
+                android:textColor="#555555"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Stats Section (Scrollable) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/statsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@string/player_stats_list" />
+    </ScrollView>
+</LinearLayout>
