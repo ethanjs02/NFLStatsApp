@@ -9,7 +9,7 @@
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:background="@drawable/search_view_background"
+        android:background="#FFFFFF"
         android:elevation="8dp"
         android:queryHint="Search players..."
         app:layout_constraintEnd_toEndOf="parent"

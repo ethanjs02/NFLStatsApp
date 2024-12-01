@@ -282,49 +282,79 @@ class PlayerStatsViewModel(private val teamRepository: TeamRepository) : ViewMod
         )
     }
 
-    fun mapPlayerStatsToList(playerStats: PlayerStats): List<Stat> {
+    fun mapPlayerStatsToList(playerStats: PlayerStats, pos: String): List<Stat> {
         val statList = mutableListOf<Stat>()
 
-        // Map each stat to a name and value
+        // Games Played is always the top stat
         playerStats.gamesPlayed?.let { statList.add(Stat("Games Played", it)) }
-        playerStats.totalPassingYards?.let { statList.add(Stat("Total Passing Yards", it)) }
-        playerStats.avgPassingYards?.let { statList.add(Stat("Avg Passing Yards", it)) }
-        playerStats.totalPassingTDs?.let { statList.add(Stat("Total Passing TDs", it)) }
-        playerStats.totalPassAttempts?.let { statList.add(Stat("Total Pass Attempts", it)) }
-        playerStats.totalInterceptions?.let { statList.add(Stat("Total Interceptions", it)) }
-        playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
-        playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
-        playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
-        playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
-        playerStats.avgRushAttempts?.let { statList.add(Stat("Avg Rush Attempts", it)) }
-        playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
-        playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
-        playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
-        playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
-        playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
-        playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
-        playerStats.totalFumbles?.let { statList.add(Stat("Total Fumbles", it)) }
+
+        when (pos) {
+            "Quarterback" -> {
+                playerStats.totalPassingYards?.let { statList.add(Stat("Total Passing Yards", it)) }
+                playerStats.avgPassingYards?.let { statList.add(Stat("Avg Passing Yards", it)) }
+                playerStats.totalPassingTDs?.let { statList.add(Stat("Total Passing TDs", it)) }
+                playerStats.totalPassAttempts?.let { statList.add(Stat("Total Pass Attempts", it)) }
+                playerStats.totalInterceptions?.let { statList.add(Stat("Total Interceptions", it)) }
+                playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
+                playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+                playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
+                playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
+            }
+            "Running Back", "Fullback" -> {
+                playerStats.totalRushingYards?.let { statList.add(Stat("Total Rushing Yards", it)) }
+                playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+                playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                playerStats.totalRushAttempts?.let { statList.add(Stat("Total Rush Attempts", it)) }
+                playerStats.rushShare?.let { statList.add(Stat("Rushing Share %", it)) }
+                playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
+                playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
+                playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
+                playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
+                playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
+            }
+            "Wide Receiver", "Tight End" -> {
+                playerStats.totalReceivingYards?.let { statList.add(Stat("Total Receiving Yards", it)) }
+                playerStats.receivingYardsPerGame?.let { statList.add(Stat("Receiving Yards Per Game", it)) }
+                playerStats.totalReceivingTDs?.let { statList.add(Stat("Total Receiving TDs", it)) }
+                playerStats.totalReceptions?.let { statList.add(Stat("Total Receptions", it)) }
+                playerStats.targetShare?.let { statList.add(Stat("Target Share %", it)) }
+
+                if ((playerStats.totalRushingYards?.toInt())!! > 0) {
+                    playerStats.totalRushingYards.let { statList.add(Stat("Total Rushing Yards", it)) }
+                    playerStats.avgRushingYards?.let { statList.add(Stat("Avg Rushing Yards", it)) }
+                    playerStats.totalRushingTDs?.let { statList.add(Stat("Total Rushing TDs", it)) }
+                }
+            }
+
+            "Place kicker" -> {
+                playerStats.extraPointAttempts?.let { statList.add(Stat("Extra Point Attempts", it)) }
+                playerStats.extraPointPct?.let { statList.add(Stat("Extra Point %", it)) }
+                playerStats.extraPointsMade?.let { statList.add(Stat("Extra Points Made", it)) }
+                playerStats.fieldGoalAttempts?.let { statList.add(Stat("Field Goal Attempts", it)) }
+                playerStats.fieldGoalPct?.let { statList.add(Stat("Field Goal %", it)) }
+                playerStats.fieldGoalsMade?.let { statList.add(Stat("Field Goals Made", it)) }
+                playerStats.fieldGoalAttempts1_19?.let { statList.add(Stat("Field Goal Attempts 1-19", it)) }
+                playerStats.fieldGoalsMade1_19?.let { statList.add(Stat("Field Goals Made 1-19", it)) }
+                playerStats.fieldGoalAttempts20_29?.let { statList.add(Stat("Field Goal Attempts 20-29", it)) }
+                playerStats.fieldGoalsMade20_29?.let { statList.add(Stat("Field Goals Made 20-29", it)) }
+                playerStats.fieldGoalAttempts30_39?.let { statList.add(Stat("Field Goal Attempts 30-39", it)) }
+                playerStats.fieldGoalsMade30_39?.let { statList.add(Stat("Field Goals Made 30-39", it)) }
+                playerStats.fieldGoalAttempts40_49?.let { statList.add(Stat("Field Goal Attempts 40-49", it)) }
+                playerStats.fieldGoalsMade40_49?.let { statList.add(Stat("Field Goals Made 40-49", it)) }
+                playerStats.fieldGoalAttempts50_59?.let { statList.add(Stat("Field Goal Attempts 50-59", it)) }
+                playerStats.fieldGoalsMade50_59?.let { statList.add(Stat("Field Goals Made 50-59", it)) }
+                playerStats.fieldGoalAttempts60_99?.let { statList.add(Stat("Field Goal Attempts 60-99", it)) }
+                playerStats.fieldGoalsMade60_99?.let { statList.add(Stat("Field Goals Made 60-99", it)) }
+                playerStats.longFieldGoalMade?.let { statList.add(Stat("Long Field Goal Made", it)) }
+
+            }
+        }
+
+        // Include fumbles for all positions
         playerStats.fumblesLost?.let { statList.add(Stat("Fumbles Lost", it)) }
-        playerStats.extraPointAttempts?.let { statList.add(Stat("Extra Point Attempts", it)) }
-        playerStats.extraPointPct?.let { statList.add(Stat("Extra Point %", it)) }
-        playerStats.extraPointsMade?.let { statList.add(Stat("Extra Points Made", it)) }
-        playerStats.fieldGoalAttempts?.let { statList.add(Stat("Field Goal Attempts", it)) }
-        playerStats.fieldGoalPct?.let { statList.add(Stat("Field Goal %", it)) }
-        playerStats.fieldGoalsMade?.let { statList.add(Stat("Field Goals Made", it)) }
-        playerStats.fieldGoalAttempts1_19?.let { statList.add(Stat("Field Goal Attempts 1-19", it)) }
-        playerStats.fieldGoalsMade1_19?.let { statList.add(Stat("Field Goals Made 1-19", it)) }
-        playerStats.fieldGoalAttempts20_29?.let { statList.add(Stat("Field Goal Attempts 20-29", it)) }
-        playerStats.fieldGoalsMade20_29?.let { statList.add(Stat("Field Goals Made 20-29", it)) }
-        playerStats.fieldGoalAttempts30_39?.let { statList.add(Stat("Field Goal Attempts 30-39", it)) }
-        playerStats.fieldGoalsMade30_39?.let { statList.add(Stat("Field Goals Made 30-39", it)) }
-        playerStats.fieldGoalAttempts40_49?.let { statList.add(Stat("Field Goal Attempts 40-49", it)) }
-        playerStats.fieldGoalsMade40_49?.let { statList.add(Stat("Field Goals Made 40-49", it)) }
-        playerStats.fieldGoalAttempts50_59?.let { statList.add(Stat("Field Goal Attempts 50-59", it)) }
-        playerStats.fieldGoalsMade50_59?.let { statList.add(Stat("Field Goals Made 50-59", it)) }
-        playerStats.fieldGoalAttempts60_99?.let { statList.add(Stat("Field Goal Attempts 60-99", it)) }
-        playerStats.fieldGoalsMade60_99?.let { statList.add(Stat("Field Goals Made 60-99", it)) }
-        playerStats.longFieldGoalMade?.let { statList.add(Stat("Long Field Goal Made", it)) }
 
         return statList
     }
 }
+

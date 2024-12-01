@@ -136,8 +136,8 @@ class StatsActivity : AppCompatActivity() {
         playerStatsViewModel.playerStats.observe(this, Observer { stats ->
             stats?.let {
                 // Map the PlayerStats to a list of Stat objects
-                val statList = playerStatsViewModel.mapPlayerStatsToList(it)
-                val adapter = StatsAdapter(statList)
+                val statList = player?.let { it1 -> playerStatsViewModel.mapPlayerStatsToList(it, it1.position) }
+                val adapter = statList?.let { it1 -> StatsAdapter(it1) }
                 recyclerView.adapter = adapter
             }
         })
@@ -156,6 +156,7 @@ class StatsActivity : AppCompatActivity() {
         })
 
         compareButton.setOnClickListener {
+            compareButton.visibility = View.GONE
             val searchFragment = SearchPlayerFragment()
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.container, searchFragment) // 'container' is the ID of your main container

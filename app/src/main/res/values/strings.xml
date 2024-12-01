@@ -7,4 +7,6 @@
     <string name="total_fantasy_points_0">Total Fantasy Points: 0</string>
     <string name="fantasy_ppg_0">Fantasy PPG: 0</string>
     <string name="compare">Compare</string>
+    <string name="logo_description">logo</string>
+    <string name="app_title">NFL Stats App</string>
 </resources>
