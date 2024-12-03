@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
 
     <application
         android:name=".NFLStatsApplication"
@@ -27,6 +29,8 @@
         </activity>
         <activity android:name=".ui.activties.StatsActivity" />
         <activity android:name=".ui.activties.ComparisonActivity" />
+        <receiver android:name=".receiver.NotificationReceiver" android:enabled="true" android:exported="false"/>
+
     </application>
 
 </manifest>
